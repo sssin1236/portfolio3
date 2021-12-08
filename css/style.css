@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Caveat&family=Dancing+Script&family=Meow+Script&family=Shadows+Into+Light&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -15,13 +16,43 @@ a {
   display: none;
   clear: both; }
 
-body {
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Meow Script', cursive;
+font-family: 'Shadows Into Light', cursive;
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #56739d, #8faac8);
+
+    div{
+        width: 500px; height: 500px;
+        background:  #7392b9;
+    }
+}
+*/
+#header {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, #56739d, #8faac8); }
-  body div {
-    width: 500px;
-    height: 500px;
-    background: #7392b9; }
+  height: 500px; }
+  #header .inner {
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 0; }
+    #header .inner h1 {
+      font: bold 24px/1 'Dancing Script';
+      text-align: center;
+      margin-bottom: 30px; }
+      #header .inner h1 a {
+        color: #111; }
+    #header .inner #gnb {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
