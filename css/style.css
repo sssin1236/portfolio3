@@ -49,14 +49,18 @@ body{
     #header .inner h1 {
       font: bold 24px/1 'Dancing Script';
       text-align: center;
-      margin-bottom: 50px; }
+      margin-bottom: 40px; }
       #header .inner h1 a {
-        color: #111; }
+        color: tan; }
     #header .inner #gnb {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      #header .inner #gnb li {
+        font: bold 18px/1 'abel'; }
+        #header .inner #gnb li a {
+          color: #111; }
     #header .inner .util {
       position: absolute;
       top: 30px;
@@ -72,8 +76,13 @@ body{
 #visual {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  background: url(../img/visual5.jpg) no-repeat center/cover; }
+  overflow: hidden; }
+  #visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.3) contrast(70%); }
   #visual .inner {
     width: 1180px;
     height: 100%;

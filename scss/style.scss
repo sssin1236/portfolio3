@@ -37,10 +37,10 @@ body{
         h1{
             font: bold 24px/1 'Dancing Script';
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
 
             a{
-                color: #111;
+                color: tan;
             }
         }
 
@@ -49,6 +49,14 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            li{
+                font: bold 18px/1 'abel';
+
+                a{
+                    color: #111;
+                }
+            }
         }
 
         .util{
@@ -70,7 +78,13 @@ body{
 #visual{
     width: 100%; height: 100vh;
     overflow: hidden;
-    background: url(../img/visual5.jpg) no-repeat center/cover;
+
+    video{
+        width: 100%; height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        filter: brightness(0.3) contrast(70%);
+    }
 
     .inner{
         width: 1180px; height: 100%;
