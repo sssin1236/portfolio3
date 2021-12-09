@@ -56,9 +56,9 @@ body{
       justify-content: space-between;
       align-items: center; }
       #header .inner #gnb li {
-        font: bold 18px/1 'Abel'; }
+        font: 18px/1 'Abel'; }
         #header .inner #gnb li a {
-          color: tan; }
+          color: #111; }
     #header .inner .util {
       position: absolute;
       top: 30px;
@@ -80,7 +80,8 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: 1;
-    filter: brightness(0.3) contrast(70%); }
+    filter: brightness(0.8) contrast(70%);
+    display: none; }
   #visual .inner {
     width: 1180px;
     height: 100%;
