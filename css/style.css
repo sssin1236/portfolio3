@@ -133,5 +133,19 @@ body{
             #visual .inner .wrap .left .title li a {
               font: 16px/1 'noto sans kr';
               color: #fff; }
+      #visual .inner .wrap .right {
+        float: right;
+        width: 60%;
+        height: 100%;
+        overflow: hidden; }
+        #visual .inner .wrap .right .product {
+          width: 100%;
+          height: calc(100% * 3); }
+          #visual .inner .wrap .right .product li {
+            width: 100%;
+            height: calc(100%/ 3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

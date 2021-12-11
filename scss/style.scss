@@ -147,6 +147,23 @@ body{
                     }
                 }
             }
+
+            .right{
+                float: right;
+                width: 60%; height: 100%;
+                overflow: hidden;
+
+                .product{
+                    width: 100%; height: calc(100% * 3);
+
+                    li{
+                        width: 100%; height: calc(100%/ 3);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
         }
     }
 } 
