@@ -120,7 +120,7 @@ body{
 
                     li{
                         width: 100%; height: calc(100% / 3);
-                        padding: 300px 0;
+                        padding: 350px 0;
                         display: none;
 
                         &.on{
@@ -128,15 +128,21 @@ body{
                         }
 
                         h2{
-                            font: bold 30px/1 'abel';
+                            font: bold 50px/1 'abel';
                             color: tan;
                             margin-bottom: 30px;
                         }
 
                         p{
+                            width: 500px;
                             font: 17px/1.4 'noto sans kr', 'arial';
                             color: #bbb;
                             margin-bottom: 20px;
+                        }
+
+                        a{
+                            font: 16px/1 'noto sans kr';
+                            color: #fff;
                         }
                     }
                 }

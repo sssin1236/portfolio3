@@ -117,17 +117,21 @@ body{
           #visual .inner .wrap .left .title li {
             width: 100%;
             height: calc(100% / 3);
-            padding: 300px 0;
+            padding: 350px 0;
             display: none; }
             #visual .inner .wrap .left .title li.on {
               display: block; }
             #visual .inner .wrap .left .title li h2 {
-              font: bold 30px/1 'abel';
+              font: bold 50px/1 'abel';
               color: tan;
               margin-bottom: 30px; }
             #visual .inner .wrap .left .title li p {
+              width: 500px;
               font: 17px/1.4 'noto sans kr', 'arial';
               color: #bbb;
               margin-bottom: 20px; }
+            #visual .inner .wrap .left .title li a {
+              font: 16px/1 'noto sans kr';
+              color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
