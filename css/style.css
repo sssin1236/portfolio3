@@ -37,6 +37,9 @@ body{
 #header {
   width: 100%;
   height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2; }
   #header .inner {
     width: 1180px;
@@ -73,8 +76,9 @@ body{
 
 #visual {
   width: 100%;
-  height: calc(100vh - 140px);
-  overflow: hidden; }
+  height: 100vh;
+  overflow: hidden;
+  background: url(../img/visual.4.jpg) no-repeat center/cover; }
   #visual video {
     width: 100%;
     height: 100%;
@@ -97,6 +101,17 @@ body{
       #visual .inner .wrap .left {
         float: left;
         width: 40%;
-        height: 100%; }
+        height: 100%;
+        overflow: hidden; }
+        #visual .inner .wrap .left .title {
+          width: 100%;
+          height: calc(100% * 3); }
+          #visual .inner .wrap .left .title li {
+            width: 100%;
+            height: calc(100% / 3);
+            padding: 300px 0;
+            display: none; }
+            #visual .inner .wrap .left .title li.on {
+              display: block; }
 
 /*# sourceMappingURL=style.css.map */
