@@ -94,13 +94,14 @@ body{
     filter: brightness(0.8) contrast(70%);
     display: none; }
   #visual .inner {
-    width: 1180px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     position: relative; }
     #visual .inner .wrap {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      padding: 0px 50px; }
       #visual .inner .wrap::after {
         content: '';
         display: block;
@@ -124,5 +125,9 @@ body{
               font: bold 30px/1 'abel';
               color: tan;
               margin-bottom: 30px; }
+            #visual .inner .wrap .left .title li p {
+              font: 17px/1.4 'noto sans kr', 'arial';
+              color: #bbb;
+              margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
