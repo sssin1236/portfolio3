@@ -120,5 +120,9 @@ body{
             display: none; }
             #visual .inner .wrap .left .title li.on {
               display: block; }
+            #visual .inner .wrap .left .title li h2 {
+              font: bold 30px/1 'abel';
+              color: tan;
+              margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
