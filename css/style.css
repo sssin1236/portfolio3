@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bakbak+One&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bakbak+One&family=Noto+Serif+Display:wght@300&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -19,6 +19,7 @@ a {
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Bakbak One', cursive;
+font-family: 'Noto Serif Display', serif;
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 */
@@ -37,11 +38,12 @@ font-family: 'Roboto Condensed', sans-serif;
     align-items: center; }
     #header .inner .logo {
       display: inline-block;
-      font: bold 28px/1 'Open Sans Condensed';
+      font: 24px/1 'Open Sans Condensed';
+      letter-spacing: 2px;
       margin-top: 40px;
       margin-right: 50px; }
       #header .inner .logo a {
-        color: #fff; }
+        color: tan; }
     #header .inner #gnb {
       display: inline-block; }
       #header .inner #gnb::after {
@@ -68,6 +70,8 @@ font-family: 'Roboto Condensed', sans-serif;
         #header .inner .util li a {
           font: 13px/1 'Abel';
           color: #eee; }
+        #header .inner .util li:last-child a i {
+          margin-left: 5px; }
 
 #visual {
   width: 100%;
@@ -102,109 +106,97 @@ font-family: 'Roboto Condensed', sans-serif;
         float: left;
         width: 40%;
         height: 100%;
+        padding: 350px 0;
         overflow: hidden; }
-        #visual .inner .wrap .left .title {
-          width: 100%;
-          height: calc(100% * 3); }
-          #visual .inner .wrap .left .title li {
-            width: 100%;
-            height: calc(100% / 3);
-            padding: 350px 0;
-            display: none; }
-            #visual .inner .wrap .left .title li.on {
-              display: block; }
-            #visual .inner .wrap .left .title li h2 {
-              font: bold 50px/1 'abel';
-              color: tan;
-              margin-bottom: 30px; }
-            #visual .inner .wrap .left .title li p {
-              width: 500px;
-              font: 17px/1.4 'noto sans kr', 'arial';
-              color: #bbb;
-              margin-bottom: 20px; }
-            #visual .inner .wrap .left .title li a {
-              font: 16px/1 'noto sans kr';
-              color: #fff; }
+        #visual .inner .wrap .left h2 {
+          font: 50px/1 'Bakbak One';
+          color: tan;
+          margin-bottom: 30px; }
+        #visual .inner .wrap .left p {
+          width: 500px;
+          font: 17px/1.4 'noto sans kr', 'arial';
+          color: #bbb;
+          margin-bottom: 20px; }
+        #visual .inner .wrap .left a {
+          font: 16px/1 'noto sans kr';
+          color: #fff; }
       #visual .inner .wrap .right {
         float: right;
         width: 60%;
         height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-right: 50px;
         overflow: hidden; }
-        #visual .inner .wrap .right .product {
-          width: 100%;
-          height: calc(100% * 3); }
-          #visual .inner .wrap .right .product li {
+        #visual .inner .wrap .right article {
+          width: 24%;
+          padding: 20px;
+          background: linear-gradient(-210deg, rgba(0, 0, 0, 0.8) 60%, rgba(36, 36, 36, 0.5) 100%);
+          cursor: pointer; }
+          #visual .inner .wrap .right article .front {
             width: 100%;
-            height: calc(100%/ 3);
-            display: flex;
-            justify-content: space-between;
-            align-items: center; }
-            #visual .inner .wrap .right .product li article {
-              width: 24%;
-              padding: 20px;
-              background: linear-gradient(-210deg, rgba(0, 0, 0, 0.8) 60%, rgba(36, 36, 36, 0.5) 100%);
-              cursor: pointer; }
-              #visual .inner .wrap .right .product li article .front {
+            height: 100%;
+            overflow: hidden; }
+            #visual .inner .wrap .right article .front .pic {
+              width: 100%;
+              height: 250px;
+              overflow: hidden;
+              margin-bottom: 30px; }
+              #visual .inner .wrap .right article .front .pic img {
                 width: 100%;
                 height: 100%;
-                overflow: hidden; }
-                #visual .inner .wrap .right .product li article .front .pic {
-                  width: 100%;
-                  height: 250px;
-                  overflow: hidden;
-                  margin-bottom: 30px; }
-                  #visual .inner .wrap .right .product li article .front .pic img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover; }
-                #visual .inner .wrap .right .product li article .front h3 {
-                  font: bold 24px/1 'abel';
-                  color: #fff;
-                  margin-bottom: 30px;
-                  opacity: 0.7;
-                  position: relative; }
-                  #visual .inner .wrap .right .product li article .front h3::after {
-                    content: '';
-                    display: block;
-                    width: 20px;
-                    height: 1px;
-                    background: rgba(238, 238, 238, 0.3);
-                    position: absolute;
-                    bottom: -15px;
-                    left: 0; }
-                #visual .inner .wrap .right .product li article .front p {
-                  font: 15px/1.2 'arial';
-                  color: #888;
-                  margin-bottom: 50px; }
-                #visual .inner .wrap .right .product li article .front a {
-                  display: block;
-                  text-align: right;
-                  position: relative; }
-                  #visual .inner .wrap .right .product li article .front a i {
-                    color: tan;
-                    margin-right: 10px;
-                    position: absolute;
-                    bottom: 0px;
-                    right: 0px;
-                    transform: rotate(180deg);
-                    transition: 1s; }
-                  #visual .inner .wrap .right .product li article .front a span {
-                    font: 17px/1 'abel';
-                    color: tan;
-                    letter-spacing: 1px;
-                    opacity: 0;
-                    position: absolute;
-                    bottom: 0;
-                    right: -100px;
-                    transition: 1s; }
-                #visual .inner .wrap .right .product li article .front:hover a i {
-                  right: 100px;
-                  transform: rotate(0deg); }
-                #visual .inner .wrap .right .product li article .front:hover a span {
-                  opacity: 1;
-                  right: 0px; }
-              #visual .inner .wrap .right .product li article .back {
-                display: none; }
+                object-fit: cover; }
+            #visual .inner .wrap .right article .front h3 {
+              font: bold 24px/1 'Open Sans Condensed';
+              color: #fff;
+              margin-bottom: 30px;
+              opacity: 0.7;
+              position: relative;
+              transition: 0.5s; }
+              #visual .inner .wrap .right article .front h3::after {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 1px;
+                background: rgba(238, 238, 238, 0.3);
+                position: absolute;
+                bottom: -15px;
+                left: 0; }
+            #visual .inner .wrap .right article .front p {
+              font: 15px/1.2 'arial';
+              color: #888;
+              margin-bottom: 50px; }
+            #visual .inner .wrap .right article .front a {
+              display: block;
+              text-align: right;
+              position: relative; }
+              #visual .inner .wrap .right article .front a i {
+                color: tan;
+                margin-right: 10px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                transform: rotate(180deg);
+                transition: 1s; }
+              #visual .inner .wrap .right article .front a span {
+                font: 17px/1 'abel';
+                color: tan;
+                letter-spacing: 1px;
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                right: -100px;
+                transition: 1s; }
+            #visual .inner .wrap .right article .front:hover h3 {
+              opacity: 1; }
+            #visual .inner .wrap .right article .front:hover a i {
+              right: 100px;
+              transform: rotate(0deg); }
+            #visual .inner .wrap .right article .front:hover a span {
+              opacity: 1;
+              right: 0px; }
+          #visual .inner .wrap .right article .back {
+            display: none; }
 
 /*# sourceMappingURL=style.css.map */
