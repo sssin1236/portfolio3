@@ -143,14 +143,23 @@ font-family: 'Roboto Condensed', sans-serif;
         overflow: hidden; }
         #visual .inner .wrap .right article {
           width: 24%;
+          height: 480px;
           padding: 20px;
           background: rgba(0, 0, 0, 0.8);
           cursor: pointer;
           transition: 1s; }
+          #visual .inner .wrap .right article.on {
+            width: 100%;
+            transform: rotateY(180deg); }
+            #visual .inner .wrap .right article.on .front {
+              opacity: 0; }
+            #visual .inner .wrap .right article.on .back {
+              opacity: 1; }
           #visual .inner .wrap .right article .front {
             width: 100%;
             height: 100%;
-            overflow: hidden; }
+            overflow: hidden;
+            transition: 1s; }
             #visual .inner .wrap .right article .front .pic {
               width: 100%;
               height: 250px;
@@ -161,8 +170,9 @@ font-family: 'Roboto Condensed', sans-serif;
                 height: 100%;
                 object-fit: cover; }
             #visual .inner .wrap .right article .front h3 {
-              font: bold 24px/1 'Open Sans Condensed';
+              font: 24px/1 'Abel';
               color: #fff;
+              letter-spacing: 1px;
               margin-bottom: 30px;
               opacity: 0.7;
               position: relative;
@@ -177,9 +187,10 @@ font-family: 'Roboto Condensed', sans-serif;
                 bottom: -15px;
                 left: 0; }
             #visual .inner .wrap .right article .front p {
-              font: 15px/1.2 'arial';
-              color: #888;
-              margin-bottom: 50px; }
+              height: 65px;
+              font: 15px/1.4 'Noto Sans KR';
+              color: #777;
+              margin-bottom: 40px; }
             #visual .inner .wrap .right article .front a {
               display: block;
               text-align: right;
@@ -202,7 +213,7 @@ font-family: 'Roboto Condensed', sans-serif;
                 right: -100px;
                 transition: 1s; }
           #visual .inner .wrap .right article .back {
-            display: none; }
+            opacity: 0; }
           #visual .inner .wrap .right article:hover .front h3 {
             opacity: 1; }
           #visual .inner .wrap .right article:hover .front a i {
