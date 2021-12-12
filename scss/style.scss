@@ -1,24 +1,12 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Caveat&family=Dancing+Script&family=Meow+Script&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bakbak+One&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 @import "reset.scss";
 
 /*
 font-family: 'Abel', sans-serif;
-font-family: 'Caveat', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Meow Script', cursive;
-font-family: 'Shadows Into Light', cursive;
-
-body{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(45deg, #56739d, #8faac8);
-
-    div{
-        width: 500px; height: 500px;
-        background:  #7392b9;
-    }
-}
+font-family: 'Bakbak One', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
 */
 
 
@@ -36,7 +24,7 @@ body{
 
         .logo{
             display: inline-block;
-            font: bold 24px/1 'Shadows Into Light';
+            font: bold 28px/1 'Open Sans Condensed';
             margin-top: 40px;
             margin-right: 50px;
 
@@ -54,7 +42,7 @@ body{
 
             li{
                 float: left;
-                font:  18px/1 'Abel';
+                font:  18px/1 'Open Sans Condensed';
                 margin-right: 50px;
 
                 a{
@@ -76,7 +64,7 @@ body{
                 margin-left: 30px;
 
                 a{
-                    font: 13px/1 'able';
+                    font: 13px/1 'Abel';
                     color: #eee;
                 }
             }
@@ -155,6 +143,7 @@ body{
             .right{
                 float: right;
                 width: 60%; height: 100%;
+                padding-right: 50px;
                 overflow: hidden;
 
                 .product{
