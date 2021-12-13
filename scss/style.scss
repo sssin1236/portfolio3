@@ -280,7 +280,6 @@ font-family: 'Roboto Condensed', sans-serif;
                         transition: 0.7s 0.5s;
 
                         h3{
-                            display: inline-block;
                             font: 24px/1 'Abel';
                             color: #fff;
                             margin-bottom: 40px; 
@@ -289,11 +288,12 @@ font-family: 'Roboto Condensed', sans-serif;
                         >span{
                             font: 18px/1 'Abel';
                             color: #eee;
-                            float: right;
+                            position: absolute;
+                            top: 40px; right: 40px;
                         }
 
                         ul{
-                            width: 100%; height: 100%;
+                            width: 100%; height: 330px;
 
                             &::after{
                                 content: ''; display: block; clear: both;
@@ -306,6 +306,53 @@ font-family: 'Roboto Condensed', sans-serif;
                                 span{
                                     font: bold 22px/1 'Open Sans Condensed';
                                     color: #eee;
+                                }
+
+                                &:nth-of-type(1){
+                                    img{
+                                        width: 95%; height: 95%;
+                                        object-fit: cover;
+                                        margin-top: 20px;
+                                    }
+                                }
+
+                                &:nth-of-type(2), &:nth-of-type(3){
+                                    img{
+                                        width: 95%; height: 100px;
+                                        object-fit: cover;
+                                        margin-top: 20px;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    h4{
+                                        font: bold 18px/1 'Abel';
+                                        color: #eee;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    p{
+                                        width: 90%;
+                                        font: 15px/1.3 'arial';
+                                        color: #999;
+                                        text-align: justify;
+                                    }
+                                }
+
+                                &:nth-of-type(4){
+                                    h4{
+                                        font: bold 18px/1 'Abel';
+                                        color: #eee;
+                                        margin-top: 20px;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    p{
+                                        width: 90%;
+                                        font: 15px/1.3 'arial';
+                                        color: #999;
+                                        text-align: justify;
+                                        margin-bottom: 30px;
+                                    }
                                 }
                             }
                         }
