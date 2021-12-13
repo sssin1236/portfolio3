@@ -25,6 +25,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
         .logo{
             display: inline-block;
+            margin-top: 20px;
             margin-right: 50px;
             text-align: center;
 
@@ -156,22 +157,32 @@ font-family: 'Roboto Condensed', sans-serif;
             .right{
                 float: right;
                 width: 60%; height: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 overflow: hidden;
+                position: relative;
                 perspective: 3000px;
 
                 article{
                     width: 24%; height: 480px;
+                    margin-right: 1%;
                     padding: 20px;
                     background: rgba(0, 0, 0, 0.8);
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -240px;
                     cursor: pointer;
-                    transition: 1s;
+                    transform: translateX(-50%);
+                    transition: left 0.5s 1s, transform 1s, width 1s;
+
+                    &:nth-of-type(1){ left: calc(0% + 12%); }
+                    &:nth-of-type(2){ left: calc(25% + 12%); }
+                    &:nth-of-type(3){ left: calc(50% + 12%); }
+                    &:nth-of-type(4){ left: calc(75% + 12%); margin-right: 0;}
 
                     &.on{
-                        width: 200%;
-                        transform: rotateY(180deg);
+                        width: 100%;
+                        top: 50%; left: 50%;
+                        transform: rotateY(180deg) translateX(50%);
+                        transition: left 0.5s, transform 1s 0.5s, width 1s 0.5s;
 
                         .front{
                             opacity: 0;
@@ -182,10 +193,16 @@ font-family: 'Roboto Condensed', sans-serif;
                         }
                     }
 
+                    &.off{
+                        transform: scale(0.2) ;
+                        opacity: 0;
+                        transition: 1s;
+                    }
+
                     .front{
                         width: 100%; height: 100%;
                         overflow: hidden;
-                        transition: 1s;
+                        transition: 0.7s 0.5s;
 
                         .pic{
                             width: 100%; height: 250px;
