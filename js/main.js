@@ -2,6 +2,7 @@ const visual = document.querySelector("#visual");
 const right = visual.querySelector(".right");
 const boxs = right.querySelectorAll("article");
 const clos = document.querySelector("article .close");
+
 console.log(clos);
 
 boxs.forEach((box, index)=>{
