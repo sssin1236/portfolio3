@@ -1,9 +1,20 @@
 const visual = document.querySelector("#visual");
+const menu = document.querySelector("#menu");
 const right = visual.querySelector(".right");
 const boxs = right.querySelectorAll("article");
 const clos = document.querySelectorAll("article .close");
 
-console.log(clos);
+const slider = menu.querySelector("#slider");
+const ul = slider.querySelector(".slide");
+const lis = ul.querySelectorAll("li");
+const prev = menu.querySelector(".prev");
+const next = menu.querySelector(".next");
+const speed = 500;
+let num = 0;
+let enableClick = true;
+let timer;
+
+console.log(next);
 
 boxs.forEach((box, index)=>{
     box.addEventListener("click", e=>{
@@ -25,3 +36,73 @@ clos.forEach((btn, index)=>{
         target.classList.remove("on");
     });
 });
+
+timer = setInterval(move, 100);
+
+next.addEventListener("click", e=>{
+    e.preventDefault();
+    clearInterval(timer);
+
+    if(enableClick){
+        enableClick = false;
+        nextMove();
+    }
+    
+});
+
+prev.addEventListener("click", e=>{
+    e.preventDefault();
+    clearInterval(timer);
+
+    if(enableClick){
+        enableClick = false;
+        prevMove();
+    }
+    
+});
+
+ul.addEventListener("mouseenter", e=>{
+    clearInterval(timer);
+});
+
+ul.addEventListener("mouseleave", e=>{
+    timer = setInterval(move, 100);
+});
+
+
+function move(){
+    if(num <= -24){
+        num = 0;
+        ul.append(ul.firstElementChild);
+    }else{
+        num-= 1;
+    }
+
+    ul.style.marginLeft = num + "%";
+}
+
+function prevMove(){
+    new Anim(ul, {
+        prop: "margin-left",
+        value: "0%",
+        duration: speed,
+        callback: ()=>{
+            ul.style.marginLeft = "-25%";
+            ul.prepend(ul.lastElementChild);
+            enableClick = true;
+        }
+    });
+}
+
+function nextMove(){
+    new Anim(ul, {
+        prop: "margin-left",
+        value: "-50%",
+        duration: speed,
+        callback: ()=>{
+            ul.style.marginLeft = "-25%";
+            ul.append(ul.firstElementChild);
+            enableClick = true;
+        }
+    });
+}

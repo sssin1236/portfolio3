@@ -620,7 +620,14 @@ font-family: 'Roboto Condensed', sans-serif;
                     z-index: 2;
                 }
 
-                .slide{
+                &#slider{
+                    .slide{
+                        width: calc(300px * 8); height: 300px;
+                        margin-left: -25%;
+                    }
+                }
+
+                ul{
                     width: calc(300px * 8); height: 300px;
 
                     &::after{
