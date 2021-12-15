@@ -14,7 +14,6 @@ let num = 0;
 let enableClick = true;
 let timer;
 
-console.log(next);
 
 boxs.forEach((box, index)=>{
     box.addEventListener("click", e=>{
@@ -28,7 +27,6 @@ boxs.forEach((box, index)=>{
 
 });
 
-
 clos.forEach((btn, index)=>{
     btn.addEventListener("click", e=>{
         let target = e.currentTarget.closest("article");
@@ -36,6 +34,22 @@ clos.forEach((btn, index)=>{
         target.classList.remove("on");
     });
 });
+
+const btnFrame = menu.querySelector(".menu_btn");
+const menuBtn = btnFrame.querySelectorAll("ul li");
+const menuBox = menu.querySelectorAll(".wrap article");
+
+menuBtn.forEach((btn, index)=>{
+    btn.addEventListener("click", e=>{
+        e.preventDefault();
+        let isOn = e.currentTarget.classList.contains("on");
+        if(isOn) return;
+
+        activeMenu(menuBtn, index);
+        activeMenu(menuBox, index);
+    });
+});
+
 
 timer = setInterval(move, 100);
 
@@ -105,4 +119,9 @@ function nextMove(){
             enableClick = true;
         }
     });
+}
+
+function activeMenu(sel, i){
+    for(el of sel) el.classList.remove("on");
+        sel[i].classList.add("on");
 }
