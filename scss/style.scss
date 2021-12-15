@@ -533,3 +533,89 @@ font-family: 'Roboto Condensed', sans-serif;
         }
     }
 } 
+
+#menu{
+    width: 100%;
+    padding: 100px 0;
+
+    .inner{
+        width: 1180px; 
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+
+        h2{
+            font: bold 28px/1 'Roboto Condensed';
+            color: #222;
+            text-align: center;
+            padding-top: 20px;
+            position: relative;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 30px; height: 2px;
+                background: tan;
+                border-radius: 50%;
+                position: absolute;
+                top: 0px; left: 50%;
+                margin-left: -15px;
+            }
+        }
+
+        .menu_btn{
+            width: 500px;
+            padding: 0px 50px;
+            margin: 50px auto;
+
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li{
+                    a{
+                        font: 18px/1 'abel';
+                        color: #333;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid #fff;
+                        transition: 0.5s;
+                    }
+
+                    &:hover{
+                        >a{
+                            border-bottom: 1px solid tan;
+                        }
+                    }
+
+                    &.on{
+                        a{
+                            font-weight: bold;
+                            color: #111;
+                            border-bottom: 1px solid tan;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .wrap{
+            width: 100%; min-height: 500px;
+            position: relative;
+            overflow: hidden;
+
+            article{
+                width: 100%;
+                position: absolute;
+                top: 0; left: 0;
+                display: none;
+
+                &.on{
+                    display: block;
+                }
+            }
+        }
+    }
+}
