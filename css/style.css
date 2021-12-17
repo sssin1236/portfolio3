@@ -436,7 +436,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 #menu {
   width: 100%;
-  padding: 100px 0; }
+  padding: 150px 0; }
   #menu .inner {
     width: 1180px;
     min-height: 500px;
@@ -633,7 +633,7 @@ font-family: 'Roboto Condensed', sans-serif;
         margin-bottom: 30px;
         margin-right: 100px; }
       #banner .inner .wrap p {
-        font: 20px/1 'Noto Sans KR';
+        font: 18px/1 'Noto Sans KR';
         color: #ddd;
         margin-bottom: 70px;
         margin-right: 100px; }
@@ -641,7 +641,7 @@ font-family: 'Roboto Condensed', sans-serif;
         float: right;
         display: block;
         width: 200px;
-        text-align: right;
+        padding: 20px;
         color: #fff;
         margin-right: 100px;
         position: relative;
@@ -651,38 +651,44 @@ font-family: 'Roboto Condensed', sans-serif;
           display: inline-block;
           width: 130px;
           height: 1px;
-          background: #fff;
+          background: tan;
           position: absolute;
           bottom: 17px;
-          right: 70px;
+          right: 0px;
           transition: 0.5s; }
         #banner .inner .wrap span::after {
           content: '';
           display: inline-block;
           width: 10px;
           height: 1px;
-          background: #fff;
+          background: tan;
           position: absolute;
           bottom: 17px;
-          left: 120px;
+          right: 0px;
           transform: rotate(30deg);
           transform-origin: right center;
           transition: 0.2s 0.4s; }
         #banner .inner .wrap span i {
           display: inline-block;
-          width: 35px;
-          height: 35px;
+          width: 45px;
+          height: 45px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          font-size: 25px;
+          color: tan;
           text-align: center;
-          line-height: 35px;
+          line-height: 45px;
           border-radius: 50%;
           border: 1px solid transparent;
-          transition: 0.3s 0.5s; }
+          transition: left 0.5s, border 0.3s 0.8s; }
         #banner .inner .wrap span:hover::before {
           width: 0; }
         #banner .inner .wrap span:hover::after {
           opacity: 0; }
         #banner .inner .wrap span:hover i {
-          border: 1px solid #fff; }
+          border: 2px solid tan;
+          left: 150px; }
       #banner .inner .wrap img {
         position: absolute;
         bottom: 0px; }
@@ -698,5 +704,17 @@ font-family: 'Roboto Condensed', sans-serif;
           height: 380px;
           filter: brightness(0.8);
           right: 80px; }
+
+#brand {
+  width: 100%;
+  padding: 150px 0;
+  overflow: hidden; }
+  #brand .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; }
+    #brand .inner .wrap {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
