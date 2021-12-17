@@ -876,8 +876,20 @@ font-family: 'Roboto Condensed', sans-serif;
         overflow: hidden;
 
         .wrap{
-            width: 100%; 
+            width: 100%; min-height: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
+            .box1{
+                width: 39%; height: 100%;
+
+            }
+
+            .box2{
+                width: 59%; height: 100%;
+                
+            }
         }
     }
 }

@@ -715,6 +715,16 @@ font-family: 'Roboto Condensed', sans-serif;
     position: relative;
     overflow: hidden; }
     #brand .inner .wrap {
-      width: 100%; }
+      width: 100%;
+      min-height: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #brand .inner .wrap .box1 {
+        width: 39%;
+        height: 100%; }
+      #brand .inner .wrap .box2 {
+        width: 59%;
+        height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
