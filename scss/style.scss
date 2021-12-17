@@ -875,24 +875,103 @@ font-family: 'Roboto Condensed', sans-serif;
         overflow: hidden;
 
         .wrap{
-            width: 100%; height: 500px;
+            width: 100%; height: 600px;
             position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             .box1{
-                width: 39%; height: 100%;
+                width: 59%; height: 100%;
                 position: relative;
+                background: url(../img/build.jpg) no-repeat center/cover;
 
-                .text_box{
+                .top{
                     width: 100%; height: 100%;
-                    background: url(../img/build.jpg) no-repeat center/cover;
+                    backdrop-filter: brightness(0.3);
+                    padding: 20px;
+                    text-align: center;
+
+                    h2{
+                        font: 15px/30px 'Noto Sans KR';
+                        color: #fff;
+                        margin: 80px auto 30px;
+                        width: 150px; height: 30px;
+                        background: tan;
+                        border-radius: 40px;
+                    }
+
+                    p{
+                        width: 80%;
+                        margin: 0 auto 40px;
+                        font: 26px/1.5 'Noto Sans KR';
+                        color: #fff;
+                        text-align: center;
+                    }
+
+                    a{
+                        display: block;
+                        width: 40px; height: 40px;
+                        margin: 0 auto;
+                        background: tan;
+                        border-radius: 50%;
+
+                        i{
+                            font-size: 25px;
+                            color: #fff;
+                            line-height: 40px;
+                        }
+                    }
+                }
+
+                .under{
+                    position: absolute;
+                    bottom: 20px; left: 20px;
+                    width: calc(100% - 40px); height: 200px;
+
+                    .txt{
+                        width: 45%; height: 100%;
+                        padding: 30px;
+                        float: left;
+                        background: url(../img/back.jpg) no-repeat center/cover;
+
+                        span{
+                            font: 18px/1 'Abel';
+                            color: #fff;
+                        }
+
+                        h4{
+                            font: 24px/1 'Noto Sans KR';
+                            color: #fff;
+                            margin: 40px 0 15px;
+                        }
+                        
+                        p{
+                            font: 13px/1 '맑은 고딕';
+                            color: #eee;
+                        }
+                    }
+
+                    .branch{
+                        width: 55%; height: 100%;
+                        float: right;
+                        background: #eee;
+
+                        li{
+                            float: left;
+                            width: 33.3333%; height: 50%;
+                            text-align: center;
+                            padding: 40px 20px;
+                            border-right: 1px solid #ccc;
+                            border-bottom: 1px solid #ccc;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
 
             .box2{
-                width: 59%; height: 100%;
+                width: 39%; height: 100%;
                 background: #eee;
             }
         }
