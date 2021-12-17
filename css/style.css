@@ -681,15 +681,15 @@ font-family: 'Roboto Condensed', sans-serif;
           border: 1px solid #fff; }
       #banner .inner .wrap img {
         position: absolute;
-        bottom: 0px;
-        left: 450px;
-        width: 400px;
-        height: 450px;
-        filter: brightness(0.8); }
+        bottom: 0px; }
         #banner .inner .wrap img:nth-of-type(1) {
-          width: 350px;
+          width: 400px;
           height: 400px;
-          bottom: 0;
           left: 350px; }
+        #banner .inner .wrap img:nth-of-type(2) {
+          width: 400px;
+          height: 450px;
+          filter: brightness(0.8);
+          left: 650px; }
 
 /*# sourceMappingURL=style.css.map */
