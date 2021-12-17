@@ -712,19 +712,25 @@ font-family: 'Roboto Condensed', sans-serif;
   #brand .inner {
     width: 1180px;
     margin: 0 auto;
-    position: relative;
     overflow: hidden; }
     #brand .inner .wrap {
       width: 100%;
-      min-height: 500px;
+      height: 500px;
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       #brand .inner .wrap .box1 {
         width: 39%;
-        height: 100%; }
+        height: 100%;
+        position: relative; }
+        #brand .inner .wrap .box1 .text_box {
+          width: 100%;
+          height: 100%;
+          background: url(../img/build.jpg) no-repeat center/cover; }
       #brand .inner .wrap .box2 {
         width: 59%;
-        height: 100%; }
+        height: 100%;
+        background: #eee; }
 
 /*# sourceMappingURL=style.css.map */
