@@ -772,18 +772,21 @@ font-family: 'Roboto Condensed', sans-serif;
                 color: tan;
                 letter-spacing: 2px;
                 margin-bottom: 10px;
+                margin-right: 100px;
             }
 
             h3{
                 font: bold 30px/1 'Noto Sans KR';
                 color: tan;
                 margin-bottom: 30px;
+                margin-right: 100px;
             }
 
             p{
                 font: 20px/1 'Noto Sans KR';
                 color: #ddd;
                 margin-bottom: 70px;
+                margin-right: 100px;
             }
 
             span{
@@ -792,6 +795,7 @@ font-family: 'Roboto Condensed', sans-serif;
                 width: 200px;
                 text-align: right;
                 color: #fff;
+                margin-right: 100px;
                 position: relative;
                 cursor: pointer;
     
@@ -840,14 +844,16 @@ font-family: 'Roboto Condensed', sans-serif;
                 
 
                 &:nth-of-type(1){
-                    width: 400px; height: 400px;
-                    left: 350px;
+                    width: 500px; height: 500px;
+                    filter: brightness(0.7);
+                    top: 50%; left: 350px;
+                    transform: translateY(-50%);
                 }
 
                 &:nth-of-type(2){
-                    width: 400px; height: 450px;
+                    width: 350px; height: 380px;
                     filter: brightness(0.8);
-                    left: 650px;
+                    right: 80px;
                 }
             }
         }

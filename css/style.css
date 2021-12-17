@@ -625,21 +625,25 @@ font-family: 'Roboto Condensed', sans-serif;
         font: bold 32px/1 'Bakbak One';
         color: tan;
         letter-spacing: 2px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        margin-right: 100px; }
       #banner .inner .wrap h3 {
         font: bold 30px/1 'Noto Sans KR';
         color: tan;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        margin-right: 100px; }
       #banner .inner .wrap p {
         font: 20px/1 'Noto Sans KR';
         color: #ddd;
-        margin-bottom: 70px; }
+        margin-bottom: 70px;
+        margin-right: 100px; }
       #banner .inner .wrap span {
         float: right;
         display: block;
         width: 200px;
         text-align: right;
         color: #fff;
+        margin-right: 100px;
         position: relative;
         cursor: pointer; }
         #banner .inner .wrap span::before {
@@ -683,13 +687,16 @@ font-family: 'Roboto Condensed', sans-serif;
         position: absolute;
         bottom: 0px; }
         #banner .inner .wrap img:nth-of-type(1) {
-          width: 400px;
-          height: 400px;
-          left: 350px; }
+          width: 500px;
+          height: 500px;
+          filter: brightness(0.7);
+          top: 50%;
+          left: 350px;
+          transform: translateY(-50%); }
         #banner .inner .wrap img:nth-of-type(2) {
-          width: 400px;
-          height: 450px;
+          width: 350px;
+          height: 380px;
           filter: brightness(0.8);
-          left: 650px; }
+          right: 80px; }
 
 /*# sourceMappingURL=style.css.map */
