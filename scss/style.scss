@@ -838,6 +838,12 @@ font-family: 'Roboto Condensed', sans-serif;
                 position: absolute;
                 bottom: 0px; left: 450px;
                 width: 400px; height: 450px;
+                filter: brightness(0.8);
+
+                &:nth-of-type(1){
+                    width: 350px; height: 400px;
+                    bottom: 0; left: 350px;
+                }
             }
         }
     }
