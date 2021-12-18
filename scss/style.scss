@@ -1,11 +1,12 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bakbak+One&family=Noto+Serif+Display:wght@300&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bakbak+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@300&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 @import "reset.scss";
 
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Bakbak One', cursive;
-font-family: 'Noto Serif Display', serif;
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 */
@@ -272,7 +273,7 @@ font-family: 'Roboto Condensed', sans-serif;
                 overflow: hidden;
 
                 h2{
-                    font:  bold 50px/1 'Noto Serif Display';
+                    font:  50px/1 'Bakbak One';
                     color: tan;
                     margin-bottom: 30px;
                 }
@@ -941,13 +942,13 @@ font-family: 'Roboto Condensed', sans-serif;
                         }
 
                         h4{
-                            font: 24px/1 'Noto Sans KR';
+                            font: bold 24px/1 'Noto Sans KR';
                             color: #fff;
                             margin: 40px 0 15px;
                         }
                         
                         p{
-                            font: 13px/1 '맑은 고딕';
+                            font: 13px/1 'Gowun Dodum';
                             color: #eee;
                         }
                     }
@@ -955,16 +956,41 @@ font-family: 'Roboto Condensed', sans-serif;
                     .branch{
                         width: 55%; height: 100%;
                         float: right;
-                        background: #eee;
+                        background: #ddd;
 
                         li{
                             float: left;
                             width: 33.3333%; height: 50%;
+                            font: 15px/1 'Noto Sans KR';
+                            color: #222;
                             text-align: center;
                             padding: 40px 20px;
+                            overflow: hidden;
                             border-right: 1px solid #ccc;
                             border-bottom: 1px solid #ccc;
                             cursor: pointer;
+                            position: relative;
+
+                            &::after{
+                                content: ''; 
+                                display: block;
+                                width: 200px; height: 80px;
+                                background: rgba(255, 255, 255, 0.384);
+                                transform: rotate(30deg);
+                                position: absolute;
+                                top: 180px; right: -30px;
+                                transition: 1s;
+                            }
+
+                            &:hover{
+                                color: #000;
+                                font: bold 17px/1 'Noto Sans KR';
+                                transition: 0.7s;
+                                
+                                &::after{
+                                    top: -150px;
+                                }
+                            }
                         }
                     }
                 }
