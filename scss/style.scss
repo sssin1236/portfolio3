@@ -768,6 +768,10 @@ font-family: 'Roboto Condensed', sans-serif;
             padding: 80px 0;;
             text-align: right;
 
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+
             h2{
                 font: bold 32px/1 'Bakbak One';
                 color: tan;
