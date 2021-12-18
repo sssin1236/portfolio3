@@ -823,10 +823,12 @@ font-family: 'Roboto Condensed', sans-serif;
         #brand .inner .wrap .box2 h3 {
           font: bold 24px/1 'Abel';
           color: #222;
+          text-align: center;
           margin-bottom: 20px; }
         #brand .inner .wrap .box2 > p {
           font: 14px/1 'Noto Sans KR';
           color: #222;
+          text-align: center;
           margin-bottom: 50px; }
         #brand .inner .wrap .box2 article {
           width: calc(100% / 3 - 6px);
@@ -835,13 +837,45 @@ font-family: 'Roboto Condensed', sans-serif;
           background: #fff;
           margin-right: 9px;
           text-align: center;
-          position: relative; }
+          position: relative;
+          overflow: hidden;
+          cursor: pointer; }
           #brand .inner .wrap .box2 article:nth-of-type(1) .pic img {
             object-fit: contain; }
           #brand .inner .wrap .box2 article:nth-of-type(3n) {
             margin-right: 0; }
           #brand .inner .wrap .box2 article:nth-of-type(4), #brand .inner .wrap .box2 article:nth-of-type(5), #brand .inner .wrap .box2 article:nth-of-type(6) {
             margin-top: 9px; }
+          #brand .inner .wrap .box2 article .front_box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background: #111;
+            z-index: 2;
+            transition: 0.8s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; }
+            #brand .inner .wrap .box2 article .front_box i {
+              width: 40px;
+              height: 40px;
+              border: 1px solid tan;
+              border-radius: 50%;
+              font-size: 20px;
+              line-height: 40px;
+              color: tan;
+              margin-bottom: 10px;
+              opacity: 0;
+              transition: 0.3s 0.3s; }
+            #brand .inner .wrap .box2 article .front_box span {
+              font: 15px/1 'Noto Sans Kr';
+              color: tan;
+              opacity: 0;
+              transition: 0.3s 0.4s; }
           #brand .inner .wrap .box2 article .pic {
             width: 100%;
             height: 90px;
@@ -869,5 +903,9 @@ font-family: 'Roboto Condensed', sans-serif;
             bottom: 0;
             left: 0;
             border-top: 1px solid #ddd; }
+          #brand .inner .wrap .box2 article:hover .front_box {
+            top: 0; }
+            #brand .inner .wrap .box2 article:hover .front_box i, #brand .inner .wrap .box2 article:hover .front_box span {
+              opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
