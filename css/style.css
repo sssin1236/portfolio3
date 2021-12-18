@@ -716,13 +716,13 @@ font-family: 'Roboto Condensed', sans-serif;
     overflow: hidden; }
     #brand .inner .wrap {
       width: 100%;
-      height: 600px;
+      height: 650px;
       position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       #brand .inner .wrap .box1 {
-        width: 59%;
+        width: 55%;
         height: 100%;
         position: relative;
         background: url(../img/build.jpg) no-repeat center/cover; }
@@ -742,7 +742,7 @@ font-family: 'Roboto Condensed', sans-serif;
             border-radius: 40px; }
           #brand .inner .wrap .box1 .top p {
             width: 80%;
-            margin: 0 auto 40px;
+            margin: 0 auto 60px;
             font: 26px/1.5 'Noto Sans KR';
             color: #fff;
             text-align: center; }
@@ -759,9 +759,9 @@ font-family: 'Roboto Condensed', sans-serif;
               line-height: 40px; }
         #brand .inner .wrap .box1 .under {
           position: absolute;
-          bottom: 20px;
-          left: 20px;
-          width: calc(100% - 40px);
+          bottom: 30px;
+          left: 30px;
+          width: calc(100% - 60px);
           height: 200px; }
           #brand .inner .wrap .box1 .under .txt {
             width: 45%;
@@ -783,7 +783,7 @@ font-family: 'Roboto Condensed', sans-serif;
             width: 55%;
             height: 100%;
             float: right;
-            background: #ddd; }
+            background: rgba(221, 221, 221, 0.8); }
             #brand .inner .wrap .box1 .under .branch li {
               float: left;
               width: 33.3333%;
@@ -815,8 +815,59 @@ font-family: 'Roboto Condensed', sans-serif;
                 #brand .inner .wrap .box1 .under .branch li:hover::after {
                   top: -150px; }
       #brand .inner .wrap .box2 {
-        width: 39%;
+        width: 44%;
         height: 100%;
-        background: #eee; }
+        background: #ddd;
+        position: relative;
+        padding: 30px; }
+        #brand .inner .wrap .box2 h3 {
+          font: bold 24px/1 'Abel';
+          color: #222;
+          margin-bottom: 20px; }
+        #brand .inner .wrap .box2 > p {
+          font: 14px/1 'Noto Sans KR';
+          color: #222;
+          margin-bottom: 50px; }
+        #brand .inner .wrap .box2 article {
+          width: calc(100% / 3 - 6px);
+          height: 230px;
+          float: left;
+          background: #fff;
+          margin-right: 9px;
+          text-align: center;
+          position: relative; }
+          #brand .inner .wrap .box2 article:nth-of-type(1) .pic img {
+            object-fit: contain; }
+          #brand .inner .wrap .box2 article:nth-of-type(3n) {
+            margin-right: 0; }
+          #brand .inner .wrap .box2 article:nth-of-type(4), #brand .inner .wrap .box2 article:nth-of-type(5), #brand .inner .wrap .box2 article:nth-of-type(6) {
+            margin-top: 9px; }
+          #brand .inner .wrap .box2 article .pic {
+            width: 100%;
+            height: 90px;
+            overflow: hidden;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px; }
+            #brand .inner .wrap .box2 article .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #brand .inner .wrap .box2 article h4 {
+            font: bold 18px/1 'Noto Sans Kr';
+            color: #444;
+            margin-bottom: 20px; }
+          #brand .inner .wrap .box2 article p {
+            font: 13px/1.4 'Noto Sans KR';
+            color: #777; }
+          #brand .inner .wrap .box2 article > span {
+            display: block;
+            width: 100%;
+            height: 40px;
+            font: 14px/40px 'Noto Sans KR';
+            color: #555;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top: 1px solid #ddd; }
 
 /*# sourceMappingURL=style.css.map */
