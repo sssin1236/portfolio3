@@ -912,4 +912,7 @@ font-family: 'Roboto Condensed', sans-serif;
             #brand .inner .wrap .box2 article:hover .front_box i, #brand .inner .wrap .box2 article:hover .front_box span {
               opacity: 1; }
 
+#benefit {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
