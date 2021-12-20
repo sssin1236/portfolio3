@@ -914,7 +914,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 #benefit {
   width: 100%;
-  padding: 150px 0; }
+  padding: 100px 0; }
   #benefit .inner {
     width: 1180px;
     min-height: 500px;
@@ -945,19 +945,89 @@ font-family: 'Roboto Condensed', sans-serif;
       margin-bottom: 50px; }
     #benefit .inner .number {
       width: 100%;
-      height: 250px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      height: 350px;
+      margin-bottom: 80px; }
+      #benefit .inner .number::after {
+        content: '';
+        display: block;
+        clear: both; }
       #benefit .inner .number li {
-        width: 100%;
+        float: left;
+        width: 360px;
         height: 100%;
-        padding: 20px;
+        margin-right: 50px;
+        padding: 20px 40px;
         text-align: center;
-        position: relative; }
+        position: relative;
+        background: #111;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+        #benefit .inner .number li:last-child {
+          margin-right: 0; }
+        #benefit .inner .number li:hover::before {
+          top: 20px;
+          left: 20px;
+          opacity: 1; }
+        #benefit .inner .number li::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 2px solid tan;
+          z-index: 2;
+          opacity: 0;
+          transition: 0.8s; }
+        #benefit .inner .number li::after {
+          content: '';
+          display: block;
+          width: 0%;
+          height: 0%;
+          border-top: 70px solid tan;
+          border-right: 70px solid transparent;
+          border-bottom: 70px solid transparent;
+          border-left: 70px solid tan;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          transition: 0.8s; }
         #benefit .inner .number li h3 {
-          font: 24px/1 'Bakbak One';
-          color: tan;
+          display: inline-block;
+          font: bold 20px/1 'Open Sans Condensed';
+          color: #eee;
+          text-align: left;
+          position: absolute;
+          top: 35px;
+          left: 5px;
+          transform: rotate(-45deg);
+          z-index: 2; }
+        #benefit .inner .number li svg {
+          width: 100%;
+          height: 120px;
+          margin-top: 40px;
           margin-bottom: 20px; }
+          #benefit .inner .number li svg path {
+            fill: transparent;
+            stroke: tan;
+            stroke-width: 5;
+            stroke-linejoin: round; }
+        #benefit .inner .number li nav {
+          font: 38px/1 'Bakbak One';
+          color: #fff;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid tan;
+          border-radius: 5%; }
+          #benefit .inner .number li nav b {
+            font: 17px/1 'Gowun Dodum';
+            color: #999;
+            margin-left: 5px;
+            letter-spacing: -1px; }
+        #benefit .inner .number li p {
+          font: 14px/1.4 'arial';
+          color: #aaa;
+          margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
