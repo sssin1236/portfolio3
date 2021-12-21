@@ -1034,15 +1034,56 @@ font-family: 'Roboto Condensed', sans-serif;
           margin: 0 auto; }
     #benefit .inner .wrap {
       width: 100%;
-      height: 300px;
+      height: 250px;
       position: relative; }
       #benefit .inner .wrap article {
-        width: 380px;
+        width: 280px;
         height: 100%;
         float: left; }
+        #benefit .inner .wrap article::before {
+          content: '';
+          display: block;
+          width: 280px;
+          height: 100%;
+          border: 5px solid #222;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1; }
+        #benefit .inner .wrap article .in {
+          width: 80%;
+          height: 90%;
+          position: relative;
+          background: #fff;
+          margin-top: -10px;
+          margin-left: -5px;
+          z-index: 2; }
+          #benefit .inner .wrap article .in h3 {
+            font: 22px/1 'Bakbak One';
+            color: #222;
+            letter-spacing: 2px;
+            margin-bottom: 20px; }
+            #benefit .inner .wrap article .in h3 em {
+              display: block;
+              font: 45px/1 'Bakbak One';
+              color: #222;
+              letter-spacing: 0px;
+              margin-top: 10px; }
+          #benefit .inner .wrap article .in p {
+            font: bold 16px/1.5 'Noto Sans KR';
+            color: #555;
+            text-align: left;
+            margin-bottom: 30px; }
+          #benefit .inner .wrap article .in a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: tan;
+            font: bold 15px/1 'Noto Sans KR';
+            color: #fff; }
       #benefit .inner .wrap .benefit {
-        width: 780px;
+        width: 880px;
         height: 100%;
-        float: right; }
+        float: right;
+        border: 2px solid #222; }
 
 /*# sourceMappingURL=style.css.map */
