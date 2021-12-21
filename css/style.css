@@ -946,7 +946,7 @@ font-family: 'Roboto Condensed', sans-serif;
     #benefit .inner .number {
       width: 100%;
       height: 350px;
-      margin-bottom: 80px; }
+      margin-bottom: 100px; }
       #benefit .inner .number::after {
         content: '';
         display: block;
@@ -1012,7 +1012,10 @@ font-family: 'Roboto Condensed', sans-serif;
             fill: transparent;
             stroke: tan;
             stroke-width: 5;
-            stroke-linejoin: round; }
+            stroke-linejoin: round;
+            stroke-dasharray: 1955;
+            stroke-dashoffset: 0;
+            transition: 1.5s; }
         #benefit .inner .number li nav {
           font: 38px/1 'Bakbak One';
           color: #fff;
@@ -1029,5 +1032,17 @@ font-family: 'Roboto Condensed', sans-serif;
           font: 14px/1.4 'arial';
           color: #aaa;
           margin: 0 auto; }
+    #benefit .inner .wrap {
+      width: 100%;
+      height: 300px;
+      position: relative; }
+      #benefit .inner .wrap article {
+        width: 380px;
+        height: 100%;
+        float: left; }
+      #benefit .inner .wrap .benefit {
+        width: 780px;
+        height: 100%;
+        float: right; }
 
 /*# sourceMappingURL=style.css.map */
