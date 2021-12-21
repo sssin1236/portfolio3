@@ -1073,15 +1073,26 @@ font-family: 'Roboto Condensed', sans-serif;
           width: 280px;
           height: 50%;
           margin-right: 20px;
-          padding: 0px 40px; }
+          padding: 0px 40px;
+          position: relative;
+          box-shadow: -5px -5px 10px rgba(0, 0, 0, 0);
+          transition: 0.5s; }
           #benefit .inner .wrap .benefit li:nth-of-type(3n) {
             margin-right: 0; }
+          #benefit .inner .wrap .benefit li:nth-of-type(4), #benefit .inner .wrap .benefit li:nth-of-type(5), #benefit .inner .wrap .benefit li:nth-of-type(6) {
+            padding-top: 30px; }
+          #benefit .inner .wrap .benefit li:hover {
+            box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.2); }
           #benefit .inner .wrap .benefit li span {
             font: bold 18px/1 'Open Sans Condensed';
             color: tan; }
           #benefit .inner .wrap .benefit li h4 {
             font: bold 18px/1 'Noto Sans KR';
             color: #222;
-            margin: 10px 0; }
+            margin: 10px 0 15px; }
+          #benefit .inner .wrap .benefit li p {
+            font: bold 13px/1.5 'Noto Sans KR';
+            color: #555;
+            text-align: justify; }
 
 /*# sourceMappingURL=style.css.map */
