@@ -4,6 +4,9 @@ const right = visual.querySelector(".right");
 const boxs = right.querySelectorAll("article");
 const clos = document.querySelectorAll("article .close");
 
+const btnFrame = menu.querySelector(".menu_btn");
+const menuBtn = btnFrame.querySelectorAll("ul li");
+const menuBox = menu.querySelectorAll(".wrap article");
 const slider = menu.querySelector("#slider");
 const ul = slider.querySelector(".slide");
 const lis = ul.querySelectorAll("li");
@@ -35,9 +38,10 @@ clos.forEach((btn, index)=>{
     });
 });
 
-const btnFrame = menu.querySelector(".menu_btn");
-const menuBtn = btnFrame.querySelectorAll("ul li");
-const menuBox = menu.querySelectorAll(".wrap article");
+
+//menu 이벤트
+
+init()
 
 menuBtn.forEach((btn, index)=>{
     btn.addEventListener("click", e=>{
@@ -51,11 +55,11 @@ menuBtn.forEach((btn, index)=>{
 });
 
 
-timer = setInterval(move, 100);
+// timer = setInterval(move, 100);
 
 next.addEventListener("click", e=>{
     e.preventDefault();
-    clearInterval(timer);
+    // clearInterval(timer);
 
     if(enableClick){
         enableClick = false;
@@ -66,7 +70,7 @@ next.addEventListener("click", e=>{
 
 prev.addEventListener("click", e=>{
     e.preventDefault();
-    clearInterval(timer);
+    // clearInterval(timer);
 
     if(enableClick){
         enableClick = false;
@@ -75,14 +79,18 @@ prev.addEventListener("click", e=>{
     
 });
 
-ul.addEventListener("mouseenter", e=>{
-    clearInterval(timer);
-});
+// ul.addEventListener("mouseenter", e=>{
+//     clearInterval(timer);
+// });
 
-ul.addEventListener("mouseleave", e=>{
-    timer = setInterval(move, 100);
-});
+// ul.addEventListener("mouseleave", e=>{
+//     timer = setInterval(move, 100);
+// });
 
+function init(){
+    ul.prepend(ul.lastElementChild);
+    ul.style.marginLeft = "-25%";
+}
 
 function move(){
     if(num <= -24){
