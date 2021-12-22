@@ -610,7 +610,8 @@ font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
   height: 400px;
   background: url(../img/banner5.jpg) no-repeat center/cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  margin-bottom: 100px; }
   #banner .inner {
     width: 100%;
     height: 100%;
@@ -914,7 +915,8 @@ font-family: 'Roboto Condensed', sans-serif;
 
 #benefit {
   width: 100%;
-  padding: 100px 0; }
+  padding: 100px 0;
+  margin-bottom: 100px; }
   #benefit .inner {
     width: 1180px;
     min-height: 500px;
@@ -1075,14 +1077,14 @@ font-family: 'Roboto Condensed', sans-serif;
           margin-right: 20px;
           padding: 0px 40px;
           position: relative;
-          box-shadow: -5px -5px 10px rgba(0, 0, 0, 0);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
           transition: 0.5s; }
           #benefit .inner .wrap .benefit li:nth-of-type(3n) {
             margin-right: 0; }
           #benefit .inner .wrap .benefit li:nth-of-type(4), #benefit .inner .wrap .benefit li:nth-of-type(5), #benefit .inner .wrap .benefit li:nth-of-type(6) {
-            padding-top: 30px; }
+            margin-top: 20px; }
           #benefit .inner .wrap .benefit li:hover {
-            box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.2); }
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
           #benefit .inner .wrap .benefit li span {
             font: bold 18px/1 'Open Sans Condensed';
             color: tan; }
@@ -1099,5 +1101,91 @@ font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
   padding: 100px 0;
   background: #000; }
+  #footer .inner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+    #footer .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #footer .inner .logoBox {
+      width: 240px;
+      height: 100%;
+      float: left; }
+      #footer .inner .logoBox .logo {
+        width: 180px;
+        display: block;
+        margin-top: -35px;
+        margin-bottom: 60px;
+        text-align: center; }
+        #footer .inner .logoBox .logo a {
+          font-size: 0; }
+          #footer .inner .logoBox .logo a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: tan;
+            border-radius: 50%; }
+          #footer .inner .logoBox .logo a span {
+            font: 22px/1 'Open Sans Condensed';
+            letter-spacing: 2px;
+            color: tan; }
+          #footer .inner .logoBox .logo a img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover; }
+      #footer .inner .logoBox label {
+        font: bold 18px/1 'Noto Sans KR';
+        color: #bbb; }
+      #footer .inner .logoBox input[type=text] {
+        display: block;
+        width: 60%;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-bottom: 1px dotted tan;
+        background: transparent;
+        color: #fff; }
+        #footer .inner .logoBox input[type=text]::placeholder {
+          color: rgba(210, 180, 140, 0.5); }
+      #footer .inner .logoBox input[type=submit] {
+        display: block;
+        width: 60%;
+        height: 30px;
+        outline: none;
+        border: none;
+        background: tan;
+        border-radius: 3%; }
+    #footer .inner .menus {
+      width: 700px;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px; }
+      #footer .inner .menus li {
+        width: 100%;
+        height: 100%; }
+        #footer .inner .menus li h2 {
+          font: 19px/1 'Open Sans Condensed';
+          color: #bbb;
+          letter-spacing: 1px;
+          margin-bottom: 20px; }
+        #footer .inner .menus li > ul li {
+          margin-top: 10px; }
+          #footer .inner .menus li > ul li a {
+            font: 17px/1 'Abel';
+            color: #777; }
+    #footer .inner .contact {
+      width: 240px;
+      height: 100%;
+      float: right;
+      background: #fff; }
 
 /*# sourceMappingURL=style.css.map */
