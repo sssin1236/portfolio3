@@ -1181,11 +1181,34 @@ font-family: 'Roboto Condensed', sans-serif;
           margin-top: 10px; }
           #footer .inner .menus li > ul li a {
             font: 17px/1 'Abel';
-            color: #777; }
+            color: #666; }
     #footer .inner .contact {
       width: 240px;
       height: 100%;
-      float: right;
-      background: #fff; }
+      float: right; }
+      #footer .inner .contact h2 {
+        font: 19px/1 'Open Sans Condensed';
+        color: #bbb;
+        margin-bottom: 20px; }
+      #footer .inner .contact p {
+        font: 17px/20px 'Abel';
+        color: #666;
+        margin-bottom: 20px; }
+        #footer .inner .contact p i {
+          font-size: 20px;
+          color: tan;
+          line-height: 20px;
+          margin-right: 10px; }
+      #footer .inner .contact .sns {
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; }
+        #footer .inner .contact .sns i {
+          font-size: 20px;
+          color: tan;
+          line-height: 30px; }
 
 /*# sourceMappingURL=style.css.map */
