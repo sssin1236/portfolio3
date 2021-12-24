@@ -20,24 +20,41 @@
 
             h1{
                 width: 100%;
-                font: bold 30px/1 'Abel';
-                color: #eee;
+                font: bold 40px/1 'Abel';
+                color: #fff;
                 letter-spacing: 2px;
                 position: absolute;
                 top: 50%; left: 50%;
                 transform: translate(-50%, -50%);
 
+                &::before{
+                    content: ''; 
+                    display: block;
+                    width: 50px; height: 3px;
+                    background: #eee;
+                    position: absolute;
+                    top: -20px; left: 50%;
+                    transform: translateX(-50%);
+                }
+
                 &::after{
                     content: 'BRAND STORY';
                     display: block;
+                    width: 100%;
                     position: absolute;
-                    top: 50%; left: 50%;
+                    top: 10%; left: 50%;
                     transform: translate(-50%, -50%);
-                    font: bold 80px/1 'Abel';
+                    font: bold 120px/1 'Abel';
                     color: #eee;
-                    opacity: 0.4;
+                    opacity: 0.1;
                 }
             }
         }
+    }
+
+    .inner{
+        width: 1180px; min-height: 300px;
+        margin: 0 auto;
+        position: relative;
     }
 }
