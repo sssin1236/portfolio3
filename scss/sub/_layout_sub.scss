@@ -1,0 +1,33 @@
+
+@import 'header_sub';
+@import 'footer_sub';
+
+.content{
+    width: 100%; 
+    padding: 0px 0px 100px;
+
+    .sub_visual{
+        width: 100%; min-height: 500px;
+        background: #fff;
+        margin-bottom: 100px;
+        position: relative;
+
+        .txt{
+            width: 1180px; height: 80%;
+            position: absolute;
+            bottom: 0; left: 50%;
+            transform: translateX(-50%);
+
+            h1{
+                width: 100%;
+                font: bold 100px/1 'arial';
+                color: #222;
+                letter-spacing: 15px;
+                position: absolute;
+                top: 30%; left: 0;
+
+                
+            }
+        }
+    }
+}
