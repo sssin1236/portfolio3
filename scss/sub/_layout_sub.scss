@@ -13,20 +13,14 @@
         position: relative;
 
         .txt{
-            width: 1180px; height: 80%;
-            position: absolute;
-            bottom: 0; left: 50%;
-            transform: translateX(-50%);
+            width: 1180px; height: 500px;
+            margin: 0 auto;
+            text-align: center;
 
             h1{
                 width: 100%;
-                font: bold 100px/1 'arial';
+                font: bold 30px/1 'arial';
                 color: #222;
-                letter-spacing: 15px;
-                position: absolute;
-                top: 30%; left: 0;
-
-                
             }
         }
     }
