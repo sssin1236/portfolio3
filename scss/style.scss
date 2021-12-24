@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bakbak+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@300&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 @import "reset.scss";
 
+@import 'sub/layout_sub';
+@import 'sub/header_sub';
+@import 'sub/footer_sub';
+
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Bakbak One', cursive;

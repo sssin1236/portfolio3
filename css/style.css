@@ -17,6 +17,184 @@ a {
   display: none;
   clear: both; }
 
+#header_sub {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; }
+  #header_sub .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px 100px;
+    align-items: center; }
+    #header_sub .inner .logo {
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 50px;
+      text-align: center; }
+      #header_sub .inner .logo a {
+        font-size: 0; }
+        #header_sub .inner .logo a::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: tan;
+          border-radius: 50%; }
+        #header_sub .inner .logo a span {
+          font: 18px/1 'Open Sans Condensed';
+          letter-spacing: 2px;
+          color: tan; }
+        #header_sub .inner .logo a img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover; }
+    #header_sub .inner #gnb {
+      display: inline-block; }
+      #header_sub .inner #gnb::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header_sub .inner #gnb li {
+        float: left;
+        font: 18px/1 'Open Sans Condensed';
+        margin-right: 50px; }
+        #header_sub .inner #gnb li a {
+          color: #eee; }
+    #header_sub .inner .util {
+      position: absolute;
+      top: 30px;
+      right: 100px; }
+      #header_sub .inner .util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header_sub .inner .util li {
+        float: left;
+        margin-left: 30px; }
+        #header_sub .inner .util li a {
+          font: 13px/1 'Abel';
+          color: #eee; }
+        #header_sub .inner .util li:last-child a i {
+          margin-left: 5px; }
+
+#footer_sub {
+  width: 100%;
+  padding: 100px 0;
+  background: #000; }
+  #footer_sub .inner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+    #footer_sub .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #footer_sub .inner .logoBox {
+      width: 240px;
+      height: 100%;
+      float: left; }
+      #footer_sub .inner .logoBox .logo {
+        width: 180px;
+        display: block;
+        margin-top: -35px;
+        margin-bottom: 60px;
+        text-align: center; }
+        #footer_sub .inner .logoBox .logo a {
+          font-size: 0; }
+          #footer_sub .inner .logoBox .logo a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: tan;
+            border-radius: 50%; }
+          #footer_sub .inner .logoBox .logo a span {
+            font: 22px/1 'Open Sans Condensed';
+            letter-spacing: 2px;
+            color: tan; }
+          #footer_sub .inner .logoBox .logo a img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover; }
+      #footer_sub .inner .logoBox label {
+        font: bold 18px/1 'Noto Sans KR';
+        color: #bbb; }
+      #footer_sub .inner .logoBox input[type=text] {
+        display: block;
+        width: 60%;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+        border-bottom: 1px dotted tan;
+        background: transparent;
+        color: #fff; }
+        #footer_sub .inner .logoBox input[type=text]::placeholder {
+          color: rgba(210, 180, 140, 0.5); }
+      #footer_sub .inner .logoBox input[type=submit] {
+        display: block;
+        width: 60%;
+        height: 30px;
+        outline: none;
+        border: none;
+        background: tan;
+        border-radius: 3%; }
+    #footer_sub .inner .menus {
+      width: 700px;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px; }
+      #footer_sub .inner .menus li {
+        width: 100%;
+        height: 100%; }
+        #footer_sub .inner .menus li h2 {
+          font: 19px/1 'Open Sans Condensed';
+          color: #bbb;
+          letter-spacing: 1px;
+          margin-bottom: 20px; }
+        #footer_sub .inner .menus li > ul li {
+          margin-top: 10px; }
+          #footer_sub .inner .menus li > ul li a {
+            font: 17px/1 'Abel';
+            color: #666; }
+    #footer_sub .inner .contact {
+      width: 240px;
+      height: 100%;
+      float: right; }
+      #footer_sub .inner .contact h2 {
+        font: 19px/1 'Open Sans Condensed';
+        color: #bbb;
+        margin-bottom: 20px; }
+      #footer_sub .inner .contact p {
+        font: 17px/20px 'Abel';
+        color: #666;
+        margin-bottom: 20px; }
+        #footer_sub .inner .contact p i {
+          font-size: 20px;
+          color: tan;
+          line-height: 20px;
+          margin-right: 10px; }
+      #footer_sub .inner .contact .sns {
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; }
+        #footer_sub .inner .contact .sns i {
+          font-size: 20px;
+          color: tan;
+          line-height: 30px; }
+
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Bakbak One', cursive;
