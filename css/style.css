@@ -213,7 +213,7 @@ a {
       .content .sub_visual .txt h1 {
         width: 100%;
         font: bold 40px/1 'Abel';
-        color: #111;
+        color: #fff;
         letter-spacing: 2px;
         position: absolute;
         top: 50%;
@@ -224,7 +224,7 @@ a {
           display: block;
           width: 50px;
           height: 3px;
-          background: #111;
+          background: #fff;
           position: absolute;
           top: -20px;
           left: 50%;
@@ -238,7 +238,7 @@ a {
           left: 50%;
           transform: translate(-50%, -50%);
           font: bold 120px/1 'Abel';
-          color: #111;
+          color: #fff;
           opacity: 0.1; }
   .content .inner {
     width: 1180px;
@@ -247,8 +247,9 @@ a {
     position: relative; }
 
 .brand .sub_visual {
-  background: url(../../img/_pic1.jpg) no-repeat center/cover;
-  filter: brightness(0.8) grayscale(0.5); }
+  background: url(../../img/_pic1.jpg) no-repeat center/cover; }
+  .brand .sub_visual .txt {
+    backdrop-filter: brightness(0.8) grayscale(0.3); }
 .brand .inner #intro {
   width: 100%;
   padding: 100px 0;

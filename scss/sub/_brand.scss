@@ -3,7 +3,10 @@
 .brand{
     .sub_visual{
         background: url(../../img/_pic1.jpg) no-repeat center/cover;
-        filter: brightness(0.8) grayscale(0.5);
+
+        .txt{
+            backdrop-filter: brightness(0.8) grayscale(0.3);
+        }
     }
 
     .inner{
