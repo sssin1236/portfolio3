@@ -195,12 +195,14 @@ a {
 
 .content {
   width: 100%;
-  padding: 0px 0px 100px; }
+  padding: 0px 0px 100px;
+  background: #111; }
   .content .sub_visual {
     width: 100%;
     min-height: 300px;
     background: #111;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    border-bottom: 1px solid #555; }
     .content .sub_visual .txt {
       width: 1180px;
       height: 300px;
