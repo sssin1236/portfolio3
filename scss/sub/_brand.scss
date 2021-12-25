@@ -1,6 +1,11 @@
 
 
 .brand{
+    .sub_visual{
+        background: url(../../img/_pic1.jpg) no-repeat center/cover;
+        filter: brightness(0.8) grayscale(0.5);
+    }
+
     .inner{
         #intro{
             width: 100%; 
@@ -54,18 +59,19 @@
 
             .philo{
                 width: 100%;
-                padding: 0px 35px;
+                padding: 0px 125px;
+                margin-bottom: 150px;
 
                 &::after{
                     content: ''; display: block; clear: both;
                 }
 
                 li{
-                    width: 400px; height: 400px;
-                    padding: 80px 30px;
+                    width: 350px; height: 350px;
+                    padding: 40px 30px;
                     float: left;
                     margin-left: -60px;
-                    background: rgba(133, 133, 133, 0.5);
+                    background: rgba(48, 48, 48, 0.5);
                     border-radius: 50%;
 
                     &:first-child{
@@ -98,6 +104,255 @@
                         font: 15px/1.4 'arial';
                         color: #888;
                         margin: 25px auto 0;
+                    }
+                }
+            }
+
+            .wrap{
+                width: 100%;  height: 500px;
+                position: relative;
+
+                .pic{
+                    float: left;
+                    width: 280px; height: 100%;
+                    margin-right: 20px;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    filter: brightness(0.8);
+
+                    &:nth-of-type(1){
+                        background-image: url(../../img/menupic2.jpg);
+                    }
+                    &:nth-of-type(2){
+                        background-image: url(../../img/team2.jpg);
+                    }
+                    &:nth-of-type(3){
+                        background-image: url(../../img/pro2.jpg);
+                    }
+                    &:nth-of-type(4){
+                        margin-right: 0;
+                        background-image: url(../../img/team1.jpg);
+                    }
+
+                    p{
+                        font: bold 18px 'Noto Sans KR';
+                        color: #fff;
+                        text-align: right;
+                        padding: 20px;
+                    }
+                }
+
+                .circle{
+                    width: 300px; height: 300px;
+                    position: absolute;
+                    bottom: -150px; left: 50%;
+                    margin-left: -150px;
+                    padding: 50px 30px;
+                    background: rgba(0, 0, 0, 0.912);
+                    border-radius: 50%;
+
+                    i{
+                        font-size: 60px;
+                        color: tan;
+                        margin-bottom: 20px;
+                    }
+
+                    h3{
+                        font: bold 17px/1 'Noto Sans KR';
+                        color: #aaa;
+                        margin-bottom: 20px;
+                    }
+
+                    span{
+                        display: block;
+                        width: 80px; height: 80px;
+                        margin: 0 auto;
+                        padding: 10px 0;
+                        border-radius: 50%;
+                        font-size: 0;
+
+                        >i{
+                            display: block;
+                            height: 5px;
+                            font-size: 35px;
+                            color: rgba(210, 180, 140, 0.9);
+
+                            &:nth-of-type(1){
+                                color: rgba(210, 180, 140, 0.2);
+                            }
+                            &:nth-of-type(2){
+                                color: rgba(210, 180, 140, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #history{
+            width: 100%; 
+            padding: 50px 0 100px;
+
+            ul{
+                width: 100%;
+                position: relative;
+                
+                li{
+                    width: 50%; height: 300px;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 20px; height: 20px;
+                        border-radius: 50%;
+                        border: 6px solid tan;
+                        position: absolute;
+                    }
+
+                    .txt{
+                        .year{
+                            h3{
+                                font: bold 40px/1 'Bakbak One';
+                                color: tan;
+                                letter-spacing: 2px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        >span{
+                            font: bold 20px/1 'Abel';
+                            color: rgba(210, 180, 140, 0.7);
+                            letter-spacing: 1px;
+                        }
+
+                        p{
+                            width: 70%;
+                            font: 15px/1.4 'Noto Snas KR';
+                            color: #888;
+                            margin-top: 20px;
+                        }
+
+                        .line{
+                            width: 1px; height: 120px;
+                            background: tan;
+                            position: absolute;
+                            top: 0; 
+                        }
+                    }
+
+                    &.y1995{
+                        margin-right: 50%;
+                        padding-right: 100px;
+
+                        &::after{
+                            top: 150px; left: 100%;
+                            margin-left: -16px;
+                        }
+
+                        .txt{
+                            text-align: right;
+                            padding-top: 150px;
+
+                            p{  
+                                margin-left: 30%;
+                            }
+
+                            .line{
+                                right: 0;
+                            }
+                        }
+                    }
+
+                    &.y1997{
+                        margin-left: 50%;
+                        margin-top: -130px;
+                        padding-left: 100px;
+
+                        &::after{
+                            top: 110px; right: 100%;
+                            margin-right: -16px;
+                        }
+
+                        .txt{
+                            padding-top: 110px;
+
+                            .line{
+                                left: 0;
+                                height: 80px;
+                            }
+                        }
+                    }
+
+                    &.y2001{
+                        margin-right: 50%;
+                        margin-top: -170px;
+                        padding-right: 100px;
+
+                        &::after{
+                            top: 190px; left: 100%;
+                            margin-left: -16px;
+                        }
+
+                        .txt{
+                            text-align: right;
+                            padding-top: 190px;
+
+                            p{  
+                                margin-left: 30%;
+                            }
+
+                            .line{
+                                right: 0;
+                                height: 160px;
+                            }
+                        }
+                    }
+
+                    &.y2015{
+                        margin-left: 50%;
+                        margin-top: -90px;
+                        padding-left: 100px;
+
+                        &::after{
+                            top: 320px; right: 100%;
+                            margin-right: -16px;
+                        }
+
+                        .txt{
+                            padding-top: 320px;
+
+                            .line{
+                                left: 0;
+                                height: 290px;
+                            }
+                        }
+                    }
+
+                    &.y2021{
+                        margin-right: 50%;
+                        margin-top: 40px;
+                        padding-right: 100px;
+
+                        &::after{
+                            top: 230px; left: 100%;
+                            margin-left: -16px;
+                        }
+
+                        .txt{
+                            text-align: right;
+                            padding-top: 230px;
+
+                            p{  
+                                margin-left: 30%;
+                            }
+
+                            .line{
+                                right: 0;
+                                height: 200px;
+                            }
+                        }
                     }
                 }
             }

@@ -198,10 +198,10 @@ a {
   padding: 0px 0px 100px;
   background: #111; }
   .content .sub_visual {
-    width: 100%;
+    width: 1180px;
     min-height: 300px;
     background: #111;
-    margin-bottom: 100px;
+    margin: 0 auto;
     border-bottom: 1px solid #555; }
     .content .sub_visual .txt {
       width: 1180px;
@@ -213,7 +213,7 @@ a {
       .content .sub_visual .txt h1 {
         width: 100%;
         font: bold 40px/1 'Abel';
-        color: #fff;
+        color: #111;
         letter-spacing: 2px;
         position: absolute;
         top: 50%;
@@ -224,7 +224,7 @@ a {
           display: block;
           width: 50px;
           height: 3px;
-          background: #fff;
+          background: #111;
           position: absolute;
           top: -20px;
           left: 50%;
@@ -238,7 +238,7 @@ a {
           left: 50%;
           transform: translate(-50%, -50%);
           font: bold 120px/1 'Abel';
-          color: #eee;
+          color: #111;
           opacity: 0.1; }
   .content .inner {
     width: 1180px;
@@ -246,6 +246,9 @@ a {
     margin: 0 auto;
     position: relative; }
 
+.brand .sub_visual {
+  background: url(../../img/_pic1.jpg) no-repeat center/cover;
+  filter: brightness(0.8) grayscale(0.5); }
 .brand .inner #intro {
   width: 100%;
   padding: 100px 0;
@@ -286,18 +289,19 @@ a {
     margin: 30px 0 80px; }
   .brand .inner #intro .philo {
     width: 100%;
-    padding: 0px 35px; }
+    padding: 0px 125px;
+    margin-bottom: 150px; }
     .brand .inner #intro .philo::after {
       content: '';
       display: block;
       clear: both; }
     .brand .inner #intro .philo li {
-      width: 400px;
-      height: 400px;
-      padding: 80px 30px;
+      width: 350px;
+      height: 350px;
+      padding: 40px 30px;
       float: left;
       margin-left: -60px;
-      background: rgba(133, 133, 133, 0.5);
+      background: rgba(48, 48, 48, 0.5);
       border-radius: 50%; }
       .brand .inner #intro .philo li:first-child {
         margin-left: 0; }
@@ -321,6 +325,178 @@ a {
         font: 15px/1.4 'arial';
         color: #888;
         margin: 25px auto 0; }
+  .brand .inner #intro .wrap {
+    width: 100%;
+    height: 500px;
+    position: relative; }
+    .brand .inner #intro .wrap .pic {
+      float: left;
+      width: 280px;
+      height: 100%;
+      margin-right: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: brightness(0.8); }
+      .brand .inner #intro .wrap .pic:nth-of-type(1) {
+        background-image: url(../../img/menupic2.jpg); }
+      .brand .inner #intro .wrap .pic:nth-of-type(2) {
+        background-image: url(../../img/team2.jpg); }
+      .brand .inner #intro .wrap .pic:nth-of-type(3) {
+        background-image: url(../../img/pro2.jpg); }
+      .brand .inner #intro .wrap .pic:nth-of-type(4) {
+        margin-right: 0;
+        background-image: url(../../img/team1.jpg); }
+      .brand .inner #intro .wrap .pic p {
+        font: bold 18px 'Noto Sans KR';
+        color: #fff;
+        text-align: right;
+        padding: 20px; }
+    .brand .inner #intro .wrap .circle {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      bottom: -150px;
+      left: 50%;
+      margin-left: -150px;
+      padding: 50px 30px;
+      background: rgba(0, 0, 0, 0.912);
+      border-radius: 50%; }
+      .brand .inner #intro .wrap .circle i {
+        font-size: 60px;
+        color: tan;
+        margin-bottom: 20px; }
+      .brand .inner #intro .wrap .circle h3 {
+        font: bold 17px/1 'Noto Sans KR';
+        color: #aaa;
+        margin-bottom: 20px; }
+      .brand .inner #intro .wrap .circle span {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        padding: 10px 0;
+        border-radius: 50%;
+        font-size: 0; }
+        .brand .inner #intro .wrap .circle span > i {
+          display: block;
+          height: 5px;
+          font-size: 35px;
+          color: rgba(210, 180, 140, 0.9); }
+          .brand .inner #intro .wrap .circle span > i:nth-of-type(1) {
+            color: rgba(210, 180, 140, 0.2); }
+          .brand .inner #intro .wrap .circle span > i:nth-of-type(2) {
+            color: rgba(210, 180, 140, 0.5); }
+.brand .inner #history {
+  width: 100%;
+  padding: 50px 0 100px; }
+  .brand .inner #history ul {
+    width: 100%;
+    position: relative; }
+    .brand .inner #history ul li {
+      width: 50%;
+      height: 300px;
+      position: relative; }
+      .brand .inner #history ul li::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 6px solid tan;
+        position: absolute; }
+      .brand .inner #history ul li .txt .year h3 {
+        font: bold 40px/1 'Bakbak One';
+        color: tan;
+        letter-spacing: 2px;
+        margin-bottom: 10px; }
+      .brand .inner #history ul li .txt > span {
+        font: bold 20px/1 'Abel';
+        color: rgba(210, 180, 140, 0.7);
+        letter-spacing: 1px; }
+      .brand .inner #history ul li .txt p {
+        width: 70%;
+        font: 15px/1.4 'Noto Snas KR';
+        color: #888;
+        margin-top: 20px; }
+      .brand .inner #history ul li .txt .line {
+        width: 1px;
+        height: 120px;
+        background: tan;
+        position: absolute;
+        top: 0; }
+      .brand .inner #history ul li.y1995 {
+        margin-right: 50%;
+        padding-right: 100px; }
+        .brand .inner #history ul li.y1995::after {
+          top: 150px;
+          left: 100%;
+          margin-left: -16px; }
+        .brand .inner #history ul li.y1995 .txt {
+          text-align: right;
+          padding-top: 150px; }
+          .brand .inner #history ul li.y1995 .txt p {
+            margin-left: 30%; }
+          .brand .inner #history ul li.y1995 .txt .line {
+            right: 0; }
+      .brand .inner #history ul li.y1997 {
+        margin-left: 50%;
+        margin-top: -130px;
+        padding-left: 100px; }
+        .brand .inner #history ul li.y1997::after {
+          top: 110px;
+          right: 100%;
+          margin-right: -16px; }
+        .brand .inner #history ul li.y1997 .txt {
+          padding-top: 110px; }
+          .brand .inner #history ul li.y1997 .txt .line {
+            left: 0;
+            height: 80px; }
+      .brand .inner #history ul li.y2001 {
+        margin-right: 50%;
+        margin-top: -170px;
+        padding-right: 100px; }
+        .brand .inner #history ul li.y2001::after {
+          top: 190px;
+          left: 100%;
+          margin-left: -16px; }
+        .brand .inner #history ul li.y2001 .txt {
+          text-align: right;
+          padding-top: 190px; }
+          .brand .inner #history ul li.y2001 .txt p {
+            margin-left: 30%; }
+          .brand .inner #history ul li.y2001 .txt .line {
+            right: 0;
+            height: 160px; }
+      .brand .inner #history ul li.y2015 {
+        margin-left: 50%;
+        margin-top: -90px;
+        padding-left: 100px; }
+        .brand .inner #history ul li.y2015::after {
+          top: 320px;
+          right: 100%;
+          margin-right: -16px; }
+        .brand .inner #history ul li.y2015 .txt {
+          padding-top: 320px; }
+          .brand .inner #history ul li.y2015 .txt .line {
+            left: 0;
+            height: 290px; }
+      .brand .inner #history ul li.y2021 {
+        margin-right: 50%;
+        margin-top: 40px;
+        padding-right: 100px; }
+        .brand .inner #history ul li.y2021::after {
+          top: 230px;
+          left: 100%;
+          margin-left: -16px; }
+        .brand .inner #history ul li.y2021 .txt {
+          text-align: right;
+          padding-top: 230px; }
+          .brand .inner #history ul li.y2021 .txt p {
+            margin-left: 30%; }
+          .brand .inner #history ul li.y2021 .txt .line {
+            right: 0;
+            height: 200px; }
 
 /*
 font-family: 'Abel', sans-serif;
