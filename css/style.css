@@ -286,7 +286,7 @@ a {
     margin: 30px 0 80px; }
   .brand .inner #intro .philo {
     width: 100%;
-    padding: 0px 20px; }
+    padding: 0px 35px; }
     .brand .inner #intro .philo::after {
       content: '';
       display: block;
@@ -296,21 +296,31 @@ a {
       height: 400px;
       padding: 80px 30px;
       float: left;
-      margin-left: -30px;
-      background: rgba(238, 238, 238, 0.5);
+      margin-left: -60px;
+      background: rgba(133, 133, 133, 0.5);
       border-radius: 50%; }
       .brand .inner #intro .philo li:first-child {
         margin-left: 0; }
       .brand .inner #intro .philo li h3 {
         font: bold 24px/1 'Abel';
         color: tan;
-        margin-bottom: 20px; }
+        margin-bottom: 30px; }
       .brand .inner #intro .philo li i {
         display: block;
         font-size: 70px;
         color: tan;
         text-shadow: 0px 0px 5px tan;
-        margin-bottom: 30px; }
+        margin-bottom: 20px; }
+      .brand .inner #intro .philo li span {
+        font: bold 14px/1 'Noto Sans KR';
+        color: #bbb;
+        padding-bottom: 10px;
+        border-bottom: 2px dotted #777; }
+      .brand .inner #intro .philo li p {
+        width: 250px;
+        font: 15px/1.4 'arial';
+        color: #888;
+        margin: 25px auto 0; }
 
 /*
 font-family: 'Abel', sans-serif;
