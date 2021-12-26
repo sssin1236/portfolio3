@@ -55,8 +55,6 @@ menuBtn.forEach((btn, index)=>{
 });
 
 
-// timer = setInterval(move, 100);
-
 next.addEventListener("click", e=>{
     e.preventDefault();
     // clearInterval(timer);
@@ -79,29 +77,13 @@ prev.addEventListener("click", e=>{
     
 });
 
-// ul.addEventListener("mouseenter", e=>{
-//     clearInterval(timer);
-// });
 
-// ul.addEventListener("mouseleave", e=>{
-//     timer = setInterval(move, 100);
-// });
 
 function init(){
     ul.prepend(ul.lastElementChild);
     ul.style.marginLeft = "-25%";
 }
 
-function move(){
-    if(num <= -24){
-        num = 0;
-        ul.append(ul.firstElementChild);
-    }else{
-        num-= 1;
-    }
-
-    ul.style.marginLeft = num + "%";
-}
 
 function prevMove(){
     new Anim(ul, {
