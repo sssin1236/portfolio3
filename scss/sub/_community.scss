@@ -1,5 +1,6 @@
 .community{
     transform-style: preserve-3d;
+    background: #fff;
 
     .sub_visual{
         background: url(../../img/special2.jpg) no-repeat center/cover;
@@ -79,17 +80,17 @@
             text-align: center;
 
             h2{
-                font: bold 38px/1 'Abel';
+                font: bold 48px/1 'Abel';
                 color: tan;
                 text-align: center;
                 margin-bottom: 50px;
             }
 
-            dt{
+            >dt{
                 display: inline-block;
                 width: 200px; height: 50px;
                 text-align: center;
-                border-bottom: 1px solid tan;
+                border: 1px solid rgba(240, 205, 160, 0.637);
                 margin-bottom: 150px;
 
                 &:nth-of-type(4){
@@ -102,14 +103,14 @@
                     display: block;
                     width: 100%; height: 100%;
                     font: 14px/50px 'Noto Sans KR';
-                    color: #aaa;
+                    color: #777;
                     position: relative;
                     
                     &::after{
                         content: '';
                         display: block;
                         width: 1px; height: 15px;
-                        background: #222;
+                        background: #ddd;
                         position: absolute;
                         top: 50%; right: 0;
                         margin-top: -7px
@@ -117,12 +118,14 @@
                 }
 
                 &.on{
-                    border: 1px solid tan;
+                    border: 1px solid rgba(240, 205, 160, 0.637);
+                    border-top: 2px solid tan;
                     border-bottom: none;
 
                     a{
-                        color: #eee;
+                        color: #222;
                         font-weight: bold;
+                        font-size: 16px;
                     }
                 }
             }
@@ -132,13 +135,229 @@
                 margin: 0 auto 50px;
                 position: relative;
 
+                .topMenu{
+                    width: 100%;
+                    float: left;
+                    margin-bottom: 10px;
+
+                    li{
+                        float: left;
+                        padding: 0px 10px;
+                        position: relative;
+                            
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 1px; height: 10px;
+                                background: #bbb;
+                                position: absolute;
+                                top: 50%; left: 0;
+                                margin-top: -5px
+                            }
+
+                        &:first-child{
+                            padding-left: 0;
+
+                            &::after{
+                                display: none;
+                            }
+                        }
+
+                        a{
+                            display: block;
+                            width: 100%; height: 100%;
+                            font: 14px/1 'Noto Sans KR';
+                            color: #777;
+                            
+                        }
+
+                        &.on{
+                            a{
+                                font: bold 14px/1 'Noto Sans KR';
+                                color: tan;
+                            }
+                        }
+                    }
+                }
+
                 table{
                     width: 100%; 
 
                     tr{
                         th{
-                            border-top: 2px solid #eee;
+                            border-top: 1px solid tan;
+                            border-bottom: 1px solid #ddd;
+                            padding: 10px 0;
+                            font: 15px/1 'Noto Sans KR';
+                            color: #555;
+
+                            &:nth-of-type(1), &:nth-of-type(3){ width: 10%; }
                         }
+
+                        td{
+                            padding: 15px 0;
+                            border-bottom: 1px solid #ddd;
+                            font: 15px/1 'Noto Sans KR';
+                            color: #666;
+                            cursor: pointer;
+
+                            &:nth-of-type(2){
+                                text-align: left;
+                                font: bold 15px/1 'Noto Sans KR';
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .pagination{
+            width: 100%; height: 30px;
+            text-align: center;
+    
+            >div{
+                display: inline-block;
+            }
+    
+            .prev{
+                width: 30px; height: 30px;
+                text-align: center;
+                margin-right: 15px;
+                position: relative;
+                cursor: pointer;
+    
+                a{
+                    display: inline-block;
+                    font: bold 15px/30px 'Abel';
+                    color: #333;
+                    opacity: 0;
+                    transform: translateX(30px);
+                    transition: 0.5s;
+                }
+    
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 15px; height: 1px;
+                    background: #333;
+                    transform-origin: right center;
+                    position: absolute;
+                    top: 13px; left: -25px;
+                    transform: translateX(25px) rotate(140deg);
+                    transition: 0.5s;
+                    
+                }
+    
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 15px; height: 1px;
+                    background: #333;
+                    transform-origin: right center;
+                    position: absolute;
+                    top: 13px; left: -25px;
+                    transform: translateX(25px) rotate(-140deg);
+                    transition: 0.5s;
+                }
+    
+                &:hover{
+                    a{
+                        transform: translateX(0px);
+                        opacity: 1;
+                    }
+    
+                    &::before{
+                        transform: translateX(0px) rotate(0deg);
+                    }
+                    &::after{
+                        transform: translateX(0px) rotate(0deg);
+                    }
+                }
+            }
+    
+            .next{
+                width: 30px; height: 30px;
+                text-align: center;
+                margin-left: 15px;
+                position: relative;
+                cursor: pointer;
+    
+                a{
+                    display: inline-block;
+                    font: bold 15px/30px 'Abel';
+                    color: #333;
+                    opacity: 0;
+                    transform: translateX(-30px);
+                    transition: 0.5s;
+                }
+    
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 15px; height: 1px;
+                    background: #333;
+                    transform-origin: left center;
+                    position: absolute;
+                    top: 13px; right: -25px;
+                    transform: translateX(-25px) rotate(140deg);
+                    transition: 0.5s;
+                    
+                }
+    
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 15px; height: 1px;
+                    background: #333;
+                    transform-origin: left center;
+                    position: absolute;
+                    top: 13px; right: -25px;
+                    transform: translateX(-25px) rotate(-140deg);
+                    transition: 0.5s;
+                }
+    
+                &:hover{
+                    a{
+                        transform: translateX(0px);
+                        opacity: 1;
+                    }
+    
+                    &::before{
+                        transform: translateX(0px) rotate(0deg);
+                    }
+                    &::after{
+                        transform: translateX(0px) rotate(0deg);
+                    }
+                }
+            }
+    
+            .numbers{
+                display: inline-block;
+                font-size: 0;
+                
+                a{
+                    display: inline-block;
+                    width: 40px; height: 40px;
+                    border: 1px solid #bbb;
+                    font: 18px/40px 'Abel';
+                    color: #333;
+                    text-align: center;
+                    transition: 0.5s;
+                    border-right: none;
+
+                    &:last-child{
+                        border-right: 1px solid #bbb;
+                    }
+    
+                    &:hover{
+                        font-weight: bold;
+                        color: #333;
+                    }
+    
+                    &.on{
+                        color: #eee;
+                        background: #111;
                     }
                 }
             }
