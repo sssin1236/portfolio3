@@ -6,6 +6,10 @@
 
         .txt{
             backdrop-filter: brightness(0.8) grayscale(0.3);
+
+            h1::after{
+                content: 'BRAND STORY';
+            }
         }
     }
 
