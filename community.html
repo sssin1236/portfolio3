@@ -9,6 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/anime.js"></script>
+    <script defer src="js/commu.js"></script>
+    <script>
+        window.addEventListener("load", ()=>{
+            new Tab();
+        })
+    </script>
 </head>
 <body>
     <header id="header_sub">
@@ -86,7 +92,7 @@
                     <li><a href="#">이벤트</a></li>
                 </ul>
 
-                <dd id="menu1">
+                <dd id="menu1" class="on">
                     <table summary="공지사항 게시판">
                         <caption class="h">공지사항 게시판</caption>
 
@@ -163,7 +169,7 @@
                     <dl>
                         <dt>
                             <b>1</b>
-                            <p>피에르 패밀리 회원가입은 어떻게 하나요?</p>
+                            <p>패밀리 회원가입은 어떻게 하나요?</p>
                             <span></span>
                         </dt>
                         <dd>
@@ -172,7 +178,7 @@
 
                         <dt>
                             <b>2</b>
-                            <p>피에르 패밀리 회원이 되면 제공받는 혜택이 무엇인가요?</p>
+                            <p>패밀리 회원이 되면 제공받는 혜택이 무엇인가요?</p>
                             <span></span>
                         </dt>
                         <dd>
@@ -205,6 +211,15 @@
                         <dd>
                             <p>먼저 피에르 다이닝 홈페이지 가입할 때 패밀리 카드 번호를 등록하여 가입 가능합니다.<br><br>패밀리 가입은 플라스틱 or 모바일 카드 중 선택 가능하시며,<br>플라스틱 카드의 경우 매장에서 수령한 카드 번호를 등록해야 하며, 모바일 카드의 경우 "카드번호 생성" 버튼을 통하여 등록 가능합니다.</p>
                         </dd>
+
+                        <dt>
+                            <b>6</b>
+                            <p>기프트 카드는 어디서 구매할 수 있나요?</p>
+                            <span></span>
+                        </dt>
+                        <dd>
+                            <p>먼저 피에르 다이닝 홈페이지 가입할 때 패밀리 카드 번호를 등록하여 가입 가능합니다.<br><br>패밀리 가입은 플라스틱 or 모바일 카드 중 선택 가능하시며,<br>플라스틱 카드의 경우 매장에서 수령한 카드 번호를 등록해야 하며, 모바일 카드의 경우 "카드번호 생성" 버튼을 통하여 등록 가능합니다.</p>
+                        </dd>
                     </dl>
                 </dd>
 
@@ -212,14 +227,6 @@
                 <dd id="menu3">
                     <table summary="FAQ 게시판">
                         <caption class="h">FAQ 게시판</caption>
-
-                        <ul class="topMenu">
-                            <li><a href="#">사이트 이용</a></li>
-                            <li><a href="#">피에르 패밀리</a></li>
-                            <li><a href="#">기프트 카드</a></li>
-                            <li><a href="#">매장 이용</a></li>
-                            <li><a href="#">이벤트</a></li>
-                        </ul>
 
                         <dl>
                             <dt>

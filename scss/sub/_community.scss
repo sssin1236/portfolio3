@@ -180,13 +180,16 @@
                 margin: 0 auto 50px;
                 position: relative;
                 display: none;
+                opacity: 0;
+                transform: translateY(100px);
+                transition: opacity 1s, transform 1s;
 
-                &#menu2{
+                &.on{
                     display: block;
+                    opacity: 1;
+                    transform: translateY(0px);
                 }
-
                 
-
                 table{
                     width: 100%; 
 
@@ -237,7 +240,7 @@
                     position: relative;
 
                     dt{
-                        padding: 20px 0 30px 100px;
+                        padding: 30px 100px 30px 70px;
                         border-bottom: 1px solid #ddd;
                         position: relative;
                         transition: 0.5s;
@@ -245,6 +248,74 @@
 
                         &:nth-of-type(1){
                             border-top: 1px solid tan;
+                        }
+
+                        b{
+                            position: absolute;
+                            top: 50%; left: 30px;
+                            transform: translateY(-50%);
+                            font: bold 24px/1 'Abel';
+                            color: #333;
+                            transition: 0.5s;
+                        }
+
+                        >p{
+                            text-align: left;
+                            font: 16px/1 'Noto Sans KR';
+                            color: #111;
+                            transition: 0.5s;
+                        }
+
+                        >span{
+                            display: block;
+                            width: 30px; height: 30px;
+                            position: absolute;
+                            top: 50%; right: 30px;
+                            transform: translateY(-50%);
+
+                            &::before{
+                                content: '';
+                                display: block;
+                                width: 15px; height: 1px;
+                                background: #666;
+                                position: absolute;
+                                top: 17px; left: 0;
+                                transform-origin: right center;
+                                transform: rotate(30deg);
+                            }
+
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 15px; height: 1px;
+                                background: #666;
+                                position: absolute;
+                                top: 17px; right: 0;
+                                transform-origin: left center;
+                                transform: rotate(-30deg);
+                            }
+                        }
+
+                        &:hover{
+                            background: #eee;
+                        }
+
+                        &.on{
+                            b, p{
+                                color: tan;
+                            }
+                        }
+                    }
+
+                    dd{
+                        width: 100%;
+                        position: relative;
+                        padding: 30px 100px 30px 70px;
+                        background: #eee;
+                        
+                        p{
+                            font: 14px/1.5 'Noto Sans KR';
+                            color: #666;
                         }
                     }
                 }

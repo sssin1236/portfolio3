@@ -831,9 +831,14 @@ a {
       width: 100%;
       margin: 0 auto 50px;
       position: relative;
-      display: none; }
-      .community .inner .menu dd#menu2 {
-        display: block; }
+      display: none;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 1s, transform 1s; }
+      .community .inner .menu dd.on {
+        display: block;
+        opacity: 1;
+        transform: translateY(0px); }
       .community .inner .menu dd table {
         width: 100%; }
         .community .inner .menu dd table tr {
@@ -870,13 +875,68 @@ a {
         margin: 30px auto;
         position: relative; }
         .community .inner .menu dd dl dt {
-          padding: 20px 0 30px 100px;
+          padding: 30px 100px 30px 70px;
           border-bottom: 1px solid #ddd;
           position: relative;
           transition: 0.5s;
           cursor: pointer; }
           .community .inner .menu dd dl dt:nth-of-type(1) {
             border-top: 1px solid tan; }
+          .community .inner .menu dd dl dt b {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            font: bold 24px/1 'Abel';
+            color: #333;
+            transition: 0.5s; }
+          .community .inner .menu dd dl dt > p {
+            text-align: left;
+            font: 16px/1 'Noto Sans KR';
+            color: #111;
+            transition: 0.5s; }
+          .community .inner .menu dd dl dt > span {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%); }
+            .community .inner .menu dd dl dt > span::before {
+              content: '';
+              display: block;
+              width: 15px;
+              height: 1px;
+              background: #666;
+              position: absolute;
+              top: 17px;
+              left: 0;
+              transform-origin: right center;
+              transform: rotate(30deg); }
+            .community .inner .menu dd dl dt > span::after {
+              content: '';
+              display: block;
+              width: 15px;
+              height: 1px;
+              background: #666;
+              position: absolute;
+              top: 17px;
+              right: 0;
+              transform-origin: left center;
+              transform: rotate(-30deg); }
+          .community .inner .menu dd dl dt:hover {
+            background: #eee; }
+          .community .inner .menu dd dl dt.on b, .community .inner .menu dd dl dt.on p {
+            color: tan; }
+        .community .inner .menu dd dl dd {
+          width: 100%;
+          position: relative;
+          padding: 30px 100px 30px 70px;
+          background: #eee; }
+          .community .inner .menu dd dl dd p {
+            font: 14px/1.5 'Noto Sans KR';
+            color: #666; }
   .community .inner .pagination {
     width: 100%;
     height: 30px;
@@ -994,6 +1054,107 @@ a {
         .community .inner .pagination .numbers a.on {
           color: #eee;
           background: #111; }
+
+.review .sub_visual .txt h1::after {
+  content: 'REVIEW'; }
+.review .inner h1 {
+  font: 28px/1 'Abel';
+  color: tan;
+  border-bottom: 1px solid tan;
+  padding-bottom: 10px;
+  margin-bottom: 20px; }
+.review .inner .search {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-content: center; }
+  .review .inner .search input {
+    width: 150px;
+    height: 20px;
+    padding: 15px;
+    border: 1px solid tan;
+    background: transparent;
+    outline: none;
+    transition: 0.5s; }
+    .review .inner .search input::placeholder {
+      font: 15px/20px 'Abel';
+      color: tan; }
+    .review .inner .search input:focus {
+      width: 250px; }
+  .review .inner .search a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: -30px; }
+    .review .inner .search a i {
+      font-size: 20px;
+      line-height: 30px;
+      color: tan; }
+.review .inner #gallery {
+  width: 100%;
+  overflow: hidden; }
+  .review .inner #gallery aside {
+    width: 1180px;
+    height: 90vh;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center; }
+    .review .inner #gallery aside img {
+      width: 400px;
+      height: 600px; }
+    .review .inner #gallery aside span {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font: 18px/1 'Abel';
+      color: #fff;
+      cursor: pointer; }
+  .review .inner #gallery .pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s; }
+    .review .inner #gallery .pic img {
+      width: 100%;
+      height: 100%;
+      transform: scale(2);
+      border-radius: 50%; }
+    .review .inner #gallery .pic.off {
+      opacity: 0;
+      transform: translate(-50%, -100px); }
+  .review .inner #gallery .list {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s; }
+    .review .inner #gallery .list.on {
+      opacity: 1;
+      transform: translateY(0); }
+    .review .inner #gallery .list::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .review .inner #gallery .list li {
+      float: left;
+      width: calc(100% / 4);
+      padding: 10px; }
+      .review .inner #gallery .list li div {
+        width: 100%; }
+        .review .inner #gallery .list li div a > img {
+          width: 100%;
+          filter: grayscale(1); }
 
 /*
 font-family: 'Abel', sans-serif;
