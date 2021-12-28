@@ -1394,14 +1394,14 @@ font-family: 'Roboto Condensed', sans-serif;
         perspective: 3000px; }
         #visual .inner .wrap .right article {
           width: 25%;
-          height: 100%;
-          border-right: 1px solid tan;
+          height: 80%;
+          border-right: 1px solid rgba(210, 180, 140, 0.493);
           padding: 20px;
           background: rgba(0, 0, 0, 0.8);
           position: absolute;
-          top: 0%;
+          top: 55%;
           cursor: pointer;
-          transform: translateX(-50%);
+          transform: translate(-50%, -50%);
           transition: left 0.5s 1.5s, transform 1s, width 1s; }
           #visual .inner .wrap .right article:nth-of-type(1) {
             left: 12%; }
@@ -1411,12 +1411,15 @@ font-family: 'Roboto Condensed', sans-serif;
             left: 62%; }
           #visual .inner .wrap .right article:nth-of-type(4) {
             left: 87%;
-            margin-right: 0; }
+            border-right: 0; }
           #visual .inner .wrap .right article.on {
             width: 100%;
+            top: 55%;
             left: 50%;
-            transform: rotateY(180deg) translateX(50%);
-            transition: left 1s, transform 1s 1.3s, width 0.5s 1.3s; }
+            transform: rotateY(180deg) translate(50%, -50%);
+            transition: left 1s, transform 1s 1.3s, width 0.5s 1.3s, border 0.3s; }
+            #visual .inner .wrap .right article.on:nth-of-type(4) {
+              border-right: 1px solid rgba(210, 180, 140, 0.493); }
             #visual .inner .wrap .right article.on .front {
               opacity: 0;
               transition: 0.5s 1.5s; }
