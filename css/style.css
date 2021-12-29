@@ -1156,6 +1156,11 @@ a {
           width: 100%;
           filter: grayscale(1); }
 
+.join .sub_visual .txt {
+  backdrop-filter: contrast(0.8) brightness(0.8); }
+  .join .sub_visual .txt h1::after {
+    content: 'JOIN'; }
+
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Bakbak One', cursive;

@@ -1,0 +1,11 @@
+.join{
+    .sub_visual{
+
+        .txt{
+            backdrop-filter: contrast(0.8) brightness(0.8);
+            h1::after{
+                content: 'JOIN';
+            }
+        }
+    }
+}
