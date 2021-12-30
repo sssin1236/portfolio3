@@ -1202,7 +1202,8 @@ a {
     position: sticky;
     top: 50px;
     padding-right: 20px; }
-    .join .inner .wrap .left h2 {
+    .join .inner .wrap .left > h2 {
+      width: 90%;
       font: 19px/1 'Noto Sans KR';
       color: tan;
       padding-top: 10px;
@@ -1214,10 +1215,30 @@ a {
     .join .inner .wrap .left p {
       font: 15px/1.4 'Noto Sans KR';
       color: #999;
-      margin: 10px 0px; }
+      margin: 10px 0px 30px; }
     .join .inner .wrap .left .terms h2 {
-      font: 16px/1 'Noto Sans KR';
-      color: tan; }
+      width: 90%;
+      font: 19px/1 'Noto Sans KR';
+      color: tan;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid tan; }
+    .join .inner .wrap .left .terms dl dt {
+      font: 15px/1 'Noto Sans KR';
+      color: #777;
+      margin-bottom: 15px; }
+    .join .inner .wrap .left .terms dl dd textarea {
+      outline: none;
+      resize: none;
+      overflow: visible;
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      font: 15px /1.4 'arial';
+      color: #888;
+      background: transparent;
+      border: 1px solid tan;
+      margin-bottom: 20px; }
 
 /*
 font-family: 'Abel', sans-serif;
