@@ -1168,8 +1168,8 @@ a {
       content: 'JOIN'; }
 .join .inner .wrap {
   width: 100%;
-  padding: 100px 0;
-  overflow: hidden;
+  height: 1800px;
+  padding: 100px 0 50px;
   position: relative; }
   .join .inner .wrap .top {
     width: 100%;
@@ -1200,15 +1200,21 @@ a {
   .join .inner .wrap .left {
     width: 30%;
     position: sticky;
-    top: 0;
-    left: 0;
+    top: 50px;
     padding-right: 20px; }
     .join .inner .wrap .left h2 {
-      font: 17px/1 'Noto Sans KR';
+      font: 19px/1 'Noto Sans KR';
       color: tan;
       padding-top: 10px;
       border-top: 1px solid tan;
       margin-bottom: 20px; }
+    .join .inner .wrap .left span {
+      font: 15px/1 'Abel';
+      color: #999; }
+    .join .inner .wrap .left p {
+      font: 15px/1.4 'Noto Sans KR';
+      color: #999;
+      margin: 10px 0px; }
 
 /*
 font-family: 'Abel', sans-serif;
