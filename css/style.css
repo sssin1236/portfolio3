@@ -1215,6 +1215,9 @@ a {
       font: 15px/1.4 'Noto Sans KR';
       color: #999;
       margin: 10px 0px; }
+    .join .inner .wrap .left .terms h2 {
+      font: 16px/1 'Noto Sans KR';
+      color: tan; }
 
 /*
 font-family: 'Abel', sans-serif;
