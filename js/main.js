@@ -81,17 +81,17 @@ prev.addEventListener("click", e=>{
 
 function init(){
     ul.prepend(ul.lastElementChild);
-    ul.style.marginLeft = "-25%";
+    ul.style.marginLeft = "-20%";
 }
 
 
 function prevMove(){
     new Anim(ul, {
         prop: "margin-left",
-        value: "0%",
+        value: "3%",
         duration: speed,
         callback: ()=>{
-            ul.style.marginLeft = "-25%";
+            ul.style.marginLeft = "-20%";
             ul.prepend(ul.lastElementChild);
             enableClick = true;
         }
@@ -101,10 +101,10 @@ function prevMove(){
 function nextMove(){
     new Anim(ul, {
         prop: "margin-left",
-        value: "-50%",
+        value: "-43%",
         duration: speed,
         callback: ()=>{
-            ul.style.marginLeft = "-25%";
+            ul.style.marginLeft = "-20%";
             ul.append(ul.firstElementChild);
             enableClick = true;
         }

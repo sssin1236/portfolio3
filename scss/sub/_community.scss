@@ -1,6 +1,6 @@
 .community{
     transform-style: preserve-3d;
-    background: #fff;
+    background: #111;
 
     .sub_visual{
         background: url(../../img/special2.jpg) no-repeat center/cover;
@@ -18,7 +18,7 @@
             display: none;
             width: 100%; 
             position: relative;
-            padding: 150px 0;
+            padding: 100px 0;
 
             >h2{
                 text-align: center;
@@ -75,9 +75,10 @@
 
         .menu{
             width: 100%; 
-            padding: 150px 0 50px;
+            padding: 100px 0 50px;
             position: relative;
             text-align: center;
+            font-size: 0;
 
             h2{
                 font: bold 48px/1 'Abel';
@@ -90,8 +91,8 @@
                 display: inline-block;
                 width: 200px; height: 50px;
                 text-align: center;
-                border: 1px solid rgba(240, 205, 160, 0.637);
-                margin-bottom: 150px;
+                border-bottom: 1px solid rgba(240, 205, 160, 0.637);
+                margin-bottom: 100px;
 
                 &:nth-of-type(4){
                     a::after{
@@ -126,6 +127,10 @@
                         color: #222;
                         font-weight: bold;
                         font-size: 16px;
+
+                        &::after{
+                            display: none;
+                        }
                     }
                 }
             }

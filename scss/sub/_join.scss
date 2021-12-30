@@ -1,10 +1,25 @@
 .join{
     .sub_visual{
+        background: url(../../img/family4.jpg) no-repeat center/cover;
 
         .txt{
             backdrop-filter: contrast(0.8) brightness(0.8);
             h1::after{
                 content: 'JOIN';
+            }
+        }
+    }
+
+    .inner{
+        .wrap{
+            width: 100%;
+            padding: 100px 0;
+            overflow: hidden;
+            position: relative;
+
+            .left{
+                position: sticky;
+                top: 0; left: 0;
             }
         }
     }
