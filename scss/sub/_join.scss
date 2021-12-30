@@ -76,7 +76,7 @@
                 p{
                     font: 15px/1.4 'Noto Sans KR';
                     color: #bbb;
-                    margin: 10px 0px 30px;
+                    margin: 10px 0px 50px;
                 }
 
                 .terms{
@@ -96,6 +96,7 @@
                             color: #aaa;
                             margin-bottom: 15px;
                             padding: 5px 0;
+                            cursor: pointer;
 
                             i{
                                 width: 16px; height: 16px;
@@ -146,7 +147,7 @@
                                 }
                             }
 
-                            &.on{
+                            &.on, &:hover{
                                 span{
                                     transform: rotate(90deg);
                                 }
@@ -159,6 +160,7 @@
                             padding: 10px 0;
                             margin-bottom: 20px;
                             text-align: center;
+                            opacity: 0;
                             
                             textarea{
                                 outline: none;
