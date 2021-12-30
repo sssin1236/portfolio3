@@ -1,6 +1,6 @@
 .community{
     transform-style: preserve-3d;
-    background: #111;
+    background: #fff;
 
     .sub_visual{
         background: url(../../img/special2.jpg) no-repeat center/cover;
@@ -472,7 +472,8 @@
     
                     &.on{
                         color: #eee;
-                        background: #111;
+                        background: tan;
+                        border: 1px solid tan;
                     }
                 }
             }
