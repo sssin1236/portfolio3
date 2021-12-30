@@ -91,6 +91,7 @@
 
                     dl{
                         dt{
+                            width: 90%;
                             font: 15px/1 'Noto Sans KR';
                             color: #aaa;
                             margin-bottom: 15px;
@@ -105,11 +106,49 @@
                                 border-radius: 50%;
                                 color: transparent;
                                 cursor: pointer;
-                                transition: 0.5s;
+                                transition: 0.3s;
 
                                 &.on{
                                     color: tan;
                                     background: transparent;
+                                }
+                            }
+
+                            span{
+                                position: relative;
+                                float: right;
+                                display: block;
+                                width: 8px; height: 15px;
+                                cursor: pointer;
+                                transform: rotate(0deg);
+                                transition: 0.5s;
+
+                                &::before{
+                                    content: '';
+                                    display: block;
+                                    width: 8px; height: 1px;
+                                    background: #bbb;
+                                    position: absolute;
+                                    top: 7px; right: 0;
+                                    transform-origin: right center;
+                                    transform: rotate(40deg);
+                                }
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 8px; height: 1px;
+                                    background: #bbb;
+                                    position: absolute;
+                                    top: 7px; right: 0;
+                                    transform-origin: right center;
+                                    transform: rotate(-40deg);
+                                }
+                            }
+
+                            &.on{
+                                span{
+                                    transform: rotate(90deg);
                                 }
                             }
                         }
