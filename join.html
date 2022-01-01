@@ -100,20 +100,35 @@
                         <fieldset>
                             <legend class="h">회원가입 입력 양식폼</legend>
         
-                            <h2>Sign In</h2>
-        
                             <table summary="회원의 아이디, 비밀번호, 주소, 연락처, 이메일, SMS수신동의여부, 수신매체선택 입력양식폼">
                                 <caption class="h">회원정보 입력 양식 테이블</caption>
         
-        
+                                <tr>
+                                    <th scope="row">
+                                        <label for="name">이름</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="name" id="name">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <label for="time">생년월일</label>
+                                    </th>
+                                    <td>
+                                        <input type="number" name="time" id="time" placeholder="생년월일 8자리를 입력하세요.">
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <th scope="row">
                                         <label for="userid">아이디</label>
                                         <i class="fas fa-check"></i>
                                     </th>
                                     <td>
-                                        <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요.">
-                                        <a href="#">중복확인<i class="fas fa-check"></i></a>
+                                        <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
+                                        <a href="#">중복확인</a>
                                         <p>영문/숫자 포함 4-10자 이내</p>
                                     </td>
                                 </tr>
@@ -139,15 +154,6 @@
                                     <td>
                                         <input type="password" name="pwd2" id="pwd2">
                                         <p>비밀번호를 동일하게 한번 더 입력해주세요.</p>
-                                    </td>
-                                </tr>
-        
-                                <tr>
-                                    <th scope="row">
-                                        <label for="name">성명</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="name" id="name">
                                     </td>
                                 </tr>
         

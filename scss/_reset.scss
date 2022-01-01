@@ -1,6 +1,8 @@
 * { margin: 0px; padding: 0px; box-sizing: border-box; border-collapse: collapse;}
 ul, ol, li { list-style: none; }
 a { text-decoration: none; outline: 1;}
+fieldset { border: none; }
+input, select, option { outline: 0; }
 
 .h {
     position: absolute;

@@ -13,6 +13,12 @@ a {
   text-decoration: none;
   outline: 1; }
 
+fieldset {
+  border: none; }
+
+input, select, option {
+  outline: 0; }
+
 .h {
   position: absolute;
   top: -9999px;
