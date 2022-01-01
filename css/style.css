@@ -1199,6 +1199,7 @@ a {
         font-weight: bold; }
   .join .inner .wrap .left {
     width: 30%;
+    float: left;
     position: sticky;
     top: 50px;
     padding-right: 20px; }
@@ -1296,6 +1297,16 @@ a {
         color: #999;
         background: rgba(82, 82, 82, 0.356);
         border: none; }
+  .join .inner .wrap .right {
+    width: 70%;
+    float: right; }
+    .join .inner .wrap .right > h2 {
+      width: 90%;
+      font: 19px/1 'Noto Sans KR';
+      color: tan;
+      padding-top: 10px;
+      border-top: 1px solid tan;
+      margin-bottom: 20px; }
 
 /*
 font-family: 'Abel', sans-serif;
