@@ -189,7 +189,7 @@
                     color: tan;
                     padding-top: 10px;
                     border-top: 1px solid tan;
-                    margin-bottom: 50px;
+                    margin-bottom: 10px;
                 }
 
                 form{
@@ -198,16 +198,20 @@
                     fieldset{
                         table{
                             width: 100%;
+                            padding: 30px;
                             position: relative;
+                            background: rgba(66, 66, 66, 0.383);
 
                             tr{
-                                width: 100%; 
+                                width: 100%; height: 50px;
                                 padding: 0px 20px;
 
                                 th{
                                     width: 20%; 
+                                    padding-left: 20px;
                                     text-align: left;
-                                    
+                                    font: 15px/1 'Noto Sans KR';
+                                    color: #eee;
                                 }
                             }
                         }
