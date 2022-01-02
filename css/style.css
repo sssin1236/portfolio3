@@ -1312,7 +1312,18 @@ input, select, option {
       color: tan;
       padding-top: 10px;
       border-top: 1px solid tan;
-      margin-bottom: 20px; }
+      margin-bottom: 50px; }
+    .join .inner .wrap .right form {
+      width: 100%; }
+      .join .inner .wrap .right form fieldset table {
+        width: 100%;
+        position: relative; }
+        .join .inner .wrap .right form fieldset table tr {
+          width: 100%;
+          padding: 0px 20px; }
+          .join .inner .wrap .right form fieldset table tr th {
+            width: 20%;
+            text-align: left; }
 
 /*
 font-family: 'Abel', sans-serif;

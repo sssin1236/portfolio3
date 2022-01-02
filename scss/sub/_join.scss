@@ -189,7 +189,29 @@
                     color: tan;
                     padding-top: 10px;
                     border-top: 1px solid tan;
-                    margin-bottom: 20px;
+                    margin-bottom: 50px;
+                }
+
+                form{
+                    width: 100%; 
+
+                    fieldset{
+                        table{
+                            width: 100%;
+                            position: relative;
+
+                            tr{
+                                width: 100%; 
+                                padding: 0px 20px;
+
+                                th{
+                                    width: 20%; 
+                                    text-align: left;
+                                    
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
