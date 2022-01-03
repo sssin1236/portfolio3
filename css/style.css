@@ -1318,14 +1318,14 @@ input, select, option {
       .join .inner .wrap .right form fieldset table {
         width: 100%;
         padding: 30px;
-        position: relative;
-        background: rgba(66, 66, 66, 0.383); }
+        position: relative; }
         .join .inner .wrap .right form fieldset table tr {
           width: 100%;
-          height: 50px;
-          padding: 0px 20px; }
+          padding: 0px 20px;
+          border-bottom: 1px solid #555; }
           .join .inner .wrap .right form fieldset table tr th {
             width: 20%;
+            padding: 50px 0px;
             padding-left: 20px;
             text-align: left;
             font: 15px/1 'Noto Sans KR';
