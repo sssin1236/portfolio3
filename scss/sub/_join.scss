@@ -218,9 +218,11 @@
                                 td{
                                     padding: 20px 0;
                                     input{
-                                        background: #222;
-                                        border: none;
+                                        width: 300px;
+                                        background: none;
+                                        border: 1px solid #222;
                                         padding: 10px;
+                                        
                                     }
                                 }
                             }

@@ -1333,8 +1333,9 @@ input, select, option {
           .join .inner .wrap .right form fieldset table tr td {
             padding: 20px 0; }
             .join .inner .wrap .right form fieldset table tr td input {
-              background: #222;
-              border: none;
+              width: 300px;
+              background: none;
+              border: 1px solid #222;
               padding: 10px; }
 
 /*
