@@ -204,15 +204,24 @@
                             tr{
                                 width: 100%;
                                 padding: 0px 20px;
-                                border-bottom: 1px solid #555;
+                                border-bottom: 1px solid #222;
 
                                 th{
                                     width: 20%; 
-                                    padding: 50px 0px;
+                                    padding: 20px 0px;
                                     padding-left: 20px;
                                     text-align: left;
                                     font: 15px/1 'Noto Sans KR';
                                     color: #eee;
+                                }
+
+                                td{
+                                    padding: 20px 0;
+                                    input{
+                                        background: #222;
+                                        border: none;
+                                        padding: 10px;
+                                    }
                                 }
                             }
                         }
