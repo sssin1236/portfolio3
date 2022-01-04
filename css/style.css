@@ -1329,9 +1329,10 @@ input, select, option {
             padding-left: 20px;
             text-align: left;
             font: 15px/1 'Noto Sans KR';
-            color: #eee; }
+            color: #ccc; }
           .join .inner .wrap .right form fieldset table tr td {
-            padding: 20px 0; }
+            padding: 20px 0;
+            vertical-align: center; }
             .join .inner .wrap .right form fieldset table tr td input[type=text], .join .inner .wrap .right form fieldset table tr td input[type=number], .join .inner .wrap .right form fieldset table tr td input[type=password], .join .inner .wrap .right form fieldset table tr td input[type=tel] {
               width: 300px;
               background: none;
@@ -1345,12 +1346,25 @@ input, select, option {
               border: 1px solid #222;
               padding: 10px;
               font: 13px/1 'arial', 'Noto Sans KR';
-              color: #fff;
-              margin-bottom: 10px; }
+              color: #fff; }
+            .join .inner .wrap .right form fieldset table tr td input[name=address] {
+              display: block;
+              margin-top: 10px; }
             .join .inner .wrap .right form fieldset table tr td p {
               font: 13px/1.6 'Noto sans KR';
               color: tan;
               margin-top: 5px; }
+            .join .inner .wrap .right form fieldset table tr td a {
+              display: inline-block;
+              width: 80px;
+              height: 35px;
+              padding: 0px 10px;
+              background: tan;
+              vertical-align: middle;
+              text-align: center;
+              font: bold 15px/35px 'Noto Sans KR';
+              color: #111;
+              letter-spacing: 1px; }
 
 /*
 font-family: 'Abel', sans-serif;

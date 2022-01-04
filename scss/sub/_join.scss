@@ -206,17 +206,24 @@
                                 padding: 0px 20px;
                                 border-bottom: 1px solid #222;
 
+                                &:nth-of-type(7){
+                                    td{
+
+                                    }
+                                }
+
                                 th{
                                     width: 25%; 
                                     padding: 20px 0px;
                                     padding-left: 20px;
                                     text-align: left;
                                     font: 15px/1 'Noto Sans KR';
-                                    color: #eee;
+                                    color: #ccc;
                                 }
 
                                 td{
                                     padding: 20px 0;
+                                    vertical-align: center;
 
                                     input[type=text], input[type=number], input[type=password], input[type=tel]{
                                         width: 300px;
@@ -234,13 +241,29 @@
                                         padding: 10px;
                                         font: 13px/1 'arial', 'Noto Sans KR';
                                         color: #fff;
-                                        margin-bottom: 10px;
+                                    }
+
+                                    input[name=address]{
+                                        display: block;
+                                        margin-top: 10px;
                                     }
 
                                     p{
                                         font: 13px/1.6 'Noto sans KR';
                                         color: tan;
                                         margin-top: 5px;
+                                    }
+
+                                    a{
+                                        display: inline-block;
+                                        width: 80px; height: 35px;
+                                        padding: 0px 10px;
+                                        background: tan;
+                                        vertical-align: middle;
+                                        text-align: center;
+                                        font: bold 15px/35px 'Noto Sans KR';
+                                        color: #111;
+                                        letter-spacing: 1px;
                                     }
                                 }
                             }
