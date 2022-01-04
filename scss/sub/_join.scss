@@ -217,12 +217,20 @@
 
                                 td{
                                     padding: 20px 0;
+
                                     input{
                                         width: 300px;
                                         background: none;
                                         border: 1px solid #222;
                                         padding: 10px;
-                                        
+                                        font: 13px/1 'arial', 'Noto Sans KR';
+                                        color: #fff;
+                                    }
+
+                                    p{
+                                        font: 13px/1.6 'Noto sans KR';
+                                        color: tan;
+                                        margin-top: 5px;
                                     }
                                 }
                             }

@@ -1336,7 +1336,13 @@ input, select, option {
               width: 300px;
               background: none;
               border: 1px solid #222;
-              padding: 10px; }
+              padding: 10px;
+              font: 13px/1 'arial', 'Noto Sans KR';
+              color: #fff; }
+            .join .inner .wrap .right form fieldset table tr td p {
+              font: 13px/1.6 'Noto sans KR';
+              color: tan;
+              margin-top: 5px; }
 
 /*
 font-family: 'Abel', sans-serif;
