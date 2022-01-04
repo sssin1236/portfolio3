@@ -1610,7 +1610,7 @@ font-family: 'Roboto Condensed', sans-serif;
               transform: rotateY(-180deg);
               transition: opacity 0.8s 1.6s, transform 1s 1.3s; }
           #visual .inner .wrap .right article.off {
-            transform: scale(0.2) translateX(-250%);
+            transform: scale(0.2) translate(-250%, -250%);
             opacity: 0;
             transition: 1s; }
           #visual .inner .wrap .right article .front {
