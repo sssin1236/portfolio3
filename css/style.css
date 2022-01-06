@@ -1067,43 +1067,49 @@ input, select, option {
 
 .review .sub_visual .txt h1::after {
   content: 'REVIEW'; }
+.review .inner::after {
+  content: '';
+  display: block;
+  clear: both; }
 .review .inner h1 {
   font: 28px/1 'Abel';
   color: tan;
   border-bottom: 1px solid tan;
   padding-bottom: 10px;
   margin-bottom: 20px; }
-.review .inner .search {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-content: center; }
-  .review .inner .search input {
-    width: 150px;
-    height: 20px;
-    padding: 15px;
-    border: 1px solid tan;
-    background: transparent;
-    outline: none;
-    transition: 0.5s; }
-    .review .inner .search input::placeholder {
-      font: 15px/20px 'Abel';
-      color: tan; }
-    .review .inner .search input:focus {
-      width: 250px; }
-  .review .inner .search a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: -30px; }
-    .review .inner .search a i {
-      font-size: 20px;
-      line-height: 30px;
-      color: tan; }
+.review .inner .leftMenu {
+  float: left;
+  width: 20%;
+  border-right: 1px solid tan; }
+  .review .inner .leftMenu .search {
+    display: block;
+    display: flex;
+    align-content: center; }
+    .review .inner .leftMenu .search input {
+      width: 150px;
+      height: 20px;
+      padding: 15px;
+      border: 1px solid tan;
+      background: transparent;
+      outline: none;
+      transition: 0.5s; }
+      .review .inner .leftMenu .search input::placeholder {
+        font: 15px/20px 'Abel';
+        color: tan; }
+      .review .inner .leftMenu .search input:focus {
+        width: 250px; }
+    .review .inner .leftMenu .search a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-left: -30px; }
+      .review .inner .leftMenu .search a i {
+        font-size: 20px;
+        line-height: 30px;
+        color: tan; }
 .review .inner #gallery {
-  width: 100%;
+  float: right;
+  width: 80%;
   overflow: hidden; }
   .review .inner #gallery aside {
     width: 1180px;

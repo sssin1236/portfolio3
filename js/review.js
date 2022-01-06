@@ -6,7 +6,7 @@ const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const method3 = "flickr.people.getPhotos";
 const key = "d61e30a1010fe3e1dab106d3a2df0f21";
-const per_page = 12;
+const per_page = 5;
 const format = "json";
 const user_id = "194134849@N06";
 
