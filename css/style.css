@@ -1109,17 +1109,24 @@ input, select, option {
       text-align: center;
       border: 1px solid tan;
       cursor: pointer;
-      position: relative; }
+      position: relative;
+      overflow: hidden; }
       .review .inner .leftMenu > ul li::after {
         content: '';
         display: block;
         width: 200%;
         height: 50px;
-        background: rgba(238, 238, 238, 0.52);
+        background: rgba(210, 180, 140, 0.35);
         position: absolute;
         top: 50px;
         left: -80px;
-        transform: rotate(45deg); }
+        transform: rotate(45deg);
+        opacity: 0;
+        transition: 0.8s; }
+      .review .inner .leftMenu > ul li:hover::after {
+        opacity: 1;
+        top: -60px;
+        left: 0px; }
   .review .inner .leftMenu .search {
     display: block;
     display: flex;
