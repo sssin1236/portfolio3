@@ -9,8 +9,10 @@ const key = "d61e30a1010fe3e1dab106d3a2df0f21";
 const per_page = 5;
 const format = "json";
 const user_id = "194134849@N06";
+let tags = "restaurant";
+let num = 1;
 
-const url1 = `${base}method=${method3}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&user_id=${user_id}`;
+const url1 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tags}`;
 
 callData(url1);
 
@@ -74,6 +76,7 @@ function creatList(items){
                         <a href="${imgSrcBig}">
                             <img class="thumb" src="${imgSrc}" alt="">
                         </a>
+                        <span>${"0"+num++}</span>
                     </div>
                 </li>
             `;
@@ -90,8 +93,9 @@ function delayLoading(){
     for(let el of imgs){
         el.onload = ()=>{
             count++;
-
-            if(count === len) isoLayout();
+            
+            imgLoad.classList.add("off");
+            frame.classList.add("on");
         }
     }
 }
