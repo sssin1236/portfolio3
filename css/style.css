@@ -1080,13 +1080,21 @@ input, select, option {
 .review .inner .leftMenu {
   float: left;
   width: 20%;
-  border-right: 1px solid tan; }
+  padding-right: 20px;
+  position: sticky;
+  top: 20px; }
+  .review .inner .leftMenu h2 {
+    font: bold 24px/1 'Noto Sans KR';
+    color: tan;
+    margin-bottom: 20px; }
   .review .inner .leftMenu .search {
     display: block;
     display: flex;
-    align-content: center; }
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
     .review .inner .leftMenu .search input {
-      width: 150px;
+      width: 100%;
       height: 20px;
       padding: 15px;
       border: 1px solid tan;
@@ -1110,6 +1118,7 @@ input, select, option {
 .review .inner #gallery {
   float: right;
   width: 80%;
+  border-left: 1px solid tan;
   overflow: hidden; }
   .review .inner #gallery aside {
     width: 1180px;
