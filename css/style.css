@@ -2895,6 +2895,729 @@ font-family: 'Roboto Condensed', sans-serif;
             font: 13px/1 'Abel';
             color: #eee; }
           #header .inner .util li:last-child a i {
-            margin-left: 5px; } }
+            margin-left: 5px; }
+
+  #visual {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    background: url(../img/visual.5.jpg) no-repeat center/cover; }
+    #visual video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: none; }
+    #visual .inner {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      backdrop-filter: blur(5px) brightness(0.3); }
+      #visual .inner .wrap {
+        width: 100%;
+        height: 100%;
+        padding: 0px 100px; }
+        #visual .inner .wrap::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #visual .inner .wrap .left {
+          float: left;
+          width: 40%;
+          height: 100%;
+          padding: 350px 0;
+          overflow: hidden; }
+          #visual .inner .wrap .left h2 {
+            font: 50px/1 'Bakbak One';
+            color: tan;
+            margin-bottom: 30px; }
+          #visual .inner .wrap .left p {
+            width: 500px;
+            font: 17px/1.4 'noto sans kr', 'arial';
+            color: #bbb;
+            margin-bottom: 80px; }
+          #visual .inner .wrap .left a {
+            font: 16px/1 'noto sans kr';
+            color: #fff; }
+        #visual .inner .wrap .right {
+          float: right;
+          width: 60%;
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+          perspective: 3000px; }
+          #visual .inner .wrap .right article {
+            width: 25%;
+            height: 80%;
+            border-right: 1px solid rgba(210, 180, 140, 0.493);
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 55%;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            transition: left 0.5s 1.5s, transform 1s, width 1s; }
+            #visual .inner .wrap .right article:nth-of-type(1) {
+              left: 12%; }
+            #visual .inner .wrap .right article:nth-of-type(2) {
+              left: 37%; }
+            #visual .inner .wrap .right article:nth-of-type(3) {
+              left: 62%; }
+            #visual .inner .wrap .right article:nth-of-type(4) {
+              left: 87%;
+              border-right: 0; }
+            #visual .inner .wrap .right article.on {
+              width: 100%;
+              top: 55%;
+              left: 50%;
+              transform: rotateY(180deg) translate(50%, -50%);
+              transition: left 1s, transform 1s 1.3s, width 0.5s 1.3s, border 0.3s; }
+              #visual .inner .wrap .right article.on:nth-of-type(4) {
+                border-right: 1px solid rgba(210, 180, 140, 0.493); }
+              #visual .inner .wrap .right article.on .front {
+                opacity: 0;
+                transition: 0.5s 1.5s; }
+              #visual .inner .wrap .right article.on .back {
+                opacity: 1;
+                transform: rotateY(-180deg);
+                transition: opacity 0.8s 1.6s, transform 1s 1.3s; }
+            #visual .inner .wrap .right article.off {
+              transform: scale(0.2) translate(-250%, -250%);
+              opacity: 0;
+              transition: 1s; }
+            #visual .inner .wrap .right article .front {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              transition: 0.5s;
+              position: relative; }
+              #visual .inner .wrap .right article .front .pic {
+                width: 100%;
+                height: 80%;
+                overflow: hidden;
+                margin-top: -30px; }
+                #visual .inner .wrap .right article .front .pic img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; }
+              #visual .inner .wrap .right article .front .text {
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%); }
+              #visual .inner .wrap .right article .front h3 {
+                font: 24px/1 'Abel';
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+                opacity: 0.8;
+                position: relative;
+                transition: 0.5s; }
+                #visual .inner .wrap .right article .front h3::after {
+                  content: '';
+                  display: block;
+                  width: 20px;
+                  height: 1px;
+                  background: rgba(238, 238, 238, 0.3);
+                  position: absolute;
+                  bottom: -15px;
+                  left: 0; }
+              #visual .inner .wrap .right article .front p {
+                height: 65px;
+                font: 15px/1.4 'Noto Sans KR';
+                color: #777;
+                margin-bottom: 40px; }
+              #visual .inner .wrap .right article .front a {
+                display: block;
+                text-align: right;
+                position: relative; }
+                #visual .inner .wrap .right article .front a::before {
+                  content: '';
+                  display: inline-block;
+                  width: 15px;
+                  height: 1px;
+                  background: tan;
+                  position: absolute;
+                  bottom: 7px;
+                  right: 0px;
+                  transform: rotate(180deg);
+                  transition: 1s; }
+                #visual .inner .wrap .right article .front a::after {
+                  content: '';
+                  display: inline-block;
+                  width: 1px;
+                  height: 15px;
+                  background: tan;
+                  position: absolute;
+                  bottom: 0px;
+                  right: 7px;
+                  transform: rotate(180deg);
+                  transition: 1s; }
+                #visual .inner .wrap .right article .front a span {
+                  font: 17px/1 'abel';
+                  color: tan;
+                  letter-spacing: 1px;
+                  opacity: 0;
+                  position: absolute;
+                  bottom: 0px;
+                  right: -100px;
+                  transition: 1s; }
+            #visual .inner .wrap .right article .back {
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              padding: 40px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              overflow: hidden;
+              transition: opacity 0.5s, transform 0.5s 0.5s; }
+              #visual .inner .wrap .right article .back h3 {
+                font: 24px/1 'Abel';
+                color: #fff;
+                margin-bottom: 40px; }
+              #visual .inner .wrap .right article .back > span {
+                font: 18px/1 'Abel';
+                color: #eee;
+                position: absolute;
+                top: 40px;
+                right: 40px; }
+              #visual .inner .wrap .right article .back ul {
+                width: 100%;
+                height: 330px; }
+                #visual .inner .wrap .right article .back ul::after {
+                  content: '';
+                  display: block;
+                  clear: both; }
+                #visual .inner .wrap .right article .back ul li {
+                  float: left;
+                  width: calc(100% / 4);
+                  height: 100%; }
+                  #visual .inner .wrap .right article .back ul li span {
+                    font: bold 22px/1 'Open Sans Condensed';
+                    color: tan; }
+                  #visual .inner .wrap .right article .back ul li:nth-of-type(1) img {
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                    margin-top: 20px; }
+                  #visual .inner .wrap .right article .back ul li:nth-of-type(2) img, #visual .inner .wrap .right article .back ul li:nth-of-type(3) img {
+                    width: 95%;
+                    height: 100px;
+                    object-fit: cover;
+                    margin-top: 20px;
+                    margin-bottom: 20px; }
+                  #visual .inner .wrap .right article .back ul li:nth-of-type(2) h4, #visual .inner .wrap .right article .back ul li:nth-of-type(3) h4 {
+                    font: bold 18px/1 'Abel';
+                    color: #ddd;
+                    margin-bottom: 10px; }
+                  #visual .inner .wrap .right article .back ul li:nth-of-type(2) p, #visual .inner .wrap .right article .back ul li:nth-of-type(3) p {
+                    font: 15px/1.3 'arial';
+                    color: #999; }
+                  #visual .inner .wrap .right article .back ul li:nth-of-type(4) h4 {
+                    font: bold 18px/1 'Abel';
+                    color: #ddd;
+                    margin-top: 20px;
+                    margin-bottom: 10px; }
+                  #visual .inner .wrap .right article .back ul li:nth-of-type(4) p {
+                    font: 13px/1.3 'arial', 'Noto Sans KR';
+                    color: #999;
+                    margin-bottom: 50px; }
+            #visual .inner .wrap .right article:hover .front h3 {
+              opacity: 1; }
+            #visual .inner .wrap .right article:hover .front a::before {
+              right: 100px;
+              transform: rotate(0deg); }
+            #visual .inner .wrap .right article:hover .front a::after {
+              right: 107px;
+              transform: rotate(0deg); }
+            #visual .inner .wrap .right article:hover .front a span {
+              opacity: 1;
+              right: 0px; }
+
+  #menu {
+    width: 100%;
+    padding: 150px 0; }
+    #menu .inner {
+      width: 1180px;
+      min-height: 500px;
+      margin: 0 auto;
+      position: relative; }
+      #menu .inner h2 {
+        font: bold 28px/1 'Roboto Condensed';
+        color: #222;
+        text-align: center;
+        padding-top: 20px;
+        position: relative; }
+        #menu .inner h2::before {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 2px;
+          background: tan;
+          border-radius: 50%;
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          margin-left: -15px; }
+      #menu .inner .menu_btn {
+        width: 500px;
+        padding: 0px 50px;
+        margin: 50px auto; }
+        #menu .inner .menu_btn ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #menu .inner .menu_btn ul li a {
+            font: 18px/1 'abel';
+            color: #333;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #fff;
+            transition: 0.5s; }
+          #menu .inner .menu_btn ul li:hover > a {
+            border-bottom: 1px solid tan; }
+          #menu .inner .menu_btn ul li.on a {
+            font-weight: bold;
+            color: #111;
+            border-bottom: 1px solid tan; }
+      #menu .inner .wrap {
+        width: 100%;
+        min-height: 400px;
+        position: relative; }
+        #menu .inner .wrap article {
+          width: 100%;
+          height: 100%;
+          padding: 50px 0;
+          font-size: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          opacity: 0;
+          z-index: 1;
+          transform: translateY(50px);
+          transition: opacity 0.5s, transform 1s; }
+          #menu .inner .wrap article.on {
+            transform: translateY(0px);
+            opacity: 1;
+            z-index: 2; }
+          #menu .inner .wrap article#slider .slide {
+            width: calc(300px * 8);
+            height: 300px;
+            margin-left: -20%; }
+          #menu .inner .wrap article ul {
+            width: calc(300px * 8);
+            height: 300px; }
+            #menu .inner .wrap article ul::after {
+              content: '';
+              display: block;
+              clear: both; }
+            #menu .inner .wrap article ul li {
+              width: 260px;
+              height: 100%;
+              float: left;
+              margin-right: 20px;
+              padding: 20px;
+              cursor: pointer;
+              transition: 0.3s; }
+              #menu .inner .wrap article ul li:last-child {
+                margin-right: 0; }
+              #menu .inner .wrap article ul li .pic {
+                width: 100%;
+                height: 150px;
+                overflow: hidden;
+                margin-bottom: 30px; }
+                #menu .inner .wrap article ul li .pic img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain; }
+              #menu .inner .wrap article ul li h3 {
+                font: bold 22px/1 'Open Sans Condensed';
+                color: #111;
+                text-align: center;
+                margin-bottom: 20px; }
+              #menu .inner .wrap article ul li p {
+                font: 15px/1.3 'abel';
+                color: #333;
+                text-align: center; }
+              #menu .inner .wrap article ul li:hover {
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18); }
+        #menu .inner .wrap .prev {
+          display: block;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 50%;
+          left: -50px;
+          margin-top: -15px;
+          border: 1px solid #aaa; }
+          #menu .inner .wrap .prev::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 1px;
+            background: #aaa;
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            transform-origin: left center;
+            transform: rotate(-30deg); }
+          #menu .inner .wrap .prev::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 1px;
+            background: #aaa;
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            transform-origin: left center;
+            transform: rotate(30deg); }
+        #menu .inner .wrap .next {
+          display: block;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 50%;
+          right: -50px;
+          margin-top: -15px;
+          border: 1px solid #aaa; }
+          #menu .inner .wrap .next::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 1px;
+            background: #aaa;
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            transform-origin: right center;
+            transform: rotate(-30deg); }
+          #menu .inner .wrap .next::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 1px;
+            background: #aaa;
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            transform-origin: right center;
+            transform: rotate(30deg); }
+
+  #banner {
+    width: 100%;
+    height: 400px;
+    background: url(../img/banner5.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    margin-bottom: 100px; }
+    #banner .inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      backdrop-filter: blur(2px) contrast(1.2) brightness(0.2); }
+      #banner .inner .wrap {
+        width: 1180px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 80px 0;
+        text-align: right; }
+        #banner .inner .wrap::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #banner .inner .wrap h2 {
+          font: bold 32px/1 'Bakbak One';
+          color: tan;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+          margin-right: 100px; }
+        #banner .inner .wrap h3 {
+          font: bold 30px/1 'Noto Sans KR';
+          color: tan;
+          margin-bottom: 30px;
+          margin-right: 100px; }
+        #banner .inner .wrap p {
+          font: 18px/1 'Noto Sans KR';
+          color: #ddd;
+          margin-bottom: 70px;
+          margin-right: 100px; }
+        #banner .inner .wrap span {
+          float: right;
+          display: block;
+          width: 200px;
+          padding: 20px;
+          color: #fff;
+          margin-right: 100px;
+          position: relative;
+          cursor: pointer; }
+          #banner .inner .wrap span::before {
+            content: '';
+            display: inline-block;
+            width: 130px;
+            height: 1px;
+            background: tan;
+            position: absolute;
+            bottom: 17px;
+            right: 0px;
+            transition: 0.5s; }
+          #banner .inner .wrap span::after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 1px;
+            background: tan;
+            position: absolute;
+            bottom: 17px;
+            right: 0px;
+            transform: rotate(30deg);
+            transform-origin: right center;
+            transition: 0.2s 0.4s; }
+          #banner .inner .wrap span i {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 25px;
+            color: tan;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            transition: left 0.5s, border 0.3s 0.8s; }
+          #banner .inner .wrap span:hover::before {
+            width: 0; }
+          #banner .inner .wrap span:hover::after {
+            opacity: 0; }
+          #banner .inner .wrap span:hover i {
+            border: 2px solid tan;
+            left: 150px; }
+        #banner .inner .wrap img {
+          position: absolute;
+          bottom: 0px; }
+          #banner .inner .wrap img:nth-of-type(1) {
+            width: 500px;
+            height: 500px;
+            filter: brightness(0.7);
+            top: 50%;
+            left: 350px;
+            transform: translateY(-50%); }
+          #banner .inner .wrap img:nth-of-type(2) {
+            width: 350px;
+            height: 380px;
+            filter: brightness(0.8);
+            right: 80px; }
+
+  #brand {
+    width: 100%;
+    padding: 150px 0;
+    overflow: hidden; }
+    #brand .inner {
+      width: 1180px;
+      margin: 0 auto;
+      overflow: hidden; }
+      #brand .inner .wrap {
+        width: 100%;
+        height: 650px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #brand .inner .wrap .box1 {
+          width: 55%;
+          height: 100%;
+          position: relative;
+          background: url(../img/build.jpg) no-repeat center/cover; }
+          #brand .inner .wrap .box1 .top {
+            width: 100%;
+            height: 100%;
+            backdrop-filter: brightness(0.3);
+            padding: 20px;
+            text-align: center; }
+            #brand .inner .wrap .box1 .top h2 {
+              font: 15px/30px 'Noto Sans KR';
+              color: #fff;
+              margin: 80px auto 30px;
+              width: 150px;
+              height: 30px;
+              background: tan;
+              border-radius: 40px; }
+            #brand .inner .wrap .box1 .top p {
+              width: 80%;
+              margin: 0 auto 60px;
+              font: 26px/1.5 'Noto Sans KR';
+              color: #fff;
+              text-align: center; }
+            #brand .inner .wrap .box1 .top a {
+              display: block;
+              width: 40px;
+              height: 40px;
+              margin: 0 auto;
+              background: tan;
+              border-radius: 50%; }
+              #brand .inner .wrap .box1 .top a i {
+                font-size: 25px;
+                color: #fff;
+                line-height: 40px; }
+          #brand .inner .wrap .box1 .under {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            width: calc(100% - 60px);
+            height: 200px; }
+            #brand .inner .wrap .box1 .under .txt {
+              width: 45%;
+              height: 100%;
+              padding: 30px;
+              float: left;
+              background: url(../img/back.jpg) no-repeat center/cover; }
+              #brand .inner .wrap .box1 .under .txt span {
+                font: 18px/1 'Abel';
+                color: #fff; }
+              #brand .inner .wrap .box1 .under .txt h4 {
+                font: bold 24px/1 'Noto Sans KR';
+                color: #fff;
+                margin: 40px 0 15px; }
+              #brand .inner .wrap .box1 .under .txt p {
+                font: 13px/1 'Gowun Dodum';
+                color: #eee; }
+            #brand .inner .wrap .box1 .under .branch {
+              width: 55%;
+              height: 100%;
+              float: right;
+              background: rgba(221, 221, 221, 0.8); }
+              #brand .inner .wrap .box1 .under .branch li {
+                float: left;
+                width: 33.3333%;
+                height: 50%;
+                font: 15px/1 'Noto Sans KR';
+                color: #222;
+                text-align: center;
+                padding: 40px 20px;
+                overflow: hidden;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                cursor: pointer;
+                position: relative; }
+                #brand .inner .wrap .box1 .under .branch li::after {
+                  content: '';
+                  display: block;
+                  width: 200px;
+                  height: 80px;
+                  background: rgba(255, 255, 255, 0.384);
+                  transform: rotate(30deg);
+                  position: absolute;
+                  top: 180px;
+                  right: -30px;
+                  transition: 1s; }
+                #brand .inner .wrap .box1 .under .branch li:hover {
+                  color: #000;
+                  font: bold 17px/1 'Noto Sans KR';
+                  transition: 0.7s; }
+                  #brand .inner .wrap .box1 .under .branch li:hover::after {
+                    top: -150px; }
+        #brand .inner .wrap .box2 {
+          width: 44%;
+          height: 100%;
+          background: #ddd;
+          position: relative;
+          padding: 30px; }
+          #brand .inner .wrap .box2 h3 {
+            font: bold 24px/1 'Abel';
+            color: #222;
+            text-align: center;
+            margin-bottom: 20px; }
+          #brand .inner .wrap .box2 > p {
+            font: 14px/1 'Noto Sans KR';
+            color: #222;
+            text-align: center;
+            margin-bottom: 50px; }
+          #brand .inner .wrap .box2 article {
+            width: calc(100% / 3 - 6px);
+            height: 230px;
+            float: left;
+            background: #fff;
+            margin-right: 9px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer; }
+            #brand .inner .wrap .box2 article:nth-of-type(1) .pic img {
+              object-fit: contain; }
+            #brand .inner .wrap .box2 article:nth-of-type(3n) {
+              margin-right: 0; }
+            #brand .inner .wrap .box2 article:nth-of-type(4), #brand .inner .wrap .box2 article:nth-of-type(5), #brand .inner .wrap .box2 article:nth-of-type(6) {
+              margin-top: 9px; }
+            #brand .inner .wrap .box2 article .front_box {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: -100%;
+              left: 0;
+              background: #111;
+              z-index: 2;
+              transition: 0.8s;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap; }
+              #brand .inner .wrap .box2 article .front_box i {
+                width: 40px;
+                height: 40px;
+                border: 1px solid tan;
+                border-radius: 50%;
+                font-size: 20px;
+                line-height: 40px;
+                color: tan;
+                margin-bottom: 10px;
+                opacity: 0;
+                transition: 0.3s 0.3s; }
+              #brand .inner .wrap .box2 article .front_box span {
+                font: 15px/1 'Noto Sans Kr';
+                color: tan;
+                opacity: 0;
+                transition: 0.3s 0.4s; }
+            #brand .inner .wrap .box2 article .pic {
+              width: 100%;
+              height: 90px;
+              overflow: hidden;
+              border-bottom: 1px solid #eee;
+              margin-bottom: 10px; }
+              #brand .inner .wrap .box2 article .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            #brand .inner .wrap .box2 article h4 {
+              font: bold 18px/1 'Noto Sans Kr';
+              color: #444;
+              margin-bottom: 20px; }
+            #brand .inner .wrap .box2 article p {
+              font: 13px/1.4 'Noto Sans KR';
+              color: #777; }
+            #brand .inner .wrap .box2 article > span {
+              display: block;
+              width: 100%;
+              height: 40px;
+              font: 14px/40px 'Noto Sans KR';
+              color: #555;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              border-top: 1px solid #ddd; }
+            #brand .inner .wrap .box2 article:hover .front_box {
+              top: 0; }
+              #brand .inner .wrap .box2 article:hover .front_box i, #brand .inner .wrap .box2 article:hover .front_box span {
+                opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
