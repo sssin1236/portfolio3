@@ -3618,6 +3618,304 @@ font-family: 'Roboto Condensed', sans-serif;
             #brand .inner .wrap .box2 article:hover .front_box {
               top: 0; }
               #brand .inner .wrap .box2 article:hover .front_box i, #brand .inner .wrap .box2 article:hover .front_box span {
-                opacity: 1; } }
+                opacity: 1; }
+
+  #benefit {
+    width: 100%;
+    padding: 100px 0;
+    margin-bottom: 100px; }
+    #benefit .inner {
+      width: 1180px;
+      min-height: 500px;
+      margin: 0 auto;
+      position: relative; }
+      #benefit .inner h2 {
+        font: bold 28px/1 'Roboto Condensed';
+        color: #222;
+        text-align: center;
+        padding-top: 20px;
+        position: relative;
+        margin-bottom: 20px; }
+        #benefit .inner h2::before {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 2px;
+          background: tan;
+          border-radius: 50%;
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          margin-left: -15px; }
+      #benefit .inner p {
+        font: 15px/1 'Noto Sans KR';
+        color: #333;
+        text-align: center;
+        margin-bottom: 50px; }
+      #benefit .inner .number {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 100px; }
+        #benefit .inner .number::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #benefit .inner .number li {
+          float: left;
+          width: 360px;
+          height: 100%;
+          margin-right: 50px;
+          padding: 20px 40px;
+          text-align: center;
+          position: relative;
+          background: #111;
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+          #benefit .inner .number li:last-child {
+            margin-right: 0; }
+          #benefit .inner .number li::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 0%;
+            border-top: 70px solid tan;
+            border-right: 70px solid transparent;
+            border-bottom: 70px solid transparent;
+            border-left: 70px solid tan;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: 0.8s; }
+          #benefit .inner .number li h3 {
+            display: inline-block;
+            font: bold 20px/1 'Open Sans Condensed';
+            color: #eee;
+            text-align: left;
+            position: absolute;
+            top: 35px;
+            left: 5px;
+            transform: rotate(-45deg);
+            z-index: 2; }
+          #benefit .inner .number li svg {
+            width: 100%;
+            height: 120px;
+            margin-top: 40px;
+            margin-bottom: 20px; }
+            #benefit .inner .number li svg path {
+              fill: transparent;
+              stroke: tan;
+              stroke-width: 5;
+              stroke-linejoin: round;
+              stroke-dasharray: 1955;
+              stroke-dashoffset: 0;
+              transition: 1.5s; }
+          #benefit .inner .number li nav {
+            font: 38px/1 'Bakbak One';
+            color: #fff;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid tan;
+            border-radius: 5%; }
+            #benefit .inner .number li nav b {
+              font: 17px/1 'Gowun Dodum';
+              color: #999;
+              margin-left: 5px;
+              letter-spacing: -1px; }
+          #benefit .inner .number li p {
+            font: 14px/1.4 'arial';
+            color: #aaa;
+            margin: 0 auto; }
+      #benefit .inner .wrap {
+        width: 100%;
+        height: 250px;
+        position: relative; }
+        #benefit .inner .wrap article {
+          width: 280px;
+          height: 100%;
+          float: left; }
+          #benefit .inner .wrap article::before {
+            content: '';
+            display: block;
+            width: 280px;
+            height: 100%;
+            border: 5px solid #222;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; }
+          #benefit .inner .wrap article .in {
+            width: 80%;
+            height: 90%;
+            position: relative;
+            background: #fff;
+            margin-top: -10px;
+            margin-left: -5px;
+            z-index: 2; }
+            #benefit .inner .wrap article .in h3 {
+              font: 22px/1 'Bakbak One';
+              color: #222;
+              letter-spacing: 2px;
+              margin-bottom: 20px; }
+              #benefit .inner .wrap article .in h3 em {
+                display: block;
+                font: 45px/1 'Bakbak One';
+                color: #222;
+                letter-spacing: 0px;
+                margin-top: 10px; }
+            #benefit .inner .wrap article .in p {
+              font: bold 16px/1.5 'Noto Sans KR';
+              color: #555;
+              text-align: left;
+              margin-bottom: 30px; }
+            #benefit .inner .wrap article .in a {
+              display: inline-block;
+              padding: 10px 15px;
+              background: tan;
+              font: bold 15px/1 'Noto Sans KR';
+              color: #fff; }
+        #benefit .inner .wrap .benefit {
+          width: 880px;
+          height: 100%;
+          float: right; }
+          #benefit .inner .wrap .benefit li {
+            float: left;
+            width: 280px;
+            height: 50%;
+            margin-right: 20px;
+            padding: 0px 40px;
+            position: relative;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+            transition: 0.5s; }
+            #benefit .inner .wrap .benefit li:nth-of-type(3n) {
+              margin-right: 0; }
+            #benefit .inner .wrap .benefit li:nth-of-type(4), #benefit .inner .wrap .benefit li:nth-of-type(5), #benefit .inner .wrap .benefit li:nth-of-type(6) {
+              margin-top: 20px; }
+            #benefit .inner .wrap .benefit li:hover {
+              box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
+            #benefit .inner .wrap .benefit li span {
+              font: bold 18px/1 'Open Sans Condensed';
+              color: tan; }
+            #benefit .inner .wrap .benefit li h4 {
+              font: bold 18px/1 'Noto Sans KR';
+              color: #222;
+              margin: 10px 0 15px; }
+            #benefit .inner .wrap .benefit li p {
+              font: bold 13px/1.5 'Noto Sans KR';
+              color: #555;
+              text-align: justify; }
+
+  #footer {
+    width: 100%;
+    padding: 100px 0;
+    background: #000; }
+    #footer .inner {
+      width: 1180px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      #footer .inner::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer .inner .logoBox {
+        width: 240px;
+        height: 100%;
+        float: left; }
+        #footer .inner .logoBox .logo {
+          width: 180px;
+          display: block;
+          margin-top: -35px;
+          margin-bottom: 60px;
+          text-align: center; }
+          #footer .inner .logoBox .logo a {
+            font-size: 0; }
+            #footer .inner .logoBox .logo a::after {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 1px;
+              background: tan;
+              border-radius: 50%; }
+            #footer .inner .logoBox .logo a span {
+              font: 22px/1 'Open Sans Condensed';
+              letter-spacing: 2px;
+              color: tan; }
+            #footer .inner .logoBox .logo a img {
+              width: 50px;
+              height: 50px;
+              object-fit: cover; }
+        #footer .inner .logoBox label {
+          font: bold 18px/1 'Noto Sans KR';
+          color: #bbb; }
+        #footer .inner .logoBox input[type=text] {
+          display: block;
+          width: 60%;
+          height: 30px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          padding: 20px 0;
+          border: none;
+          outline: none;
+          border-bottom: 1px dotted tan;
+          background: transparent;
+          color: #fff; }
+          #footer .inner .logoBox input[type=text]::placeholder {
+            color: rgba(210, 180, 140, 0.5); }
+        #footer .inner .logoBox input[type=submit] {
+          display: block;
+          width: 60%;
+          height: 30px;
+          outline: none;
+          border: none;
+          background: tan;
+          border-radius: 3%; }
+      #footer .inner .menus {
+        width: 700px;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px; }
+        #footer .inner .menus li {
+          width: 100%;
+          height: 100%; }
+          #footer .inner .menus li h2 {
+            font: 19px/1 'Open Sans Condensed';
+            color: #bbb;
+            letter-spacing: 1px;
+            margin-bottom: 20px; }
+          #footer .inner .menus li > ul li {
+            margin-top: 10px; }
+            #footer .inner .menus li > ul li a {
+              font: 17px/1 'Abel';
+              color: #666; }
+      #footer .inner .contact {
+        width: 240px;
+        height: 100%;
+        float: right; }
+        #footer .inner .contact h2 {
+          font: 19px/1 'Open Sans Condensed';
+          color: #bbb;
+          margin-bottom: 20px; }
+        #footer .inner .contact p {
+          font: 17px/20px 'Abel';
+          color: #666;
+          margin-bottom: 20px; }
+          #footer .inner .contact p i {
+            font-size: 20px;
+            color: tan;
+            line-height: 20px;
+            margin-right: 10px; }
+        #footer .inner .contact .sns {
+          display: inline-block;
+          margin-right: 15px;
+          margin-top: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%; }
+          #footer .inner .contact .sns i {
+            font-size: 20px;
+            color: tan;
+            line-height: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
