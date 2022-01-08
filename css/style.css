@@ -2019,8 +2019,9 @@ font-family: 'Roboto Condensed', sans-serif;
           height: 300px;
           margin-left: -20%; }
         #menu .inner .wrap article ul {
-          width: calc(300px * 8);
-          height: 300px; }
+          width: calc(300px * 4);
+          height: 300px;
+          margin-left: 50px; }
           #menu .inner .wrap article ul::after {
             content: '';
             display: block;

@@ -649,7 +649,8 @@ font-family: 'Roboto Condensed', sans-serif;
                 }
 
                 ul{
-                    width: calc(300px * 8); height: 300px;
+                    width: calc(300px * 4); height: 300px;
+                    margin-left: 50px;
 
                     &::after{
                         content: ''; display: block; clear: both;
