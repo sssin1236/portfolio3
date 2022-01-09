@@ -1,3 +1,5 @@
+
+const skip = document.querySelectorAll("#skip a");
 const visual = document.querySelector("#visual");
 const menu = document.querySelector("#menu");
 const right = visual.querySelector(".right");
@@ -17,6 +19,16 @@ let num = 0;
 let enableClick = true;
 let timer;
 
+
+skip.forEach((btn, index)=>{
+    btn.addEventListener("focusin", e=>{
+        e.currentTarget.classList.add("on");
+    });
+
+    btn.addEventListener("focusout", e=>{
+        e.currentTarget.classList.remove("on")
+    })
+})
 
 boxs.forEach((box, index)=>{
     box.addEventListener("click", e=>{
