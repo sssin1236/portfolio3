@@ -18,6 +18,21 @@ font-family: 'Roboto Condensed', sans-serif;
 */
 
 
+#skip a{
+    position: fixed;
+    top: -100px; left: 0px;
+    width: 30px; height: 100px;
+    padding: 10px;
+    background: tan;
+    font: bold 15px 'Noto Sans KR';
+    color: #111;
+    z-index: 3;
+
+    &.on{
+        top: 0px;
+    }
+}
+
 .side{
     width: 200px; height: 100vh;
     position: fixed;
