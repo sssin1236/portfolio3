@@ -836,7 +836,7 @@ input, select, option {
         .community .inner .menu .topMenu li.on a {
           font: bold 14px/1 'Noto Sans KR';
           color: tan; }
-    .community .inner .menu dd {
+    .community .inner .menu > dd {
       width: 100%;
       margin: 0 auto 50px;
       position: relative;
@@ -844,54 +844,54 @@ input, select, option {
       opacity: 0;
       transform: translateY(100px);
       transition: opacity 1s, transform 1s; }
-      .community .inner .menu dd.on {
+      .community .inner .menu > dd.on {
         display: block;
         opacity: 1;
         transform: translateY(0px); }
-      .community .inner .menu dd table {
+      .community .inner .menu > dd table {
         width: 100%; }
-        .community .inner .menu dd table tr {
+        .community .inner .menu > dd table tr {
           transition: 0.5s; }
-          .community .inner .menu dd table tr th {
+          .community .inner .menu > dd table tr th {
             border-top: 1px solid tan;
             border-bottom: 1px solid #ddd;
             padding: 10px 0;
             font: 15px/1 'Noto Sans KR';
             color: #555; }
-            .community .inner .menu dd table tr th:nth-of-type(1), .community .inner .menu dd table tr th:nth-of-type(3) {
+            .community .inner .menu > dd table tr th:nth-of-type(1), .community .inner .menu > dd table tr th:nth-of-type(3) {
               width: 10%; }
-          .community .inner .menu dd table tr td {
+          .community .inner .menu > dd table tr td {
             padding: 20px 0;
             border-bottom: 1px solid #ddd;
             font: 15px/1 'Noto Sans KR';
             color: #666;
             cursor: pointer; }
-            .community .inner .menu dd table tr td:nth-of-type(2) {
+            .community .inner .menu > dd table tr td:nth-of-type(2) {
               text-align: left;
               font: bold 15px/1 'Noto Sans KR';
               color: #333; }
-            .community .inner .menu dd table tr td span {
+            .community .inner .menu > dd table tr td span {
               display: inline-block;
               width: 55px;
               height: 25px;
               font: bold 13px/25px 'Noto Sans KR';
               color: #cb0000;
               border: 1px solid #cb0000; }
-          .community .inner .menu dd table tr:hover {
+          .community .inner .menu > dd table tr:hover {
             background: #eee; }
-      .community .inner .menu dd dl {
+      .community .inner .menu > dd dl {
         width: 100%;
         margin: 30px auto;
         position: relative; }
-        .community .inner .menu dd dl dt {
+        .community .inner .menu > dd dl dt {
           padding: 30px 100px 30px 70px;
           border-bottom: 1px solid #ddd;
           position: relative;
           transition: 0.5s;
           cursor: pointer; }
-          .community .inner .menu dd dl dt:nth-of-type(1) {
+          .community .inner .menu > dd dl dt:nth-of-type(1) {
             border-top: 1px solid tan; }
-          .community .inner .menu dd dl dt b {
+          .community .inner .menu > dd dl dt b {
             position: absolute;
             top: 50%;
             left: 30px;
@@ -899,12 +899,12 @@ input, select, option {
             font: bold 24px/1 'Abel';
             color: #333;
             transition: 0.5s; }
-          .community .inner .menu dd dl dt > p {
+          .community .inner .menu > dd dl dt > p {
             text-align: left;
             font: 16px/1 'Noto Sans KR';
             color: #111;
             transition: 0.5s; }
-          .community .inner .menu dd dl dt > span {
+          .community .inner .menu > dd dl dt > span {
             display: block;
             width: 30px;
             height: 30px;
@@ -912,7 +912,7 @@ input, select, option {
             top: 50%;
             right: 30px;
             transform: translateY(-50%); }
-            .community .inner .menu dd dl dt > span::before {
+            .community .inner .menu > dd dl dt > span::before {
               content: '';
               display: block;
               width: 15px;
@@ -923,7 +923,7 @@ input, select, option {
               left: 0;
               transform-origin: right center;
               transform: rotate(30deg); }
-            .community .inner .menu dd dl dt > span::after {
+            .community .inner .menu > dd dl dt > span::after {
               content: '';
               display: block;
               width: 15px;
@@ -934,18 +934,19 @@ input, select, option {
               right: 0;
               transform-origin: left center;
               transform: rotate(-30deg); }
-          .community .inner .menu dd dl dt:hover {
+          .community .inner .menu > dd dl dt:hover {
             background: #eee; }
-          .community .inner .menu dd dl dt.on b, .community .inner .menu dd dl dt.on p {
+          .community .inner .menu > dd dl dt.on b, .community .inner .menu > dd dl dt.on p {
             color: tan; }
-        .community .inner .menu dd dl dd {
+        .community .inner .menu > dd dl dd {
           width: 100%;
           position: relative;
           padding: 30px 100px 30px 70px;
           background: #eee; }
-          .community .inner .menu dd dl dd p {
+          .community .inner .menu > dd dl dd p {
             font: 14px/1.5 'Noto Sans KR';
-            color: #666; }
+            color: #666;
+            text-align: left; }
   .community .inner .pagination {
     width: 100%;
     height: 30px;

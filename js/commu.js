@@ -1,3 +1,17 @@
+const menu2 = document.querySelector("#menu2");
+const menu3 = document.querySelector("#menu3");
+const dts1 = menu2.querySelectorAll("dt");
+console.log(dts1);
+
+dts1.forEach((dt, index)=>{
+    dt.addEventListener("click", ()=>{
+        for(let el of dts1) el.classList.remove("on");
+        dts1[index].classList.add("on");
+
+    })
+})
+
+
 class Tab {
     constructor() {
         this.main = document.querySelector(".menu");
