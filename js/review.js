@@ -1,5 +1,6 @@
 const main = document.querySelector("#gallery");
 const frame = document.querySelector(".list");
+const list = document.querySelector(".list2");
 const imgLoad = document.querySelector(".pic");
 const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
@@ -96,6 +97,7 @@ function delayLoading(){
             
             imgLoad.classList.add("off");
             frame.classList.add("on");
+            list.classList.add("on");
         }
     }
 }
