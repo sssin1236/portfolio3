@@ -317,6 +317,7 @@
                         position: relative;
                         padding: 30px 100px 30px 70px;
                         background: #eee;
+                        display: none;
                         
                         p{
                             font: 14px/1.5 'Noto Sans KR';
@@ -328,7 +329,7 @@
             }
         }
         
-        .pagination{
+        #pagination{
             width: 100%; height: 30px;
             text-align: center;
     
@@ -475,6 +476,7 @@
                         color: #eee;
                         background: tan;
                         border: 1px solid tan;
+                        border-right: none;
                     }
                 }
             }

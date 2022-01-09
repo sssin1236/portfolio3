@@ -1,13 +1,25 @@
 const menu2 = document.querySelector("#menu2");
 const menu3 = document.querySelector("#menu3");
 const dts1 = menu2.querySelectorAll("dt");
-console.log(dts1);
+const dds1 = menu2.querySelectorAll("dd");
+const numbers = document.querySelectorAll("#pagination .numbers a");
 
 dts1.forEach((dt, index)=>{
-    dt.addEventListener("click", ()=>{
+    dt.addEventListener("click", e=>{
         for(let el of dts1) el.classList.remove("on");
+        for(let el of dds1) el.style.display = "none";
         dts1[index].classList.add("on");
 
+        let target = e.currentTarget.nextElementSibling;
+        target.style.display = "block";
+    })
+})
+
+numbers.forEach((num, index)=>{
+    num.addEventListener("click", e=>{
+        e.preventDefault();
+        for(let el of numbers) el.classList.remove("on");
+        numbers[index].classList.add("on");
     })
 })
 
