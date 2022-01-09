@@ -20,16 +20,18 @@ font-family: 'Roboto Condensed', sans-serif;
 
 #skip a{
     position: fixed;
-    top: -100px; left: 0px;
-    width: 30px; height: 100px;
-    padding: 10px;
+    top: 0; left: -40px;
+    width: 40px; height: 100vh;
+    padding: 80px 10px;
     background: tan;
-    font: bold 15px 'Noto Sans KR';
+    font: bold 16px/1.4 'Noto Sans KR';
     color: #111;
+    letter-spacing: 1px;
     z-index: 3;
+    transition: 0.5s;
 
     &.on{
-        top: 0px;
+        left: 0px;
     }
 }
 
