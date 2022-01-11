@@ -1418,17 +1418,15 @@ input, select, option {
       margin-bottom: 20px;
       text-align: center;
       opacity: 0; }
-      .join .inner .wrap .left .terms dl dd textarea {
-        outline: none;
-        resize: none;
-        overflow: visible;
+      .join .inner .wrap .left .terms dl dd #policy {
+        overflow-y: scroll;
         width: 100%;
         height: 100%;
         padding: 10px;
         font: 15px /1.4 'arial';
         color: #999;
-        background: rgba(82, 82, 82, 0.356);
-        border: none; }
+        text-align: left;
+        background: rgba(82, 82, 82, 0.356); }
   .join .inner .wrap .right {
     width: 70%;
     float: right; }
