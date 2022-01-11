@@ -101,14 +101,3 @@ function delayLoading(){
         }
     }
 }
-
-function isoLayout(){
-    imgLoad.classList.add("off");
-    frame.classList.add("on");
-
-    new Isotope(".list", {
-        itemSelector: ".item",
-        columWidth: ".item",
-        trnasitionDuration: "0.5s"
-    });
-}
