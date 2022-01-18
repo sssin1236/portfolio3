@@ -1265,6 +1265,7 @@ input, select, option {
           bottom: 20px;
           right: 20px; }
   .review .inner #gallery .list2 {
+    display: none;
     width: 100%;
     padding: 20px 10px;
     opacity: 0;
