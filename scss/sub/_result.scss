@@ -1,0 +1,13 @@
+.result{
+    width: 100%; height: 100vh;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font: bold 50px/1 'Noto Sans KR';
+        color: tan;
+    }
+}

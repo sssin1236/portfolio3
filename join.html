@@ -9,7 +9,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/anime.js"></script>
-    <script defer src="js/join.js"></script>
+    <script defer src="js/form.js"></script>
+    <script>
+        window.addEventListener("load", ()=>{
+            new Validation("#member",[
+                {
+                    type: "text",
+                    name: "name",
+                    len: 1
+                },
+                {
+                    type: "number",
+                    name: "time",
+                    len: 8
+                },
+                {
+                    type: "text",
+                    name: "userid",
+                    len: 4
+                },
+                {
+                    type: "password",
+                    name: ["pwd1", "pwd2"],
+                    len: 8
+                },
+                {
+                    type: "number",
+                    name: "call",
+                    len: 11
+                },
+                {
+                    type: "text",
+                    name: "address",
+                    len: 5
+                },
+                {
+                    type: "text",
+                    name: "e-id",
+                    len: 3
+                },
+                {
+                    type: "select",
+                    name: "site"
+                },
+                {
+                    id: "pwd3",
+                    name: ["pwd3", "pwd4"],
+                    len: 4
+                },
+                {
+                    type: "checkbox",
+                    name: "check"
+                }
+            ])
+        })
+    </script>
+
 </head>
 <body>
     <header id="header_sub">
@@ -24,7 +79,6 @@
                 <li><a href="community.html">COMMUNITY</a></li>
                 <li><a href="review.html">REVIEW</a></li>
                 <li><a href="youtube.html">YOUTUBE</a></li>
-                <li><a href="location.html">LOCATION</a></li>
             </ul>
 
             <ul class="util">
@@ -173,7 +227,7 @@
                 <div class="right">
                     <h2>필수 입력 사항</h2>
 
-                    <form action="/" mathod="post">
+                    <form action="result.html" mathod="post" id="member">
                         <fieldset>
                             <legend class="h">회원가입 입력 양식폼</legend>
         
@@ -201,23 +255,21 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="userid">아이디</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
                                         <a href="#">중복확인</a>
-                                        <p>영문/숫자 포함 4-10자 이내</p>
+                                        <p>영문/숫자 포함 4자 이상</p>
                                     </td>
                                 </tr>
         
                                 <tr>
                                     <th scope="row">
                                         <label for="pwd1">비밀번호</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력해주세요.">
-                                        <p>영문 대/소문자 포함 8-15자 이내</p>
+                                        <p>영문 대/소문자 포함 8자 이상</p>
                                         <p>특수문자 포함</p>
                                         <p>숫자 포함</p>
                                     </td>
@@ -226,7 +278,6 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="pwd2">비밀번호 확인</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <input type="password" name="pwd2" id="pwd2">
@@ -237,10 +288,9 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="call">휴대폰 번호</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
-                                        <input type="tel" name="call" id="call" placeholder="숫자만 입력해주세요.">
+                                        <input type="number" name="call" id="call" placeholder="숫자만 입력해주세요.">
                                     </td>
                                 </tr>
         
@@ -259,7 +309,6 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="e-mail">이메일</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <input type="text" name="e-id" id="e-id">
@@ -285,19 +334,17 @@
                                 <tr>
                                     <th scope="row">
                                         <label for="pwd3">포인트 비밀번호</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <input type="password" name="pwd3" id="pwd3" placeholder="비밀번호를 입력해주세요.">
                                         <p>" 패밀리 포인트 카드 사용을 위한 비밀번호 입니다. "</p>
-                                        <p>숫자 4-6자리</p>
+                                        <p>숫자 4자리</p>
                                     </td>
                                 </tr>
         
                                 <tr>
                                     <th scope="row">
                                         <label for="pwd4">포인트 비밀번호 확인</label>
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <input type="password" name="pwd4" id="pwd4">
@@ -308,15 +355,17 @@
                                 <tr>
                                     <th scope="row">
                                         마케팅 정보 수신
-                                        <i class="fas fa-check"></i>
                                     </th>
                                     <td>
                                         <label for="mail">
-                                        <input type="checkbox" name="mail" id="mail" value="mail">
+                                        <input type="checkbox" name="check" id="mail" value="mail">
                                         E-mail 수신</label>
                                         <label for="sms">
-                                        <input type="checkbox" name="sms" id="sms" value="sms">
+                                        <input type="checkbox" name="check" id="sms" value="sms">
                                         SMS 수신</label>
+                                        <label for="none">
+                                            <input type="checkbox" name="check" id="sms" value="sms">
+                                            미수신</label>
                                         <p>다이닝 패밀리의 다양한 쿠폰 및 이벤트 혜택 정보(광고)를 누리실 수 있습니다.</p>
                                     </td>
                                 </tr>

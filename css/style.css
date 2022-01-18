@@ -1528,14 +1528,18 @@ input, select, option {
               color: #111;
               letter-spacing: 1px; }
 
-/*
-font-family: 'Abel', sans-serif;
-font-family: 'Bakbak One', cursive;
-font-family: 'Gowun Dodum', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-*/
+.result {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .result h1 {
+    font: bold 50px/1 'Noto Sans KR';
+    color: tan; }
+
 #skip a {
   position: fixed;
   top: 0;
