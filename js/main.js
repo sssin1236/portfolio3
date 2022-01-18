@@ -4,7 +4,7 @@ const visual = document.querySelector("#visual");
 const menu = document.querySelector("#menu");
 const right = visual.querySelector(".right");
 const boxs = right.querySelectorAll("article");
-const clos = document.querySelectorAll("article .close");
+const clos = right.querySelector(".close");
 
 const btnFrame = menu.querySelector(".menu_btn");
 const menuBtn = btnFrame.querySelectorAll("ul li");
@@ -18,7 +18,6 @@ const speed = 500;
 let num = 0;
 let enableClick = true;
 let timer;
-
 
 skip.forEach((btn, index)=>{
     btn.addEventListener("focusin", e=>{
@@ -38,17 +37,22 @@ boxs.forEach((box, index)=>{
         } 
         boxs[index].classList.remove("off");
         boxs[index].classList.add("on");
-    });
-
-});
-
-clos.forEach((btn, index)=>{
-    btn.addEventListener("click", e=>{
-        let target = e.currentTarget.closest("article");
-        console.log(target);
-        target.classList.remove("on");
+        clos.classList.add("on");
     });
 });
+
+clos.addEventListener("click", e=>{
+    for(let el of boxs){
+        el.classList.remove("on");
+        setTimeout(function(){
+            el.classList.remove("off")
+        }, 1000);
+    } 
+    e.currentTarget.classList.remove("on");
+});
+
+
+
 
 
 //menu 이벤트

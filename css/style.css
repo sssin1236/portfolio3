@@ -1729,8 +1729,8 @@ font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  transform-style: preserve-3d;
-  background: url(../img/visual.5.jpg) no-repeat center/cover; }
+  background: url(../img/visual.5.jpg) no-repeat center/cover;
+  transform-style: preserve-3d; }
   #visual video {
     width: 100%;
     height: 100%;
@@ -1780,17 +1780,32 @@ font-family: 'Roboto Condensed', sans-serif;
         overflow: hidden;
         position: relative;
         perspective: 3000px; }
+        #visual .inner .wrap .right > .close {
+          font: 18px/1 'Abel';
+          color: #eee;
+          position: absolute;
+          bottom: 100px;
+          right: 50%;
+          cursor: pointer;
+          opacity: 0;
+          transform: translateY(-150px);
+          transition: 0.3s; }
+          #visual .inner .wrap .right > .close.on {
+            opacity: 1;
+            transform: translateY(0);
+            transition: 0.8s 1.5s; }
         #visual .inner .wrap .right article {
-          width: 25%;
-          height: 80%;
-          border-right: 1px solid rgba(210, 180, 140, 0.493);
+          width: 24%;
+          height: 480px;
+          margin-right: 1%;
           padding: 20px;
           background: rgba(0, 0, 0, 0.8);
           position: absolute;
-          top: 55%;
+          top: 50%;
+          margin-top: -240px;
           cursor: pointer;
-          transform: translate(-50%, -50%);
-          transition: left 0.5s 1.5s, transform 1s, width 1s; }
+          transform: translateX(-50%);
+          transition: left 0.7s 1s, transform 1s, width 1s; }
           #visual .inner .wrap .right article:nth-of-type(1) {
             left: 12%; }
           #visual .inner .wrap .right article:nth-of-type(2) {
@@ -1799,47 +1814,38 @@ font-family: 'Roboto Condensed', sans-serif;
             left: 62%; }
           #visual .inner .wrap .right article:nth-of-type(4) {
             left: 87%;
-            border-right: 0; }
+            margin-right: 0; }
           #visual .inner .wrap .right article.on {
             width: 100%;
-            top: 55%;
+            top: 50%;
             left: 50%;
-            transform: rotateY(180deg) translate(50%, -50%);
-            transition: left 1s, transform 1s 1.3s, width 0.5s 1.3s, border 0.3s; }
-            #visual .inner .wrap .right article.on:nth-of-type(4) {
-              border-right: 1px solid rgba(210, 180, 140, 0.493); }
+            transform: rotateY(180deg) translateX(50%);
+            transition: left 1s, transform 1s 1.1s, width 0.5s 1.1s; }
             #visual .inner .wrap .right article.on .front {
               opacity: 0;
-              transition: 0.5s 1.5s; }
+              transition: 0.5s 1.3s; }
             #visual .inner .wrap .right article.on .back {
               opacity: 1;
               transform: rotateY(-180deg);
-              transition: opacity 0.8s 1.6s, transform 1s 1.3s; }
+              transition: opacity 0.8s 1.3s, transform 1s 1.1s; }
           #visual .inner .wrap .right article.off {
-            transform: scale(0.2) translate(-250%, -250%);
+            transform: scale(0.2) translateX(-250%);
             opacity: 0;
             transition: 1s; }
           #visual .inner .wrap .right article .front {
             width: 100%;
             height: 100%;
             overflow: hidden;
-            transition: 0.5s;
-            position: relative; }
+            transition: 0.5s; }
             #visual .inner .wrap .right article .front .pic {
               width: 100%;
-              height: 80%;
+              height: 250px;
               overflow: hidden;
-              margin-top: -30px; }
+              margin-bottom: 30px; }
               #visual .inner .wrap .right article .front .pic img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover; }
-            #visual .inner .wrap .right article .front .text {
-              width: 100%;
-              position: absolute;
-              bottom: 0px;
-              left: 50%;
-              transform: translateX(-50%); }
             #visual .inner .wrap .right article .front h3 {
               font: 24px/1 'Abel';
               color: #fff;
@@ -1908,15 +1914,10 @@ font-family: 'Roboto Condensed', sans-serif;
             overflow: hidden;
             transition: opacity 0.5s, transform 0.5s 0.5s; }
             #visual .inner .wrap .right article .back h3 {
+              width: 80%;
               font: 24px/1 'Abel';
               color: #fff;
               margin-bottom: 40px; }
-            #visual .inner .wrap .right article .back > span {
-              font: 18px/1 'Abel';
-              color: #eee;
-              position: absolute;
-              top: 40px;
-              right: 40px; }
             #visual .inner .wrap .right article .back ul {
               width: 100%;
               height: 330px; }
