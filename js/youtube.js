@@ -18,9 +18,10 @@ fetch(url)
 
         let tit = item.snippet.title;
         let desc = item.snippet.description;
+        let chanel = item.snippet.videoOwnerChannelTitle;
         let date = item.snippet.publishedAt.split("T")[0];
 
-        if(tit.length > 50) tit = tit.substr(0, 50)+".....";
+        if(tit.length > 30) tit = tit.substr(0, 30)+".....";
         if(desc.length > 150) desc = desc.substr(0, 150)+".....";
 
         result += `
@@ -29,9 +30,11 @@ fetch(url)
                     <img src="${item.snippet.thumbnails.standard.url}">
                 </a>
                 <div class="con">
-                    <h2>${tit}</h2>
-                    <p>${desc}</p>
                     <span>${date}</span>
+                    <h2>${tit}</h2>
+                    <nav>${chanel}</nav>
+                    <p>${desc}</p>
+                    <a href="#" class="view">VIDEO PLAY</a>
                 </div>
             </article>
         `;
