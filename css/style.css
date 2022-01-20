@@ -1607,7 +1607,8 @@ input, select, option {
           text-align: center;
           letter-spacing: 1px;
           border-bottom: 1px solid #ddd;
-          position: relative; }
+          position: relative;
+          transition: 0.5s; }
           .youtube .inner #playlist1 article:nth-of-type(1) .con .view::before {
             content: '';
             display: inline-block;
@@ -1616,8 +1617,9 @@ input, select, option {
             background: #fff;
             position: absolute;
             top: 50%;
-            right: -30px;
-            transform: rotate(-45deg); }
+            right: -20px;
+            transform: rotate(-45deg);
+            transition: 0.5s; }
           .youtube .inner #playlist1 article:nth-of-type(1) .con .view::after {
             content: '';
             display: inline-block;
@@ -1627,8 +1629,18 @@ input, select, option {
             border-right: 1px solid #fff;
             position: absolute;
             top: 50%;
-            right: -30px;
-            margin-top: -6px; }
+            right: -20px;
+            margin-top: -6px;
+            transition: 0.5s; }
+          .youtube .inner #playlist1 article:nth-of-type(1) .con .view:hover {
+            color: tan;
+            border-color: tan; }
+            .youtube .inner #playlist1 article:nth-of-type(1) .con .view:hover::before {
+              background: tan;
+              right: -35px; }
+            .youtube .inner #playlist1 article:nth-of-type(1) .con .view:hover::after {
+              border-color: tan;
+              right: -35px; }
     .youtube .inner #playlist1 article:not(:nth-of-type(1)) {
       width: calc(100% / 5);
       height: 300px;
