@@ -1667,6 +1667,13 @@ input, select, option {
         position: absolute;
         top: 0;
         left: 0; }
+      .youtube .inner #playlist1 article:not(:nth-of-type(1)) .span {
+        font: 13px/1 'Abel';
+        color: #999; }
+      .youtube .inner #playlist1 article:not(:nth-of-type(1)) h2 {
+        font: 20px/1 'Open Sans Condensed';
+        color: #fff;
+        margin-top: 10px; }
 
 #skip a {
   position: fixed;
