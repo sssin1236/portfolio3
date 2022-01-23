@@ -161,17 +161,19 @@
                         padding: 20px;
                         position: absolute;
                         top: 0; left: 0;
+                        background: rgba(17, 17, 17, 0.602);
                     }
 
-                    .span{
+                    span{
                         font: 13px/1 'Abel';
                         color: #999;
                     }
 
                     h2{
-                        font:  20px/1 'Open Sans Condensed';
-                        color: #fff;
-                        margin-top: 10px;
+                        font:  20px/1 'Open Sans Condensed', 'Noto sans KR';
+                        color: tan;
+                        margin-top: 30px;
+                        margin-bottom: 80px;
                     }
                 }
             }
