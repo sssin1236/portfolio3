@@ -173,10 +173,25 @@
                         font: 18px/1 'Open Sans Condensed', 'Noto sans KR';
                         color: tan;
                         margin-top: 30px;
+                        margin-bottom: 15px;
                     }
 
                     nav{
+                        margin-bottom: 80px;
+                        font: 15px/1 'Abel';
+                        color: #bbb;
 
+                        &::before{
+                            content: '|';
+                            display: inline-block;
+                            margin-right: 5px;
+                        }
+
+                        &::after{
+                            content: '|';
+                            display: inline-block;
+                            margin-left: 5px;
+                        }
                     }
 
                     p{
