@@ -16,6 +16,7 @@
 
         #playlist1{
             width: 100%; height: 800px;
+            overflow: hidden;
             transition: 0.5s;
             
             article{
@@ -141,16 +142,11 @@
                     width: 220px; height: 300px;
                     position: relative;
                     margin-right: 20px;
-                    float: left;
                     overflow: hidden;
-
-                    &:nth-of-type(2){
-                        width: 460px;
-                    }
+                    float: left;
 
                     &:last-child{
                         margin-right: 0;
-                        float: right;
                     }
 
                     .pic{
@@ -261,7 +257,7 @@
                     }
 
                     &:hover{
-                        width: 440px;
+                        width: 460px;
 
                         .con{
                             left: 0;
