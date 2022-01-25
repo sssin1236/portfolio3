@@ -45,10 +45,17 @@ fetch(url)
 
 main.addEventListener("click", e=>{
     e.preventDefault();
+    let vidId = '';
 
-    if(e.target.parentElement.nodeName !=="A") return;
-    const vidId = e.target.closest("a").getAttribute("href");
-    console.log(vidId);
+    if(e.target.parentElement.nodeName !=="A" && e.target.className !=="view") return;
+
+    if(e.target.parentElement.nodeName =="A"){
+        vidId = e.target.closest("a").getAttribute("href");
+    }
+
+    if(e.target.className == "view"){
+        vidId = e.target.closest("div").previousElementSibling.getAttribute("href");
+    } 
 
     let pop = document.createElement("aside");
 
@@ -58,6 +65,8 @@ main.addEventListener("click", e=>{
     `;
 
     frame.append(pop);
+
+    
 });
 
 frame.addEventListener("click", e=>{
