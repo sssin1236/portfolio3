@@ -42,3 +42,13 @@ fetch(url)
 
     main.innerHTML = result;
 })
+
+main.addEventListener("click", e=>{
+    e.preventDefault();
+
+    if(e.target.parentElement.nodeName !=="A") return;
+    const vidId = e.target.closest("a").getAttribute("href");
+    console.log(vidId);
+
+    let pop = document.createElement("aside");
+})

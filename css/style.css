@@ -1746,6 +1746,9 @@ input, select, option {
           .youtube .inner #playlist1 article:not(:nth-of-type(1)):hover .con {
             left: 0;
             opacity: 1; }
+  .youtube .inner .num {
+    position: absolute;
+    bottom: 20px; }
 
 #skip a {
   position: fixed;
