@@ -1749,6 +1749,20 @@ input, select, option {
   .youtube .inner .num {
     position: absolute;
     bottom: 20px; }
+.youtube aside {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5vw; }
+  .youtube aside .btnClose {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: tan;
+    cursor: pointer; }
 
 #skip a {
   position: fixed;

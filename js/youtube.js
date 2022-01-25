@@ -1,3 +1,4 @@
+const frame = document.querySelector("section");
 const main = document.querySelector("#playlist1");
 const key = "AIzaSyCCiZuUxyRnAnWNnLdQxnZ5COuFx0Cv33A";
 const playlist_Id = "PLlgbG45RVNaqmozynV0bmmtSQtFrMNNVv";
@@ -51,4 +52,11 @@ main.addEventListener("click", e=>{
     console.log(vidId);
 
     let pop = document.createElement("aside");
+
+    pop.innerHTML = `
+        <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+        <span class="btnClose">CLOSE</span>
+    `;
+
+    frame.append(pop);
 })
