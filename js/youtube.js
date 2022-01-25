@@ -15,7 +15,6 @@ fetch(url)
     let result = "";
 
     items.map( item=>{
-        console.log(item);
 
         let tit = item.snippet.title;
         let desc = item.snippet.description;
@@ -59,4 +58,12 @@ main.addEventListener("click", e=>{
     `;
 
     frame.append(pop);
+});
+
+frame.addEventListener("click", e=>{
+    const pop = frame.querySelector("aside");
+    if(pop == null) return;
+
+    const close = pop.querySelector("span");
+    if(e.target == close) e.target.closest("aside").remove();
 })
