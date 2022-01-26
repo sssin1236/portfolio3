@@ -1761,10 +1761,43 @@ input, select, option {
     position: absolute;
     top: 40px;
     right: 40px;
-    width: 30px;
-    height: 30px;
-    background: tan;
-    cursor: pointer; }
+    color: transparent;
+    font: 18px/1 'abel';
+    padding: 5px 0;
+    cursor: pointer;
+    transition: 0.5s 0.5s; }
+    .youtube aside .btnClose::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 1px;
+      position: absolute;
+      top: 49%;
+      right: 50%;
+      margin-right: -7px;
+      background: tan;
+      transform: rotate(-45deg);
+      transition: transform 0.5s, top 0.5s 0.5s; }
+    .youtube aside .btnClose::after {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 1px;
+      position: absolute;
+      bottom: 48%;
+      right: 50%;
+      margin-right: -7px;
+      background: tan;
+      transform: rotate(45deg);
+      transition: transform 0.5s, bottom 0.5s 0.5s; }
+    .youtube aside .btnClose:hover {
+      color: tan; }
+      .youtube aside .btnClose:hover::before {
+        top: 0%;
+        transform: rotate(0deg); }
+      .youtube aside .btnClose:hover::after {
+        bottom: 0%;
+        transform: rotate(0deg); }
 
 #skip a {
   position: fixed;

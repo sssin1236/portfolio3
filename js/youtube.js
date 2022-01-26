@@ -61,7 +61,7 @@ main.addEventListener("click", e=>{
 
     pop.innerHTML = `
         <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-        <span class="btnClose"></span>
+        <span class="btnClose">CLOSE</span>
     `;
 
     frame.append(pop);
