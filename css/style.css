@@ -1761,7 +1761,9 @@ input, select, option {
     position: absolute;
     top: 40px;
     right: 40px;
-    color: tan;
+    width: 30px;
+    height: 30px;
+    background: tan;
     cursor: pointer; }
 
 #skip a {
