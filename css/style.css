@@ -1650,7 +1650,7 @@ input, select, option {
     align-items: center; }
     .youtube .inner #playlist2 article {
       flex-basis: 220px;
-      height: 300px;
+      height: 280px;
       position: relative;
       overflow: hidden;
       transition: 1s; }
@@ -1685,7 +1685,7 @@ input, select, option {
         margin-top: 30px;
         margin-bottom: 10px; }
       .youtube .inner #playlist2 article nav {
-        margin-bottom: 130px;
+        margin-bottom: 100px;
         font: 13px/1 'Abel';
         color: tan; }
         .youtube .inner #playlist2 article nav::before {
@@ -1741,7 +1741,7 @@ input, select, option {
             border-color: tan;
             right: -35px; }
       .youtube .inner #playlist2 article:hover {
-        flex-basis: 460px; }
+        flex-basis: 280px; }
         .youtube .inner #playlist2 article:hover .con {
           left: 0;
           opacity: 1; }
