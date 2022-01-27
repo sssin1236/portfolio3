@@ -1541,10 +1541,8 @@ input, select, option {
     font: bold 50px/1 'Noto Sans KR';
     color: tan; }
 
-.youtube .sub_visual .txt {
-  backdrop-filter: brightness(0.8) grayscale(0.3); }
-  .youtube .sub_visual .txt h1::after {
-    content: 'YOUTUBE'; }
+.youtube .sub_visual .txt h1::after {
+  content: 'YOUTUBE'; }
 .youtube .inner {
   padding: 150px 0; }
   .youtube .inner #playlist1 {
