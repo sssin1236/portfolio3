@@ -1,11 +1,11 @@
 
 class Youtube{
-    constructor(){
+    constructor(selector, opt){
         this.frame = document.querySelector("section");
-        this.main = document.querySelector("#playlist1");
-        this.key = "AIzaSyCCiZuUxyRnAnWNnLdQxnZ5COuFx0Cv33A";
-        this.playlist_Id = "PLlgbG45RVNaqmozynV0bmmtSQtFrMNNVv";
-        this.num = 5;
+        this.main = document.querySelector(selector);
+        this.key = opt.api_key;
+        this.playlist_Id = opt.playList;
+        this.num = opt.count;
         this.url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${this.key}&part=snippet&playlistId=${this.playlist_Id}&maxResults=${this.num}`
 
         this.createList(this.url);

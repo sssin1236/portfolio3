@@ -12,7 +12,21 @@
     <script defer src="js/youtube.js"></script>
     <script>
         window.addEventListener("load", ()=>{
-            new Youtube();
+            new Youtube("#playlist1",
+                {
+                    api_key: "AIzaSyCCiZuUxyRnAnWNnLdQxnZ5COuFx0Cv33A",
+                    playList: "PLlgbG45RVNaoZANwWZHtO5yXvOF0uOZeb",
+                    count: 1
+                }
+            );
+
+            new Youtube("#playlist2",
+                {
+                    api_key: "AIzaSyCCiZuUxyRnAnWNnLdQxnZ5COuFx0Cv33A",
+                    playList: "PLlgbG45RVNaqmozynV0bmmtSQtFrMNNVv",
+                    count: 5
+                }
+            );
         })
     </script>
 </head>
