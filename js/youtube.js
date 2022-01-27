@@ -1,3 +1,10 @@
+
+class Youtube{
+    constructor(){
+        
+    }
+}
+
 const frame = document.querySelector("section");
 const main = document.querySelector("#playlist1");
 const key = "AIzaSyCCiZuUxyRnAnWNnLdQxnZ5COuFx0Cv33A";
