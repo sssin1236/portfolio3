@@ -293,36 +293,38 @@
             &::before{
                 content: '';
                 display: block;
-                width: 18px; height: 1px;
+                width: 18px; height: 2px;
                 position: absolute;
-                top: 49%; right: 50%;
+                top: 48%; right: 50%;
                 margin-right: -7px;
                 background: tan;
                 transform: rotate(-45deg);
-                transition: transform 0.5s, top 0.5s 0.5s;
+                transition: transform 0.5s, height 0.3s, top 0.5s 0.5s;
             }
 
             &::after{
                 content: '';
                 display: block;
-                width: 18px; height: 1px;
+                width: 18px; height: 2px;
                 position: absolute;
                 bottom: 48%; right: 50%;
                 margin-right: -7px;
                 background: tan;
                 transform: rotate(45deg);
-                transition: transform 0.5s, bottom 0.5s 0.5s;
+                transition: transform 0.5s, height 0.3s, bottom 0.5s 0.5s;
             }
 
             &:hover{
                 color: tan;
 
                 &::before{
+                    height: 1px;
                     top: 0%;
                     transform: rotate(0deg);
                 }
 
                 &::after{
+                    height: 1px;
                     bottom: 0%;
                     transform: rotate(0deg);
                 }
