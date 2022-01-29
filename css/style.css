@@ -1642,26 +1642,31 @@ input, select, option {
             .youtube .inner #playlist1 article .con .view:hover::after {
               border-color: tan;
               right: -35px; }
-  .youtube .inner #playlist2 {
+  .youtube .inner #playlist2, .youtube .inner #playlist3 {
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .youtube .inner #playlist2 article {
+    .youtube .inner #playlist2#playlist3 article, .youtube .inner #playlist3#playlist3 article {
+      flex-basis: 280px; }
+      .youtube .inner #playlist2#playlist3 article:hover, .youtube .inner #playlist3#playlist3 article:hover {
+        flex-basis: 320px; }
+    .youtube .inner #playlist2 article, .youtube .inner #playlist3 article {
       flex-basis: 220px;
       height: 280px;
       position: relative;
       overflow: hidden;
       transition: 1s; }
-      .youtube .inner #playlist2 article .pic {
+      .youtube .inner #playlist2 article .pic, .youtube .inner #playlist3 article .pic {
         width: 100%;
         height: 100%; }
-        .youtube .inner #playlist2 article .pic img {
+        .youtube .inner #playlist2 article .pic img, .youtube .inner #playlist3 article .pic img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           filter: contrast(0.5);
           transform: scale(1.5); }
-      .youtube .inner #playlist2 article .con {
+      .youtube .inner #playlist2 article .con, .youtube .inner #playlist3 article .con {
         width: 100%;
         height: 100%;
         padding: 20px 10px;
@@ -1671,10 +1676,10 @@ input, select, option {
         opacity: 0;
         background: rgba(17, 17, 17, 0.602);
         transition: 1s; }
-      .youtube .inner #playlist2 article span {
+      .youtube .inner #playlist2 article span, .youtube .inner #playlist3 article span {
         font: 13px/1 'Abel';
         color: #999; }
-      .youtube .inner #playlist2 article h2 {
+      .youtube .inner #playlist2 article h2, .youtube .inner #playlist3 article h2 {
         width: 100%;
         height: 25px;
         overflow: hidden;
@@ -1682,21 +1687,21 @@ input, select, option {
         color: #eee;
         margin-top: 30px;
         margin-bottom: 10px; }
-      .youtube .inner #playlist2 article nav {
+      .youtube .inner #playlist2 article nav, .youtube .inner #playlist3 article nav {
         margin-bottom: 100px;
         font: 13px/1 'Abel';
         color: tan; }
-        .youtube .inner #playlist2 article nav::before {
+        .youtube .inner #playlist2 article nav::before, .youtube .inner #playlist3 article nav::before {
           content: '|';
           display: inline-block;
           margin-right: 5px; }
-        .youtube .inner #playlist2 article nav::after {
+        .youtube .inner #playlist2 article nav::after, .youtube .inner #playlist3 article nav::after {
           content: '|';
           display: inline-block;
           margin-left: 5px; }
-      .youtube .inner #playlist2 article p {
+      .youtube .inner #playlist2 article p, .youtube .inner #playlist3 article p {
         display: none; }
-      .youtube .inner #playlist2 article .view {
+      .youtube .inner #playlist2 article .view, .youtube .inner #playlist3 article .view {
         width: 75px;
         padding-bottom: 5px;
         font: bold 17px/1 'Open Sans Condensed';
@@ -1706,7 +1711,7 @@ input, select, option {
         border-bottom: 1px solid #ddd;
         position: relative;
         transition: 0.5s; }
-        .youtube .inner #playlist2 article .view::before {
+        .youtube .inner #playlist2 article .view::before, .youtube .inner #playlist3 article .view::before {
           content: '';
           display: inline-block;
           width: 15px;
@@ -1717,7 +1722,7 @@ input, select, option {
           right: -20px;
           transform: rotate(-45deg);
           transition: 0.5s; }
-        .youtube .inner #playlist2 article .view::after {
+        .youtube .inner #playlist2 article .view::after, .youtube .inner #playlist3 article .view::after {
           content: '';
           display: inline-block;
           width: 10px;
@@ -1729,18 +1734,18 @@ input, select, option {
           right: -20px;
           margin-top: -6px;
           transition: 0.5s; }
-        .youtube .inner #playlist2 article .view:hover {
+        .youtube .inner #playlist2 article .view:hover, .youtube .inner #playlist3 article .view:hover {
           color: tan;
           border-color: tan; }
-          .youtube .inner #playlist2 article .view:hover::before {
+          .youtube .inner #playlist2 article .view:hover::before, .youtube .inner #playlist3 article .view:hover::before {
             background: tan;
             right: -35px; }
-          .youtube .inner #playlist2 article .view:hover::after {
+          .youtube .inner #playlist2 article .view:hover::after, .youtube .inner #playlist3 article .view:hover::after {
             border-color: tan;
             right: -35px; }
-      .youtube .inner #playlist2 article:hover {
+      .youtube .inner #playlist2 article:hover, .youtube .inner #playlist3 article:hover {
         flex-basis: 280px; }
-        .youtube .inner #playlist2 article:hover .con {
+        .youtube .inner #playlist2 article:hover .con, .youtube .inner #playlist3 article:hover .con {
           left: 0;
           opacity: 1; }
 .youtube aside {
