@@ -258,16 +258,6 @@
     background: url(../img/visual.5.jpg) no-repeat center/cover;
     transform-style: preserve-3d;
 
-    video{
-        width: 100%; height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0; left: 0;
-        z-index: 1;
-        display: none;
-        // filter: brightness(0.8) contrast(70%);
-    }
-
     .inner{
         width: 100%; height: 100%;
         margin: 0 auto;

@@ -2008,15 +2008,6 @@ input, select, option {
   overflow: hidden;
   background: url(../img/visual.5.jpg) no-repeat center/cover;
   transform-style: preserve-3d; }
-  #visual video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none; }
   #visual .inner {
     width: 100%;
     height: 100%;
