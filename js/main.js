@@ -5,6 +5,9 @@ const menu = document.querySelector("#menu");
 const right = visual.querySelector(".right");
 const boxs = right.querySelectorAll("article");
 const clos = right.querySelector(".close");
+const sections = document.querySelectorAll("section");
+const scrollBtn = document.querySelectorAll(".sideBtn li");
+const len = sections.length;
 
 const btnFrame = menu.querySelector(".menu_btn");
 const menuBtn = btnFrame.querySelectorAll("ul li");
