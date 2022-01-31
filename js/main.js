@@ -18,9 +18,11 @@ const lis = ul.querySelectorAll("li");
 const prev = menu.querySelector(".prev");
 const next = menu.querySelector(".next");
 const speed = 500;
+const base = -300;
 let num = 0;
 let enableClick = true;
 let timer;
+let posArr = [];
 
 skip.forEach((btn, index)=>{
     btn.addEventListener("focusin", e=>{
@@ -55,7 +57,22 @@ clos.addEventListener("click", e=>{
 });
 
 
+//scoll 이벤트
 
+window.addEventListener("scroll", e=>{
+    let scroll = window.scrollY || window.pageYOffset;
+
+    sections.forEach((el, index)=>{
+        if(scroll >= posArr[index] + base){
+            lis.forEach((el, i)=>{
+                el.classList.remove("on");
+                sections[i].classList.remove("on");
+            });
+            lis[index].classList.add("on");
+            sections[index].classList.add("on");
+        }
+    })
+});
 
 
 //menu 이벤트
