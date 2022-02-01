@@ -7,6 +7,7 @@ const boxs = right.querySelectorAll("article");
 const clos = right.querySelector(".close");
 const sections = document.querySelectorAll("section");
 const scrollBtn = document.querySelectorAll(".sideBtn li");
+const scroll_arr = Array.from(scrollBtn);
 const len = sections.length;
 
 const btnFrame = menu.querySelector(".menu_btn");
@@ -24,6 +25,7 @@ let enableClick = true;
 let timer;
 let posArr = [];
 
+console.log(scroll_arr);
 skip.forEach((btn, index)=>{
     btn.addEventListener("focusin", e=>{
         e.currentTarget.classList.add("on");
@@ -58,6 +60,12 @@ clos.addEventListener("click", e=>{
 
 
 //scoll 이벤트
+
+window.addEventListener("mousewheel", e=>{
+    e.preventDefault();
+
+    let activeItem = docuement.querySelector(".sideBtn li.on");
+})
 
 window.addEventListener("scroll", e=>{
     let scroll = window.scrollY || window.pageYOffset;
