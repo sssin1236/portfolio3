@@ -25,7 +25,6 @@ let enableClick = true;
 let timer;
 let posArr = [];
 
-console.log(scroll_arr);
 skip.forEach((btn, index)=>{
     btn.addEventListener("focusin", e=>{
         e.currentTarget.classList.add("on");
@@ -61,22 +60,47 @@ clos.addEventListener("click", e=>{
 
 //scoll 이벤트
 
+window.addEventListener("resize", e=>{
+    setPos();
+
+    let activeItem = docuement.querySelector(".sideBtn li.on");
+    let activeIndex = scroll_arr.indexOf(activeItem);
+
+    window.scroll(0, posArr[activeIndex]);
+});
+
 window.addEventListener("mousewheel", e=>{
     e.preventDefault();
 
     let activeItem = docuement.querySelector(".sideBtn li.on");
-})
+    let activeIndex = scroll_arr.indexOf(activeItem);
+    let targetIndex;
+
+    if(e.deltaY < 0){
+        if(activeIndex == 0) return;
+        targetIndex = activeIndex -1;
+    }else{
+        if(activeIndex == len-1) return;
+        targetIndex = activeIndex +1;
+    }
+
+    new Anim(window,{
+        prop: "scroll",
+        value: posArr[targetIndex],
+        duration: speed
+    });
+}, {passive : false});
 
 window.addEventListener("scroll", e=>{
     let scroll = window.scrollY || window.pageYOffset;
 
     sections.forEach((el, index)=>{
         if(scroll >= posArr[index] + base){
-            lis.forEach((el, i)=>{
+            scrollBtn.forEach((el, i)=>{
                 el.classList.remove("on");
                 sections[i].classList.remove("on");
             });
-            lis[index].classList.add("on");
+            scrollBtn[index].classList.add("on");
             sections[index].classList.add("on");
         }
     })
@@ -158,4 +182,10 @@ function nextMove(){
 function activeMenu(sel, i){
     for(el of sel) el.classList.remove("on");
         sel[i].classList.add("on");
+}
+
+function setPos(){
+    posArr = [];
+    
+    for(let el of sections) posArr.push(el.offsetTop);
 }
