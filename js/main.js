@@ -106,7 +106,18 @@ window.addEventListener("scroll", e=>{
     });
 });
 
+scrollBtn.forEach((el, index)=>{
+    el.addEventListener("click", e=>{
+        new Anim(window, {
+            prop: "scroll",
+            value: posArr[index],
+            duration: speed
+        });
 
+        for(el of scrollBtn) el.classList.remove("on");
+        e.currentTarget.classList.add("on");
+    });
+})
 //menu 이벤트
 
 init()
