@@ -18,7 +18,7 @@ const ul = slider.querySelector(".slide");
 const lis = ul.querySelectorAll("li");
 const prev = menu.querySelector(".prev");
 const next = menu.querySelector(".next");
-const speed = 500;
+const speed = 600;
 const base = -300;
 let num = 0;
 let enableClick = true;
@@ -71,7 +71,6 @@ window.addEventListener("resize", e=>{
 });
 
 window.addEventListener("mousewheel", e=>{
-    e.preventDefault();
 
     let activeItem = document.querySelector(".sideBtn li.on");
     let activeIndex = scroll_arr.indexOf(activeItem);
