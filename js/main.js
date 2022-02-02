@@ -62,6 +62,12 @@ clos.addEventListener("click", e=>{
 setPos();
 window.addEventListener("load", e=>{
     sections[1].classList.add("on");
+
+    for(let el of boxs){
+        setTimeout(function(){
+            el.classList.remove("off")
+        }, 1000);
+    } 
 });
 
 window.addEventListener("resize", e=>{
@@ -78,6 +84,7 @@ window.addEventListener("mousewheel", e=>{
     let activeItem = document.querySelector(".sideBtn li.on");
     let activeIndex = scroll_arr.indexOf(activeItem);
     let targetIndex;
+    let isOn = sections[1].classList.contains("on");
 
     if(e.deltaY < 0){
         if(activeIndex == 0) return;
@@ -85,6 +92,18 @@ window.addEventListener("mousewheel", e=>{
     }else{
         if(activeIndex == len-1) return;
         targetIndex = activeIndex +1;
+    }
+
+    if(isOn){
+        for(let el of boxs){
+            el.classList.add("off")
+        } 
+    }else{
+        for(let el of boxs){
+            setTimeout(function(){
+                el.classList.remove("off")
+            }, 1000);
+        } 
     }
 
     new Anim(window,{
