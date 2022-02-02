@@ -60,6 +60,9 @@ clos.addEventListener("click", e=>{
 
 //scoll 이벤트
 setPos();
+window.addEventListener("load", e=>{
+    sections[1].classList.add("on");
+});
 
 window.addEventListener("resize", e=>{
     setPos();
