@@ -278,6 +278,12 @@
                     article{
                         transform: translateX(-50%) scale(1);
                         opacity: 1;
+
+                        
+                        &:nth-of-type(1){ left: 12% }
+                        &:nth-of-type(2){ left: 37% }
+                        &:nth-of-type(3){ left: 62% }
+                        &:nth-of-type(4){ left: 87%; margin-right: 0;}
                     }
                 }
             }
@@ -330,6 +336,7 @@
                 overflow: hidden;
                 position: relative;
                 perspective: 3000px;
+                transition: 1s;
 
                 >.close{
                     font: 18px/1 'Abel';
@@ -357,14 +364,14 @@
                     top: 50%;
                     margin-top: -240px;
                     cursor: pointer;
-                    transform: translateX(-50%) scale(0.2);
+                    transform: translateX(-50%) scale(0);
                     opacity: 0;
-                    transition: left 0.7s 1s, transform 1s, width 1s;
+                    transition: left 0.7s 1s, transform 1s, width 1s, opacity 0.8s 1s;
 
-                    &:nth-of-type(1){ left: 12% }
-                    &:nth-of-type(2){ left: 37% }
-                    &:nth-of-type(3){ left: 62% }
-                    &:nth-of-type(4){ left: 87%; margin-right: 0;}
+                    &:nth-of-type(1){ left: 0% }
+                    &:nth-of-type(2){ left: 12% }
+                    &:nth-of-type(3){ left: 37% }
+                    &:nth-of-type(4){ left: 62%; margin-right: 0;}
 
                     &.on{
                         width: 100%;
