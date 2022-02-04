@@ -1,6 +1,8 @@
 
 
 .brand{
+    overflow: hidden;
+
     .sub_visual{
         background: url(../../img/_pic1.jpg) no-repeat center/cover;
 
@@ -231,7 +233,7 @@
 
         #history{
             width: 100%; 
-            padding: 50px 0 100px;
+            padding: 50px 0 200px;
             position: relative;
 
             &.on{
@@ -616,7 +618,7 @@
 
         #member{
             width: 100%;
-            padding: 150px 0;
+            padding: 180px 0;
             text-align: center;
 
             .logo{

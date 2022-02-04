@@ -257,475 +257,477 @@ input, select, option {
     margin: 0 auto;
     position: relative; }
 
-.brand .sub_visual {
-  background: url(../../img/_pic1.jpg) no-repeat center/cover; }
-  .brand .sub_visual .txt {
-    backdrop-filter: brightness(0.8) grayscale(0.3); }
-    .brand .sub_visual .txt h1::after {
-      content: 'BRAND STORY'; }
-.brand .inner #intro {
-  width: 100%;
-  padding: 100px 0;
-  text-align: center; }
-  .brand .inner #intro.on .philo li {
-    transform: scale(1);
-    opacity: 1; }
-  .brand .inner #intro.on .wrap .pic {
-    opacity: 1;
-    transform: scale(1); }
-    .brand .inner #intro.on .wrap .pic p {
+.brand {
+  overflow: hidden; }
+  .brand .sub_visual {
+    background: url(../../img/_pic1.jpg) no-repeat center/cover; }
+    .brand .sub_visual .txt {
+      backdrop-filter: brightness(0.8) grayscale(0.3); }
+      .brand .sub_visual .txt h1::after {
+        content: 'BRAND STORY'; }
+  .brand .inner #intro {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center; }
+    .brand .inner #intro.on .philo li {
+      transform: scale(1);
       opacity: 1; }
-  .brand .inner #intro .logo {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative; }
-    .brand .inner #intro .logo a {
-      font-size: 0; }
-      .brand .inner #intro .logo a::after {
-        content: '';
-        display: block;
-        width: 250px;
-        height: 1px;
-        background: tan;
-        border-radius: 50%;
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        margin-left: -125px; }
-      .brand .inner #intro .logo a span {
-        font: 18px/1 'Open Sans Condensed';
-        letter-spacing: 2px;
-        color: tan; }
-      .brand .inner #intro .logo a img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover; }
-  .brand .inner #intro > span {
-    font: bold 28px/1 'Noto Sans KR';
-    color: tan;
-    text-align: center; }
-  .brand .inner #intro > p {
-    font: 15px/1 'Noto Sans KR';
-    color: #999;
-    margin: 30px 0 80px; }
-  .brand .inner #intro .philo {
-    width: 100%;
-    padding: 0px 125px;
-    margin-bottom: 150px; }
-    .brand .inner #intro .philo::after {
-      content: '';
+    .brand .inner #intro.on .wrap .pic {
+      opacity: 1;
+      transform: scale(1); }
+      .brand .inner #intro.on .wrap .pic p {
+        opacity: 1; }
+    .brand .inner #intro .logo {
       display: block;
-      clear: both; }
-    .brand .inner #intro .philo li {
-      width: 350px;
-      height: 350px;
-      padding: 40px 30px;
-      float: left;
-      margin-left: -60px;
-      background: rgba(48, 48, 48, 0.5);
-      border-radius: 50%;
-      transform: scale(1.5);
-      opacity: 0;
-      transition: 1s 0.5s; }
-      .brand .inner #intro .philo li:first-child {
-        margin-left: 0; }
-      .brand .inner #intro .philo li h3 {
-        font: bold 24px/1 'Abel';
-        color: tan;
-        margin-bottom: 30px; }
-      .brand .inner #intro .philo li i {
-        display: block;
-        font-size: 70px;
-        color: tan;
-        text-shadow: 0px 0px 5px tan;
-        margin-bottom: 20px; }
-      .brand .inner #intro .philo li span {
-        font: bold 14px/1 'Noto Sans KR';
-        color: #bbb;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #bbb; }
-      .brand .inner #intro .philo li p {
-        width: 250px;
-        font: 15px/1.4 'arial';
-        color: #888;
-        margin: 25px auto 0; }
-  .brand .inner #intro .wrap {
-    width: 100%;
-    height: 500px;
-    position: relative; }
-    .brand .inner #intro .wrap .pic {
-      float: left;
-      width: 280px;
-      height: 100%;
-      margin-right: 20px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      filter: brightness(0.8);
-      opacity: 0;
-      transform: scale(0.2);
-      transition: 1s 1s; }
-      .brand .inner #intro .wrap .pic:nth-of-type(1) {
-        background-image: url(../../img/menupic2.jpg);
-        transition-delay: 1s; }
-      .brand .inner #intro .wrap .pic:nth-of-type(2) {
-        background-image: url(../../img/team2.jpg);
-        transition-delay: 1.4s; }
-      .brand .inner #intro .wrap .pic:nth-of-type(3) {
-        background-image: url(../../img/pro2.jpg);
-        transition-delay: 1.8s; }
-      .brand .inner #intro .wrap .pic:nth-of-type(4) {
-        margin-right: 0;
-        background-image: url(../../img/team1.jpg);
-        transition-delay: 2.2s; }
-      .brand .inner #intro .wrap .pic p {
-        font: bold 18px 'Noto Sans KR';
-        color: #fff;
-        text-align: right;
-        padding: 20px;
-        opacity: 0;
-        transition: 0.5s 1s; }
-    .brand .inner #intro .wrap .circle {
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      bottom: -150px;
-      left: 50%;
-      margin-left: -150px;
-      padding: 50px 30px;
-      background: rgba(0, 0, 0, 0.912);
-      border-radius: 50%; }
-      .brand .inner #intro .wrap .circle i {
-        font-size: 60px;
-        color: tan;
-        margin-bottom: 20px; }
-      .brand .inner #intro .wrap .circle h3 {
-        font: bold 17px/1 'Noto Sans KR';
-        color: #aaa;
-        margin-bottom: 20px; }
-      .brand .inner #intro .wrap .circle span {
-        display: block;
-        width: 80px;
-        height: 80px;
-        margin: 0 auto;
-        padding: 10px 0;
-        border-radius: 50%;
-        font-size: 0; }
-        .brand .inner #intro .wrap .circle span > i {
-          display: block;
-          height: 5px;
-          font-size: 35px;
-          color: rgba(210, 180, 140, 0.9); }
-          .brand .inner #intro .wrap .circle span > i:nth-of-type(1) {
-            color: rgba(210, 180, 140, 0.2); }
-          .brand .inner #intro .wrap .circle span > i:nth-of-type(2) {
-            color: rgba(210, 180, 140, 0.5); }
-.brand .inner #history {
-  width: 100%;
-  padding: 50px 0 100px;
-  position: relative; }
-  .brand .inner #history.on img {
-    transform: rotate(180deg) scale(1.1); }
-  .brand .inner #history img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 250px;
-    left: 0;
-    object-fit: contain;
-    opacity: 0.5;
-    filter: contrast(0.8);
-    transform: rotate(0deg) scale(1.3);
-    transition: 3s ease-out; }
-  .brand .inner #history ul {
-    width: 100%;
-    position: relative; }
-    .brand .inner #history ul li {
-      width: 50%;
-      height: 300px;
+      margin-bottom: 20px;
+      text-align: center;
       position: relative; }
-      .brand .inner #history ul li::after {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 6px solid tan;
-        position: absolute;
-        transition: 0.5s 0.3s; }
-      .brand .inner #history ul li .txt {
-        overflow: hidden; }
-        .brand .inner #history ul li .txt .year {
-          transition: 0.5s 0.5s; }
-          .brand .inner #history ul li .txt .year h3 {
-            font: bold 40px/1 'Bakbak One';
-            color: tan;
-            letter-spacing: 2px;
-            margin-bottom: 10px; }
-        .brand .inner #history ul li .txt > span {
-          display: inline-block;
-          font: bold 20px/1 'Abel';
-          color: rgba(210, 180, 140, 0.7);
-          letter-spacing: 1px;
-          transition: 0.8s 0.5s; }
-        .brand .inner #history ul li .txt .info {
-          width: 70%;
-          font: 15px/1.4 'Noto Snas KR';
-          color: #999;
-          margin-top: 20px;
-          opacity: 0;
-          transition: 0.8s 0.5s; }
-        .brand .inner #history ul li .txt .line {
-          width: 1px;
-          height: 120px;
-          margin-top: 20px;
+      .brand .inner #intro .logo a {
+        font-size: 0; }
+        .brand .inner #intro .logo a::after {
+          content: '';
+          display: block;
+          width: 250px;
+          height: 1px;
           background: tan;
+          border-radius: 50%;
           position: absolute;
-          top: 0;
-          transition: 0.3s; }
-      .brand .inner #history ul li.y1995 {
-        margin-right: 50%;
-        padding-right: 100px; }
-        .brand .inner #history ul li.y1995::after {
-          top: 150px;
-          left: 100%;
-          margin-left: -16px;
-          opacity: 0; }
-        .brand .inner #history ul li.y1995 .year {
-          transform: translateX(100px); }
-        .brand .inner #history ul li.y1995 .txt {
-          text-align: right;
-          padding-top: 150px;
-          margin-left: 100%; }
-          .brand .inner #history ul li.y1995 .txt > span {
-            transform: translateX(200px); }
-          .brand .inner #history ul li.y1995 .txt .info {
-            margin-left: 30%;
-            transform: translateX(300px); }
-          .brand .inner #history ul li.y1995 .txt .line {
-            right: 0;
-            height: 0; }
-        .brand .inner #history ul li.y1995.on::after {
-          opacity: 1; }
-        .brand .inner #history ul li.y1995.on .year {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y1995.on .txt {
-          margin-left: 0;
-          opacity: 1; }
-          .brand .inner #history ul li.y1995.on .txt > span {
-            transform: translateX(0px); }
-          .brand .inner #history ul li.y1995.on .txt .info {
-            transform: translateX(0px);
-            opacity: 1; }
-          .brand .inner #history ul li.y1995.on .txt .line {
-            height: 120px; }
-      .brand .inner #history ul li.y1997 {
-        margin-left: 50%;
-        margin-top: -130px;
-        padding-left: 100px; }
-        .brand .inner #history ul li.y1997::after {
-          top: 110px;
-          right: 100%;
-          margin-right: -16px;
-          opacity: 0; }
-        .brand .inner #history ul li.y1997 .year {
-          transform: translateX(-100px); }
-        .brand .inner #history ul li.y1997 .txt {
-          padding-top: 110px; }
-          .brand .inner #history ul li.y1997 .txt span {
-            transform: translateX(-200px); }
-          .brand .inner #history ul li.y1997 .txt .info {
-            transform: translateX(-300px); }
-          .brand .inner #history ul li.y1997 .txt .line {
-            left: 0;
-            height: 0px; }
-        .brand .inner #history ul li.y1997.on::after {
-          opacity: 1; }
-        .brand .inner #history ul li.y1997.on .year {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y1997.on .txt > span {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y1997.on .txt .info {
-          transform: translateX(0px);
-          opacity: 1; }
-        .brand .inner #history ul li.y1997.on .txt .line {
-          height: 80px; }
-      .brand .inner #history ul li.y2001 {
-        margin-right: 50%;
-        margin-top: -170px;
-        padding-right: 100px; }
-        .brand .inner #history ul li.y2001::after {
-          top: 190px;
-          left: 100%;
-          margin-left: -16px;
-          opacity: 0; }
-        .brand .inner #history ul li.y2001 .year {
-          transform: translateX(100px); }
-        .brand .inner #history ul li.y2001 .txt {
-          text-align: right;
-          padding-top: 190px; }
-          .brand .inner #history ul li.y2001 .txt > span {
-            transform: translateX(200px); }
-          .brand .inner #history ul li.y2001 .txt .info {
-            transform: translateX(300px);
-            margin-left: 30%; }
-          .brand .inner #history ul li.y2001 .txt .line {
-            right: 0;
-            height: 0px; }
-        .brand .inner #history ul li.y2001.on::after {
-          opacity: 1; }
-        .brand .inner #history ul li.y2001.on .year {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y2001.on .txt > span {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y2001.on .txt .info {
-          transform: translateX(0px);
-          opacity: 1; }
-        .brand .inner #history ul li.y2001.on .txt .line {
-          height: 160px; }
-      .brand .inner #history ul li.y2015 {
-        margin-left: 50%;
-        margin-top: -90px;
-        padding-left: 100px; }
-        .brand .inner #history ul li.y2015::after {
-          top: 320px;
-          right: 100%;
-          margin-right: -16px;
-          opacity: 0; }
-        .brand .inner #history ul li.y2015 .year {
-          transform: translateX(-100px); }
-        .brand .inner #history ul li.y2015 .txt {
-          padding-top: 320px; }
-          .brand .inner #history ul li.y2015 .txt > span {
-            transform: translateX(-200px); }
-          .brand .inner #history ul li.y2015 .txt .info {
-            transform: translateX(-300px); }
-          .brand .inner #history ul li.y2015 .txt .line {
-            left: 0;
-            height: 0px; }
-        .brand .inner #history ul li.y2015.on::after {
-          opacity: 1; }
-        .brand .inner #history ul li.y2015.on .year {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y2015.on .txt > span {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y2015.on .txt .info {
-          transform: translateX(0px);
-          opacity: 1; }
-        .brand .inner #history ul li.y2015.on .txt .line {
-          height: 290px; }
-      .brand .inner #history ul li.y2021 {
-        margin-right: 50%;
-        margin-top: 40px;
-        padding-right: 100px; }
-        .brand .inner #history ul li.y2021::after {
-          top: 230px;
-          left: 100%;
-          margin-left: -16px;
-          opacity: 0; }
-        .brand .inner #history ul li.y2021 .year {
-          transform: translateX(100px); }
-        .brand .inner #history ul li.y2021 .txt {
-          text-align: right;
-          padding-top: 230px; }
-          .brand .inner #history ul li.y2021 .txt > span {
-            transform: translateX(200px); }
-          .brand .inner #history ul li.y2021 .txt .info {
-            transform: translateX(300px);
-            margin-left: 30%; }
-          .brand .inner #history ul li.y2021 .txt .line {
-            right: 0;
-            height: 0px; }
-        .brand .inner #history ul li.y2021.on::after {
-          opacity: 1; }
-        .brand .inner #history ul li.y2021.on .year {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y2021.on .txt > span {
-          transform: translateX(0px); }
-        .brand .inner #history ul li.y2021.on .txt .info {
-          transform: translateX(0px);
-          opacity: 1; }
-        .brand .inner #history ul li.y2021.on .txt .line {
-          height: 200px; }
-.brand .inner #member {
-  width: 100%;
-  padding: 150px 0;
-  text-align: center; }
-  .brand .inner #member .logo {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative; }
-    .brand .inner #member .logo a {
-      font-size: 0; }
-      .brand .inner #member .logo a::after {
-        content: '';
-        display: block;
-        width: 250px;
-        height: 1px;
-        background: tan;
-        border-radius: 50%;
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        margin-left: -125px; }
-      .brand .inner #member .logo a span {
-        font: 18px/1 'Open Sans Condensed';
-        letter-spacing: 2px;
-        color: tan; }
-      .brand .inner #member .logo a img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover; }
-  .brand .inner #member > span {
-    font: bold 28px/1 'Noto Sans KR';
-    color: tan;
-    text-align: center; }
-  .brand .inner #member > p {
-    font: 15px/1 'Noto Sans KR';
-    color: #999;
-    margin: 30px 0 80px; }
-  .brand .inner #member .slider {
-    width: 1800px;
-    overflow: hidden;
-    position: relative;
-    left: 50%;
-    margin-left: -900px; }
-    .brand .inner #member .slider .shef {
-      width: calc(220px * 10);
-      height: 200px;
-      margin-left: -220px; }
-      .brand .inner #member .slider .shef::after {
+          bottom: -10px;
+          left: 50%;
+          margin-left: -125px; }
+        .brand .inner #intro .logo a span {
+          font: 18px/1 'Open Sans Condensed';
+          letter-spacing: 2px;
+          color: tan; }
+        .brand .inner #intro .logo a img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover; }
+    .brand .inner #intro > span {
+      font: bold 28px/1 'Noto Sans KR';
+      color: tan;
+      text-align: center; }
+    .brand .inner #intro > p {
+      font: 15px/1 'Noto Sans KR';
+      color: #999;
+      margin: 30px 0 80px; }
+    .brand .inner #intro .philo {
+      width: 100%;
+      padding: 0px 125px;
+      margin-bottom: 150px; }
+      .brand .inner #intro .philo::after {
         content: '';
         display: block;
         clear: both; }
-      .brand .inner #member .slider .shef > li {
+      .brand .inner #intro .philo li {
+        width: 350px;
+        height: 350px;
+        padding: 40px 30px;
         float: left;
-        width: 200px;
+        margin-left: -60px;
+        background: rgba(48, 48, 48, 0.5);
+        border-radius: 50%;
+        transform: scale(1.5);
+        opacity: 0;
+        transition: 1s 0.5s; }
+        .brand .inner #intro .philo li:first-child {
+          margin-left: 0; }
+        .brand .inner #intro .philo li h3 {
+          font: bold 24px/1 'Abel';
+          color: tan;
+          margin-bottom: 30px; }
+        .brand .inner #intro .philo li i {
+          display: block;
+          font-size: 70px;
+          color: tan;
+          text-shadow: 0px 0px 5px tan;
+          margin-bottom: 20px; }
+        .brand .inner #intro .philo li span {
+          font: bold 14px/1 'Noto Sans KR';
+          color: #bbb;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #bbb; }
+        .brand .inner #intro .philo li p {
+          width: 250px;
+          font: 15px/1.4 'arial';
+          color: #888;
+          margin: 25px auto 0; }
+    .brand .inner #intro .wrap {
+      width: 100%;
+      height: 500px;
+      position: relative; }
+      .brand .inner #intro .wrap .pic {
+        float: left;
+        width: 280px;
         height: 100%;
         margin-right: 20px;
-        position: relative; }
-        .brand .inner #member .slider .shef > li img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 50%;
-          filter: contrast(0.8) grayscale(1); }
-        .brand .inner #member .slider .shef > li p {
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: linear-gradient(180deg, rgba(255, 255, 224, 0.4), rgba(210, 180, 140, 0.4));
-          font: bold 24px/200px 'Open Sans Condensed';
-          color: #333;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(0.8);
+        opacity: 0;
+        transform: scale(0.2);
+        transition: 1s 1s; }
+        .brand .inner #intro .wrap .pic:nth-of-type(1) {
+          background-image: url(../../img/menupic2.jpg);
+          transition-delay: 1s; }
+        .brand .inner #intro .wrap .pic:nth-of-type(2) {
+          background-image: url(../../img/team2.jpg);
+          transition-delay: 1.4s; }
+        .brand .inner #intro .wrap .pic:nth-of-type(3) {
+          background-image: url(../../img/pro2.jpg);
+          transition-delay: 1.8s; }
+        .brand .inner #intro .wrap .pic:nth-of-type(4) {
+          margin-right: 0;
+          background-image: url(../../img/team1.jpg);
+          transition-delay: 2.2s; }
+        .brand .inner #intro .wrap .pic p {
+          font: bold 18px 'Noto Sans KR';
+          color: #fff;
+          text-align: right;
+          padding: 20px;
           opacity: 0;
-          transition: 0.8s; }
-        .brand .inner #member .slider .shef > li:hover p {
-          opacity: 1; }
+          transition: 0.5s 1s; }
+      .brand .inner #intro .wrap .circle {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: -150px;
+        left: 50%;
+        margin-left: -150px;
+        padding: 50px 30px;
+        background: rgba(0, 0, 0, 0.912);
+        border-radius: 50%; }
+        .brand .inner #intro .wrap .circle i {
+          font-size: 60px;
+          color: tan;
+          margin-bottom: 20px; }
+        .brand .inner #intro .wrap .circle h3 {
+          font: bold 17px/1 'Noto Sans KR';
+          color: #aaa;
+          margin-bottom: 20px; }
+        .brand .inner #intro .wrap .circle span {
+          display: block;
+          width: 80px;
+          height: 80px;
+          margin: 0 auto;
+          padding: 10px 0;
+          border-radius: 50%;
+          font-size: 0; }
+          .brand .inner #intro .wrap .circle span > i {
+            display: block;
+            height: 5px;
+            font-size: 35px;
+            color: rgba(210, 180, 140, 0.9); }
+            .brand .inner #intro .wrap .circle span > i:nth-of-type(1) {
+              color: rgba(210, 180, 140, 0.2); }
+            .brand .inner #intro .wrap .circle span > i:nth-of-type(2) {
+              color: rgba(210, 180, 140, 0.5); }
+  .brand .inner #history {
+    width: 100%;
+    padding: 50px 0 200px;
+    position: relative; }
+    .brand .inner #history.on img {
+      transform: rotate(180deg) scale(1.1); }
+    .brand .inner #history img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 250px;
+      left: 0;
+      object-fit: contain;
+      opacity: 0.5;
+      filter: contrast(0.8);
+      transform: rotate(0deg) scale(1.3);
+      transition: 3s ease-out; }
+    .brand .inner #history ul {
+      width: 100%;
+      position: relative; }
+      .brand .inner #history ul li {
+        width: 50%;
+        height: 300px;
+        position: relative; }
+        .brand .inner #history ul li::after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 6px solid tan;
+          position: absolute;
+          transition: 0.5s 0.3s; }
+        .brand .inner #history ul li .txt {
+          overflow: hidden; }
+          .brand .inner #history ul li .txt .year {
+            transition: 0.5s 0.5s; }
+            .brand .inner #history ul li .txt .year h3 {
+              font: bold 40px/1 'Bakbak One';
+              color: tan;
+              letter-spacing: 2px;
+              margin-bottom: 10px; }
+          .brand .inner #history ul li .txt > span {
+            display: inline-block;
+            font: bold 20px/1 'Abel';
+            color: rgba(210, 180, 140, 0.7);
+            letter-spacing: 1px;
+            transition: 0.8s 0.5s; }
+          .brand .inner #history ul li .txt .info {
+            width: 70%;
+            font: 15px/1.4 'Noto Snas KR';
+            color: #999;
+            margin-top: 20px;
+            opacity: 0;
+            transition: 0.8s 0.5s; }
+          .brand .inner #history ul li .txt .line {
+            width: 1px;
+            height: 120px;
+            margin-top: 20px;
+            background: tan;
+            position: absolute;
+            top: 0;
+            transition: 0.3s; }
+        .brand .inner #history ul li.y1995 {
+          margin-right: 50%;
+          padding-right: 100px; }
+          .brand .inner #history ul li.y1995::after {
+            top: 150px;
+            left: 100%;
+            margin-left: -16px;
+            opacity: 0; }
+          .brand .inner #history ul li.y1995 .year {
+            transform: translateX(100px); }
+          .brand .inner #history ul li.y1995 .txt {
+            text-align: right;
+            padding-top: 150px;
+            margin-left: 100%; }
+            .brand .inner #history ul li.y1995 .txt > span {
+              transform: translateX(200px); }
+            .brand .inner #history ul li.y1995 .txt .info {
+              margin-left: 30%;
+              transform: translateX(300px); }
+            .brand .inner #history ul li.y1995 .txt .line {
+              right: 0;
+              height: 0; }
+          .brand .inner #history ul li.y1995.on::after {
+            opacity: 1; }
+          .brand .inner #history ul li.y1995.on .year {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y1995.on .txt {
+            margin-left: 0;
+            opacity: 1; }
+            .brand .inner #history ul li.y1995.on .txt > span {
+              transform: translateX(0px); }
+            .brand .inner #history ul li.y1995.on .txt .info {
+              transform: translateX(0px);
+              opacity: 1; }
+            .brand .inner #history ul li.y1995.on .txt .line {
+              height: 120px; }
+        .brand .inner #history ul li.y1997 {
+          margin-left: 50%;
+          margin-top: -130px;
+          padding-left: 100px; }
+          .brand .inner #history ul li.y1997::after {
+            top: 110px;
+            right: 100%;
+            margin-right: -16px;
+            opacity: 0; }
+          .brand .inner #history ul li.y1997 .year {
+            transform: translateX(-100px); }
+          .brand .inner #history ul li.y1997 .txt {
+            padding-top: 110px; }
+            .brand .inner #history ul li.y1997 .txt span {
+              transform: translateX(-200px); }
+            .brand .inner #history ul li.y1997 .txt .info {
+              transform: translateX(-300px); }
+            .brand .inner #history ul li.y1997 .txt .line {
+              left: 0;
+              height: 0px; }
+          .brand .inner #history ul li.y1997.on::after {
+            opacity: 1; }
+          .brand .inner #history ul li.y1997.on .year {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y1997.on .txt > span {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y1997.on .txt .info {
+            transform: translateX(0px);
+            opacity: 1; }
+          .brand .inner #history ul li.y1997.on .txt .line {
+            height: 80px; }
+        .brand .inner #history ul li.y2001 {
+          margin-right: 50%;
+          margin-top: -170px;
+          padding-right: 100px; }
+          .brand .inner #history ul li.y2001::after {
+            top: 190px;
+            left: 100%;
+            margin-left: -16px;
+            opacity: 0; }
+          .brand .inner #history ul li.y2001 .year {
+            transform: translateX(100px); }
+          .brand .inner #history ul li.y2001 .txt {
+            text-align: right;
+            padding-top: 190px; }
+            .brand .inner #history ul li.y2001 .txt > span {
+              transform: translateX(200px); }
+            .brand .inner #history ul li.y2001 .txt .info {
+              transform: translateX(300px);
+              margin-left: 30%; }
+            .brand .inner #history ul li.y2001 .txt .line {
+              right: 0;
+              height: 0px; }
+          .brand .inner #history ul li.y2001.on::after {
+            opacity: 1; }
+          .brand .inner #history ul li.y2001.on .year {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y2001.on .txt > span {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y2001.on .txt .info {
+            transform: translateX(0px);
+            opacity: 1; }
+          .brand .inner #history ul li.y2001.on .txt .line {
+            height: 160px; }
+        .brand .inner #history ul li.y2015 {
+          margin-left: 50%;
+          margin-top: -90px;
+          padding-left: 100px; }
+          .brand .inner #history ul li.y2015::after {
+            top: 320px;
+            right: 100%;
+            margin-right: -16px;
+            opacity: 0; }
+          .brand .inner #history ul li.y2015 .year {
+            transform: translateX(-100px); }
+          .brand .inner #history ul li.y2015 .txt {
+            padding-top: 320px; }
+            .brand .inner #history ul li.y2015 .txt > span {
+              transform: translateX(-200px); }
+            .brand .inner #history ul li.y2015 .txt .info {
+              transform: translateX(-300px); }
+            .brand .inner #history ul li.y2015 .txt .line {
+              left: 0;
+              height: 0px; }
+          .brand .inner #history ul li.y2015.on::after {
+            opacity: 1; }
+          .brand .inner #history ul li.y2015.on .year {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y2015.on .txt > span {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y2015.on .txt .info {
+            transform: translateX(0px);
+            opacity: 1; }
+          .brand .inner #history ul li.y2015.on .txt .line {
+            height: 290px; }
+        .brand .inner #history ul li.y2021 {
+          margin-right: 50%;
+          margin-top: 40px;
+          padding-right: 100px; }
+          .brand .inner #history ul li.y2021::after {
+            top: 230px;
+            left: 100%;
+            margin-left: -16px;
+            opacity: 0; }
+          .brand .inner #history ul li.y2021 .year {
+            transform: translateX(100px); }
+          .brand .inner #history ul li.y2021 .txt {
+            text-align: right;
+            padding-top: 230px; }
+            .brand .inner #history ul li.y2021 .txt > span {
+              transform: translateX(200px); }
+            .brand .inner #history ul li.y2021 .txt .info {
+              transform: translateX(300px);
+              margin-left: 30%; }
+            .brand .inner #history ul li.y2021 .txt .line {
+              right: 0;
+              height: 0px; }
+          .brand .inner #history ul li.y2021.on::after {
+            opacity: 1; }
+          .brand .inner #history ul li.y2021.on .year {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y2021.on .txt > span {
+            transform: translateX(0px); }
+          .brand .inner #history ul li.y2021.on .txt .info {
+            transform: translateX(0px);
+            opacity: 1; }
+          .brand .inner #history ul li.y2021.on .txt .line {
+            height: 200px; }
+  .brand .inner #member {
+    width: 100%;
+    padding: 180px 0;
+    text-align: center; }
+    .brand .inner #member .logo {
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative; }
+      .brand .inner #member .logo a {
+        font-size: 0; }
+        .brand .inner #member .logo a::after {
+          content: '';
+          display: block;
+          width: 250px;
+          height: 1px;
+          background: tan;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          margin-left: -125px; }
+        .brand .inner #member .logo a span {
+          font: 18px/1 'Open Sans Condensed';
+          letter-spacing: 2px;
+          color: tan; }
+        .brand .inner #member .logo a img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover; }
+    .brand .inner #member > span {
+      font: bold 28px/1 'Noto Sans KR';
+      color: tan;
+      text-align: center; }
+    .brand .inner #member > p {
+      font: 15px/1 'Noto Sans KR';
+      color: #999;
+      margin: 30px 0 80px; }
+    .brand .inner #member .slider {
+      width: 1800px;
+      overflow: hidden;
+      position: relative;
+      left: 50%;
+      margin-left: -900px; }
+      .brand .inner #member .slider .shef {
+        width: calc(220px * 10);
+        height: 200px;
+        margin-left: -220px; }
+        .brand .inner #member .slider .shef::after {
+          content: '';
+          display: block;
+          clear: both; }
+        .brand .inner #member .slider .shef > li {
+          float: left;
+          width: 200px;
+          height: 100%;
+          margin-right: 20px;
+          position: relative; }
+          .brand .inner #member .slider .shef > li img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            filter: contrast(0.8) grayscale(1); }
+          .brand .inner #member .slider .shef > li p {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 224, 0.4), rgba(210, 180, 140, 0.4));
+            font: bold 24px/200px 'Open Sans Condensed';
+            color: #333;
+            opacity: 0;
+            transition: 0.8s; }
+          .brand .inner #member .slider .shef > li:hover p {
+            opacity: 1; }
 
 .community {
   transform-style: preserve-3d;

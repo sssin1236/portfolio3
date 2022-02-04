@@ -3,7 +3,9 @@ const slider = member.querySelector(".slider");
 const ul = slider.querySelector(".shef");
 const lis = ul.querySelectorAll("li");
 const mains = document.querySelectorAll("main");
-const base = -300;
+const base = -150;
+const history = document.querySelector("#history");
+const year = history.querySelectorAll("ul li");
 let num= 0;
 
 init();
@@ -11,41 +13,13 @@ setPos();
 
 timer = setInterval(move, 50);
 
-// window.addEventListener("mousewheel", e=>{
-
-//     let activeIndex = scroll_arr.indexOf(activeItem);
-//     let targetIndex;
-//     let isOn = sections[1].classList.contains("on");
-
-//     if(e.deltaY < 0){
-//         if(activeIndex == 0) return;
-//         targetIndex = activeIndex -1;
-//     }else{
-//         if(activeIndex == len-1) return;
-//         targetIndex = activeIndex +1;
-//     }
-
-//     if(isOn){
-//         for(let el of boxs){
-//             el.classList.add("off")
-//         } 
-//     }else{
-//         for(let el of boxs){
-//             setTimeout(function(){
-//                 el.classList.remove("off")
-//             }, 1000);
-//         } 
-//     }
-
-//     new Anim(window,{
-//         prop: "scroll",
-//         value: posArr[targetIndex],
-//         duration: speed
-//     });
-// }, {passive : false});
+window.addEventListener("resize", e=>{
+    setPos();
+});
 
 window.addEventListener("scroll", e=>{
     let scroll = window.scrollY || window.pageYOffset;
+    let isOn = mains[1].classList.contains("on");
 
     mains.forEach((el, index)=>{
         if(scroll >= posArr[index] + base){
@@ -54,7 +28,31 @@ window.addEventListener("scroll", e=>{
             mains[index].classList.add("on");
         }
     });
+
+    if(isOn){
+        console.log(isOn);
+        posArr2 = [];
+        for(let el of year) posArr2.push(el.offsetTop);
+
+        year.forEach((el, index)=>{
+            if(scroll >= posArr2[index]){
+                year[index].classList.add("on");
+            }
+        })
+    }else{
+        setPos();
+
+        mains.forEach((el, index)=>{
+            if(scroll >= posArr[index] + base){
+                for(let el of mains) el.classList.remove("on");
+    
+                mains[index].classList.add("on");
+            }
+        });
+    }
 });
+
+
 
 ul.addEventListener("mouseenter", e=>{
     clearInterval(timer);
