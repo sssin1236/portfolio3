@@ -2,10 +2,12 @@ const member = document.querySelector("#member");
 const slider = member.querySelector(".slider");
 const ul = slider.querySelector(".shef");
 const lis = ul.querySelectorAll("li");
-const mains = querySelectorAll("main");
+const mains = document.querySelectorAll("main");
+const base = -300;
 let num= 0;
 
-init()
+init();
+setPos();
 
 timer = setInterval(move, 50);
 
@@ -45,7 +47,7 @@ timer = setInterval(move, 50);
 window.addEventListener("scroll", e=>{
     let scroll = window.scrollY || window.pageYOffset;
 
-    sections.forEach((el, index)=>{
+    mains.forEach((el, index)=>{
         if(scroll >= posArr[index] + base){
             for(let el of mains) el.classList.remove("on");
 
