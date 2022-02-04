@@ -30,25 +30,18 @@ window.addEventListener("scroll", e=>{
     });
 
     if(isOn){
-        console.log(isOn);
         posArr2 = [];
+        let scroll2 = scroll - posArr[1];
+        console.log(scroll2);
         for(let el of year) posArr2.push(el.offsetTop);
 
         year.forEach((el, index)=>{
-            if(scroll >= posArr2[index]){
+            if(scroll2 >= posArr2[index] - base){
                 year[index].classList.add("on");
             }
         })
     }else{
-        setPos();
-
-        mains.forEach((el, index)=>{
-            if(scroll >= posArr[index] + base){
-                for(let el of mains) el.classList.remove("on");
-    
-                mains[index].classList.add("on");
-            }
-        });
+        for(el of year) el.classList.remove("on");
     }
 });
 
