@@ -42,20 +42,17 @@ timer = setInterval(move, 50);
 //     });
 // }, {passive : false});
 
-// // window.addEventListener("scroll", e=>{
-// //     let scroll = window.scrollY || window.pageYOffset;
+window.addEventListener("scroll", e=>{
+    let scroll = window.scrollY || window.pageYOffset;
 
-// //     sections.forEach((el, index)=>{
-// //         if(scroll >= posArr[index] + base){
-// //             scrollBtn.forEach((el, i)=>{
-// //                 el.classList.remove("on");
-// //                 sections[i].classList.remove("on");
-// //             })
-// //             scrollBtn[index].classList.add("on");
-// //             sections[index].classList.add("on");
-// //         }
-// //     });
-// // });
+    sections.forEach((el, index)=>{
+        if(scroll >= posArr[index] + base){
+            for(let el of mains) el.classList.remove("on");
+
+            mains[index].classList.add("on");
+        }
+    });
+});
 
 ul.addEventListener("mouseenter", e=>{
     clearInterval(timer);
@@ -84,5 +81,5 @@ function init(){
 function setPos(){
     posArr = [];
     
-    for(let el of sections) posArr.push(el.offsetTop);
+    for(let el of mains) posArr.push(el.offsetTop);
 }
