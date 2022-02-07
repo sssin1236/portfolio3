@@ -4,10 +4,7 @@
     overflow: hidden;
 
     .sub_visual{
-        background-image: url(../../img/subback.jpg), url(../../img/subback.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background: url(../../img/subback.jpg) no-repeat center/cover;
 
         .txt{
             backdrop-filter: brightness(0.8) grayscale(0.3);
