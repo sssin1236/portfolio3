@@ -4,7 +4,7 @@
     overflow: hidden;
 
     .sub_visual{
-        background: url(/img/subback.jpg) no-repeat center/cover;
+        background: url(../img/subback.jpg) no-repeat center/cover;
         img{
             display: none;
         }
@@ -160,20 +160,20 @@
                     transition: 1s 1s;
 
                     &:nth-of-type(1){
-                        background-image: url(../.././img/menupic2.jpg);
+                        background-image: url(../img/menupic2.jpg);
                         transition-delay: 1s;
                     }
                     &:nth-of-type(2){
-                        background-image: url(../.././img/team2.jpg);
+                        background-image: url(../img/team2.jpg);
                         transition-delay: 1.4s;
                     }
                     &:nth-of-type(3){
-                        background-image: url(../.././img/pro2.jpg);
+                        background-image: url(../img/pro2.jpg);
                         transition-delay: 1.8s;
                     }
                     &:nth-of-type(4){
                         margin-right: 0;
-                        background-image: url(../.././img/team1.jpg);
+                        background-image: url(../img/team1.jpg);
                         transition-delay: 2.2s;
                     }
 
