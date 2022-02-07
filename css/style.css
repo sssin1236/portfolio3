@@ -260,7 +260,7 @@ input, select, option {
 .brand {
   overflow: hidden; }
   .brand .sub_visual {
-    background: url(../../../img/subback.jpg) no-repeat center/cover; }
+    background: url(../.././img/subback.jpg) no-repeat center/cover; }
     .brand .sub_visual .txt {
       backdrop-filter: brightness(0.8) grayscale(0.3); }
       .brand .sub_visual .txt h1::after {
