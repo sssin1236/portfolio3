@@ -735,7 +735,7 @@ input, select, option {
   transform-style: preserve-3d;
   background: #fff; }
   .community .sub_visual {
-    background: url(../../img/special2.jpg) no-repeat center/cover; }
+    background: url(../img/special2.jpg) no-repeat center/cover; }
     .community .sub_visual .txt {
       backdrop-filter: contrast(0.8) brightness(0.8); }
       .community .sub_visual .txt h1::after {
