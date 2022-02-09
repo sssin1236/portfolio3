@@ -2573,6 +2573,9 @@ input, select, option {
   width: 100%;
   padding: 150px 0;
   overflow: hidden; }
+  #brand.on .inner .wrap .box1, #brand.on .inner .wrap .box2 {
+    transform: translateX(0px);
+    opacity: 1; }
   #brand .inner {
     width: 1180px;
     margin: 0 auto;
@@ -2588,7 +2591,10 @@ input, select, option {
         width: 55%;
         height: 100%;
         position: relative;
-        background: url(../img/build.jpg) no-repeat center/cover; }
+        background: url(../img/build.jpg) no-repeat center/cover;
+        transform: translateX(-150px);
+        opacity: 0;
+        transition: 0.8s; }
         #brand .inner .wrap .box1 .top {
           width: 100%;
           height: 100%;
@@ -2682,7 +2688,10 @@ input, select, option {
         height: 100%;
         background: #ddd;
         position: relative;
-        padding: 30px; }
+        padding: 30px;
+        transform: translateX(150px);
+        opacity: 0;
+        transition: 0.8s; }
         #brand .inner .wrap .box2 h3 {
           font: bold 24px/1 'Abel';
           color: #222;
