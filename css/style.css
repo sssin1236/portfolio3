@@ -2059,7 +2059,8 @@ input, select, option {
         width: 40%;
         height: 100%;
         padding: 350px 0;
-        overflow: hidden; }
+        overflow: hidden;
+        display: none; }
         #visual .inner .wrap .left h2 {
           font: 50px/1 'Bakbak One';
           color: tan;
@@ -2073,9 +2074,9 @@ input, select, option {
           font: 16px/1 'noto sans kr';
           color: #fff; }
       #visual .inner .wrap .right {
-        float: right;
-        width: 60%;
+        width: 1180px;
         height: 100%;
+        margin: 0 auto;
         overflow: hidden;
         position: relative;
         perspective: 3000px;
