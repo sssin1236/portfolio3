@@ -61,7 +61,7 @@ clos.addEventListener("click", e=>{
 //scoll 이벤트
 setPos();
 window.addEventListener("load", e=>{
-    sections[1].classList.add("on");
+    sections[0].classList.add("on");
 
     for(let el of boxs){
         setTimeout(function(){
@@ -84,7 +84,7 @@ window.addEventListener("mousewheel", e=>{
     let activeItem = document.querySelector(".sideBtn li.on");
     let activeIndex = scroll_arr.indexOf(activeItem);
     let targetIndex;
-    let isOn = sections[1].classList.contains("on");
+    let isOn = sections[0].classList.contains("on");
 
     if(e.deltaY < 0){
         if(activeIndex == 0) return;
