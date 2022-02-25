@@ -1318,7 +1318,7 @@ input, select, option {
         color: #bbb; }
 
 .join .sub_visual {
-  background: url(../../img/family4.jpg) no-repeat center/cover; }
+  background: url(../img/family4.jpg) no-repeat center/cover; }
   .join .sub_visual .txt {
     backdrop-filter: contrast(0.8) brightness(0.8); }
     .join .sub_visual .txt h1::after {
